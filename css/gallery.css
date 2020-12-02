@@ -1,0 +1,285 @@
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #A6A49E;
+  position: relative;
+}
+.item1 {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+
+.item2 {
+  display: none;
+  grid-column: 1/ span 2;
+  grid-row: 1;
+}
+
+/* .item3 {
+  grid-column: 2;
+  grid-row: 2;
+  flex-direction:row;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin:30px;
+} */
+.item3 {
+  grid-column: 2;
+  grid-row: 2;
+  flex-direction:row;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin:30px;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.item3::-webkit-scrollbar{
+  display: block !important;
+  background-color: #464646;
+  width: 10px;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+}
+.item3::-webkit-scrollbar-track {
+  display: block !important;
+  width: 10px;
+  height: 35px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+ 
+/* Handle */
+.item3::-webkit-scrollbar-thumb {
+  display: block !important;
+  background: #FDDB3A;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.item3::-webkit-scrollbar-thumb:hover {
+  display: block !important;
+
+  background: #FDDB3A; 
+}
+
+
+@media only screen and (min-width:768px){
+  .item1{
+    display: block;
+  }
+  .item2{
+    display: none;
+  }
+
+.item3::-webkit-scrollbar, .item3::-webkit-scrollbar-track, .item3::-webkit-scrollbar-thumb, .item3::-webkit-scrollbar-thumb:hover{
+  display: block !important;
+
+}
+}
+@media only screen and (max-width:767px){
+  .item1{
+    display: none;
+  }
+  .item2{
+    display: block;
+  }
+  .item3{
+    flex-direction: row;
+    justify-content: center;
+  } 
+   .grid-container{
+    grid-template-columns: auto;
+  }
+  .item3::-webkit-scrollbar, .item3::-webkit-scrollbar-track, .item3::-webkit-scrollbar-thumb,.item3::-webkit-scrollbar-thumb:hover{
+    display: block !important;
+  
+  }
+}
+
+@media only screen and (max-width:600px){
+  .item1{
+    display: none;
+  }
+  .item2{
+    display: block;
+  }
+  .description {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .item3{
+    /* flex-direction: column; */
+    justify-content: flex-end;
+    grid-column: span 2;
+  }
+  .date, .title p{
+    font-size: 10px;
+  }
+  .grid-container{
+    grid-template-columns: auto;
+  }
+  .frame{
+    width: 100vw;
+  }
+  .item3::-webkit-scrollbar, .item3::-webkit-scrollbar-track, .item3::-webkit-scrollbar-thumb, .item3::-webkit-scrollbar-thumb:hover{
+    display: block !important;
+  
+  }
+}
+
+@media only screen and (min-width:320px){
+  /* .item2{
+    display: block;
+  } */
+  .description {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .grid-container{
+    grid-template-columns: auto;
+  }
+  .item3::-webkit-scrollbar, .item3::-webkit-scrollbar-track, .item3::-webkit-scrollbar-thumb,.item3::-webkit-scrollbar-thumb:hover{
+    display: block !important;
+  
+  }
+}
+@media only screen and (min-width:320px){
+  .item3::-webkit-scrollbar, .item3::-webkit-scrollbar-track, .item3::-webkit-scrollbar-thumb,.item3::-webkit-scrollbar-thumb:hover{
+    display: block !important;
+  
+  }
+}
+
+.item3 .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 35%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .item3::-webkit-scrollbar, .item3::-webkit-scrollbar-track, .item3::-webkit-scrollbar-thumb,.item3::-webkit-scrollbar-thumb:hover{
+    display: block !important;
+  
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .item3::-webkit-scrollbar, .item3::-webkit-scrollbar-track, .item3::-webkit-scrollbar-thumb,.item3::-webkit-scrollbar-thumb:hover{
+    display: block !important;
+  
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
