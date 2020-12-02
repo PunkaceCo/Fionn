@@ -162,6 +162,7 @@
     .item3{
       flex-direction: row;
       justify-content: left;
+      align-self: flex-end;
     } 
      .grid-container{
       grid-template-columns: auto;
