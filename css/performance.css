@@ -99,7 +99,23 @@
     font-size: 20px;
     margin:30px;
   }
+  .item4{
+    position: absolute;
+  grid-column: 3;
+  grid-row: 5;
+  right: 0%;
+  bottom: 0%;
+  }
 
+  .component-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #FDDB3A;
+  }
+  .component-links i{
+    margin: 5px;
+  }
   @media only screen and (min-width:768px){
     .item1{
       display: block;
@@ -119,6 +135,7 @@
     .item3{
       flex-direction: row;
       justify-content: left;
+      align-self: flex-end;
     } 
      .grid-container{
       grid-template-columns: auto;
