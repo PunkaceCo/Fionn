@@ -100,7 +100,7 @@
     margin:30px;
   }
   .item4{
-    position: absolute;
+    position: fixed;
   grid-column: 3;
   grid-row: 5;
   right: 0%;
