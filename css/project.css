@@ -378,7 +378,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  /* background-color: #464646; */
   position: relative;
   overflow: hidden;
 }
@@ -623,10 +623,10 @@ body {
 
 } */
 
-.grid-item {
-  /* text-align: center; */
+/* .grid-item {
+  text-align: center;
   padding: 20px;
-}
+} */
 /* 
 .item1 {
   grid-column: 1;
