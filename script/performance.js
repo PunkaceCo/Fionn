@@ -15,7 +15,3 @@ function myFunction() {
 
   }
 }
-
-function Touch(){
-  console.log("click")
-}
