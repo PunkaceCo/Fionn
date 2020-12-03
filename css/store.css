@@ -8,6 +8,15 @@ body {
   background-color: #595B83;
   position: relative;
 }
+.item2 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 2 / span 4;
+}
 
 .item3 {
   grid-column: 2 / span 3;
@@ -20,6 +29,22 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+.item4{
+  position: fixed;
+grid-column: 3;
+grid-row: 5;
+right: 0%;
+bottom: 0%;
+}
+.component-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #FDDB3A;
+}
+.component-links i{
+  margin: 5px;
 }
 .item3::-webkit-scrollbar{
   display: block !important;
@@ -96,9 +121,13 @@ body {
   font-weight: normal;
   font-size: 19px;
   line-height: 22px;
-
+  height: 45px;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
-
+.product-card p button{
+  margin-bottom: 0%;
+}
 .row::after {
   content: "";
   clear: both;
@@ -183,9 +212,9 @@ input[type=text]{
 
 @media only screen and (max-width: 768px) {
 /* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -233,18 +262,20 @@ input[type=text]{
     line-height: 12px;
   }
   .item3{
+    grid-column: 1 ;
     flex-direction: column;
     justify-content: flex-end;
   }
   .date, .title p{
     font-size: 10px;
   }
-  .grid-container{
-    grid-template-columns: auto;
+  .item3 .all{
+    margin-left:0%;
   }
+
 }
 
-@media only screen and (max-width:320px){
+/* @media only screen and (max-width:320px){
   .item2{
     display: block;
   }
@@ -252,19 +283,20 @@ input[type=text]{
     font-size: 9px;
     line-height: 10px;
   }
-  .grid-container{
-    grid-template-columns: auto;
+  .item3 .all{
+    margin-left:0%;
   }
-} 
 
-@media only screen and (min-width:768px){
+}  */
+
+/* @media only screen and (min-width:768px){
   .item1{
     display: block;
   }
   .item2{
     display: none;
   }
-}
+} */
 
 @media only screen and (max-width:767px){
   .item1{
@@ -277,9 +309,7 @@ input[type=text]{
     flex-direction: row;
     justify-content: center;
   } 
-   .grid-container{
-    grid-template-columns: auto;
-  }
+
 }
 
 @media only screen and (max-width:600px){
@@ -300,9 +330,7 @@ input[type=text]{
   .date, .title p{
     font-size: 10px;
   }
-  .grid-container{
-    grid-template-columns: auto;
-  }
+
 }
 
 @media only screen and (min-width:320px){
@@ -313,7 +341,5 @@ input[type=text]{
     font-size: 9px;
     line-height: 10px;
   }
-  .grid-container{
-    grid-template-columns: auto;
-  }
+
 }
