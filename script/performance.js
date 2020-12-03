@@ -1,12 +1,21 @@
+var mobileMenu = document.getElementById("mob");
+var iconMenu = document.getElementById("icon")
+
+var gridContainer = document.getElementById('maingrid');
+
+
 function myFunction() {
-  var x = document.getElementById("mob");
-  var icon = document.getElementById("icon")
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    icon.style.display = "block"
+
+  if (mobileMenu.style.display === "block") {
+    mobileMenu.style.display = "none";
+    iconMenu.style.display = "block"
   } else {
-    x.style.display = "block";
-    icon.style.display = "block"
+    mobileMenu.style.display = "block";
+    iconMenu.style.display = "block"
 
   }
+}
+
+function Touch(){
+  console.log("click")
 }

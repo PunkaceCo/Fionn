@@ -157,19 +157,37 @@
       display: none;
     }
     .item2{
+      overflow: hidden;
       display: block;
+      grid-column: 1;
+
     }
     .item3{
       flex-direction: row;
-      justify-content: left;
-      align-self: flex-end;
+      grid-row: 2;
+      grid-column: 1;
+      justify-content: center;
+      align-self: center;
+      margin: 0px;
+
     } 
-     .grid-container{
-      grid-template-columns: auto;
+    .description {
+      font-size: 10px;
+      line-height: 12px;
+      font-family: 'Roboto';
+
     }
+    .date, .title p{
+      font-size: 12px;
+      font-family: 'Roboto';
+
+    }
+     /* .grid-container{
+      grid-template-columns: auto;
+    } */
   }
 
-  @media only screen and (max-width:600px){
+  /* @media only screen and (max-width:600px){
     .item1{
       display: none;
     }
@@ -190,17 +208,32 @@
     .grid-container{
       grid-template-columns: auto;
     }
-  }
+  } */
+  @media (max-width:600) and (min-width:320px) {
 
-  @media only screen and (min-width:320px){
-    /* .item2{
-      display: block;
-    } */
-    .description {
-      font-size: 9px;
-      line-height: 10px;
+    .item1{
+      display: none;
     }
-    .grid-container{
-      grid-template-columns: auto;
+    .item2{
+      display: block;
+    }
+    .item3{
+      flex-direction: row;
+      grid-row: 2;
+      grid-column: 1;
+      justify-content: center;
+      align-self: center;
+      margin: 0 10px;
+      padding: 0%;
+    } 
+    .description {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    .date, .title p{
+      font-size: 8px;
+    }
+    body{
+      overflow-x : hidden
     }
   }

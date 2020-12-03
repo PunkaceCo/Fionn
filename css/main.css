@@ -16,7 +16,7 @@ body {
   position: relative;
 }
 .slider {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -25,7 +25,7 @@ body {
   left: -12px; */
   text-align: center;
   padding: 20px 0px;
-  width:100vw;
+  width:100%;
 }
 .slider .row a{
   border-bottom: 2px solid #FFFFFF;
@@ -38,12 +38,12 @@ body {
 #slide-2{
   z-index: 1;
   text-align: right;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   flex-shrink: 0;
   display: flex;
   justify-content: flex-end;
-  width: 100vw;
-  height: 70%;
+  /* width: 100vw; */
+  /* height: 70%; */
   border-radius: 10px;
   transform-origin: center center;
   transform: scale(1);
@@ -56,10 +56,10 @@ body {
   display: flex;
   position: inherit;
   /* top:80px; */
-  overflow-x: auto;
+  /* overflow-x: auto; */
     
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  /* scroll-behavior: smooth; */
+  /* -webkit-overflow-scrolling: touch; */
   
   /*
   scroll-snap-points-x: repeat(300px);
@@ -69,10 +69,10 @@ body {
 
 .slides > div {
   z-index: 1;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   flex-shrink: 0;
-  width: 100vw;
-  height: 70%;
+  /* width: 100vw; */
+  /* height: 70%; */
   border-radius: 10px;
   transform-origin: center center;
   transform: scale(1);
@@ -139,7 +139,7 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
-  font-size: 23px;
+  font-size: 19px;
   line-height: 27px;
   letter-spacing: 0.36em;
 }
@@ -167,6 +167,7 @@ body {
   text-align: right;
 }
 #mob{
+  width: 100%;
   display: none;
 }
 
