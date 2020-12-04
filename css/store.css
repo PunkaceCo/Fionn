@@ -137,7 +137,9 @@ bottom: 0%;
 [class*="col-"] {
   float: left;
 }
-
+.information .row{
+  display: block;
+}
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -178,8 +180,6 @@ bottom: 0%;
   border: 1px solid #C4C4C4;
 
   /* border: 1px solid #363636; */
-
-
 }
 .price p{
   display: inline;
@@ -216,11 +216,49 @@ bottom: 0%;
   font-size: 28px;
   font-weight: bold;
 }
-
-input[type=text]{
-  background-color:#C4C4C4;
+.information{
+  margin:20px;
+  width: 100%;
 }
+.information input[type= submit]{
+  background-color: #F39405;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  width: 30%;
+  float: right;
+  margin: 10px;
+}
+label{
+  color: #C4C4C4;
+}
+input[type=text]{
+  border: none;
+  border-radius: 20px;
+  padding: 5px;;
+  background-color:#C4C4C4;
+  width: 100%;
+}
+/* input[type=number]{
+  border: none;
+  border-radius: 20px;
+  padding: 5px;;
+  background-color:#C4C4C4;
+  width: 100%;
+} */
+textarea{
+  border: none;
+  border-radius: 20px;
+  padding: 5px;;
+  background-color:#C4C4C4;
+  width: 100%;
+  height: 150px;
 
+}
+textarea:focus, input:focus{
+  outline: none;
+}
 .close:hover,
 .close:focus {
   color: #000;
