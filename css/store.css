@@ -131,7 +131,9 @@ bottom: 0%;
   clear: both;
   display: block;
 }
-
+.row{
+  display: flex;
+}
 [class*="col-"] {
   float: left;
 }
@@ -155,7 +157,6 @@ bottom: 0%;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -166,20 +167,40 @@ bottom: 0%;
 
 /* Modal Content */
 .modal-content {
+  position: absolute;
+  top: 15%;
+  left: 25%;
   margin: auto;
   padding: 20px;
-  width: 80%;
+  width: 60%;
   border-radius: 20px;
   background-color: #595B83;
-  border: 1px solid #363636;
+  border: 1px solid #C4C4C4;
+
+  /* border: 1px solid #363636; */
 
 
+}
+.price p{
+  display: inline;
+}
+.modal-content button{
+  width:100%;
+  border-radius:20px;
+  padding:5px;
+  margin-top: 40px;
+  font-size:24px;
+  background-color:#FF9B04;
+  color:#FFFFFF;
+  border:none;
 }
 #successBuy .modal-content{
-    width: 50%;
+    width: 60%;
+    padding: 50px;;
+    border: 1px solid #C4C4C4;
 }
 #successBuy p{
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 46px;
