@@ -209,7 +209,7 @@ bottom: 0%;
   font-weight: normal;
   font-size: 46px;
   line-height: 54px;
-  text-align: justify;  
+  text-align: left;  
   color: #FFFFFF;
 }
 /* The Close Button */
@@ -317,9 +317,16 @@ textarea:focus, input:focus{
   .information input[type= submit]{
     width: 100%;
   }
+  #successBuy .modal-content{
+    width: 100%;
+  }
+  #successBuy .modal-content{
+    height: 100%;
+  }
+  #successBuy p{
+    font-size: 45px;
+  }
 }
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   [class*="col-"] {
@@ -331,6 +338,10 @@ textarea:focus, input:focus{
   /* .modal-content .product-card{
     width: 35%;
   } */
+  #successBuy p{
+    font-size: 25px;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -349,6 +360,9 @@ textarea:focus, input:focus{
   }
   .row [class*="col-"] {
     width: 50%;
+  }
+  #successBuy p{
+    font-size: 28px;
   }
 
 }
@@ -370,7 +384,9 @@ textarea:focus, input:focus{
   .row [class*="col-"] {
     width: 50%;
   }
-
+  #successBuy p{
+    font-size: 28px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
