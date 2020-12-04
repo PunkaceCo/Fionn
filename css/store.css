@@ -1,5 +1,3 @@
-
-
 body {
   background-position: center center;
   background-repeat: no-repeat;
@@ -209,53 +207,19 @@ input[type=text]{
   cursor: pointer;
 }
 
-
-@media only screen and (max-width: 768px) {
-/* For mobile phones: */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .item1{
+    display: none;
+  }
+  .item2{
+    display: block;
+  }
   [class*="col-"] {
-    width: 100%;
+    width: 80%;
   }
-}
-
-@media only screen and (max-width: 1200px) {
-  /* For mobile phones: */
-  /* [class*="col-"] {
-    width: fit-content;
-  } */
-  .information{
-    width: 60%;
-  }
-}
-@media only screen and (min-width:768px){
-  .item1{
-    display: block;
-  }
-  /* .item2{
-    display: none;
-  } */
-}
-@media only screen and (max-width:767px){
-  .item1{
-    display: none;
-  }
-  .item2{
-    display: block;
-  }
-  .item3{
-    flex-direction: row;
-    justify-content: center;
-  } 
-   /* .grid-container{
-    grid-template-columns: auto;
-  } */
-}
-
-@media only screen and (max-width:600px){
-  .item1{
-    display: none;
-  }
-  .item2{
-    display: block;
+  .item3 .all{
+    margin-left: 0%;
   }
   .description {
     font-size: 10px;
@@ -269,33 +233,108 @@ input[type=text]{
   .date, .title p{
     font-size: 10px;
   }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  [class*="col-"] {
+    width: 45%;
+  }
   .item3 .all{
-    margin-left:0%;
+    margin-left: 0%;
   }
 
 }
 
-/* @media only screen and (max-width:320px){
-  .item2{
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .item1{
     display: block;
   }
-  .description {
-    font-size: 9px;
-    line-height: 10px;
+  /* .item2{
+    display: none;
+  } */
+  [class*="col-"] {
+    width: 35%;
   }
   .item3 .all{
-    margin-left:0%;
+    margin-left: 5%;
   }
+}
 
-}  */
-
-/* @media only screen and (min-width:768px){
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .item1{
     display: block;
   }
   .item2{
     display: none;
   }
+  [class*="col-"] {
+    width: 30%;
+  }
+  .item3 .all{
+    margin-left: 10%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .item1{
+    display: block;
+  }
+  .item2{
+    display: none;
+  }
+  [class*="col-"] {
+    width: 20%;
+  }
+}
+
+
+
+
+/* @media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 50%;
+  }
+  .all{
+    margin-left: 0%;
+  }
+} */
+
+/* @media only screen and (max-width: 1200px) {
+  For mobile phones:
+  [class*="col-"] {
+    width: fit-content;
+  }
+  .information{
+    width: 60%;
+  }
+} */
+/* @media only screen and (min-width:768px){
+
+}
+@media only screen and (max-width:767px){
+  .item1{
+    display: none;
+  }
+  .item2{
+    display: block;
+  }
+  .item3{
+    flex-direction: row;
+    justify-content: center;
+  } 
+   .grid-container{
+    grid-template-columns: auto;
+  }
+} */
+
+/* @media only screen and (max-width:600px){
+
+
 } */
 
 @media only screen and (max-width:767px){
@@ -312,34 +351,18 @@ input[type=text]{
 
 }
 
-@media only screen and (max-width:600px){
-  .item1{
-    display: none;
-  }
+/* @media only screen and (max-width:600px){
+
+
+} */
+
+/* @media only screen and (min-width:320px){
   .item2{
     display: block;
   }
-  .description {
-    font-size: 10px;
-    line-height: 12px;
-  }
-  .item3{
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  .date, .title p{
-    font-size: 10px;
-  }
-
-}
-
-@media only screen and (min-width:320px){
-  /* .item2{
-    display: block;
-  } */
   .description {
     font-size: 9px;
     line-height: 10px;
   }
 
-}
+} */
