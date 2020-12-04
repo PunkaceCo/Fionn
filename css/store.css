@@ -131,6 +131,11 @@ bottom: 0%;
   clear: both;
   display: block;
 }
+.row::before {
+  content: "";
+  clear: both;
+  display: block;
+}
 .row{
   display: flex;
 }
@@ -178,7 +183,6 @@ bottom: 0%;
   border-radius: 20px;
   background-color: #595B83;
   border: 1px solid #C4C4C4;
-
   /* border: 1px solid #363636; */
 }
 .price p{
@@ -205,8 +209,7 @@ bottom: 0%;
   font-weight: normal;
   font-size: 46px;
   line-height: 54px;
-  text-align: justify;
-  
+  text-align: justify;  
   color: #FFFFFF;
 }
 /* The Close Button */
@@ -230,6 +233,13 @@ bottom: 0%;
   float: right;
   margin: 10px;
 }
+input[type= submit]:focus{
+  outline: none;
+}
+button{
+  outline: none;
+
+}
 label{
   color: #C4C4C4;
 }
@@ -240,13 +250,7 @@ input[type=text]{
   background-color:#C4C4C4;
   width: 100%;
 }
-/* input[type=number]{
-  border: none;
-  border-radius: 20px;
-  padding: 5px;;
-  background-color:#C4C4C4;
-  width: 100%;
-} */
+
 textarea{
   border: none;
   border-radius: 20px;
@@ -259,6 +263,7 @@ textarea{
 textarea:focus, input:focus{
   outline: none;
 }
+
 .close:hover,
 .close:focus {
   color: #000;
@@ -276,6 +281,9 @@ textarea:focus, input:focus{
   }
   .item3{
     margin:10px;
+  }
+  .information {
+    display: inline;
   }
   [class*="col-"] {
     width: 90%;
@@ -295,6 +303,20 @@ textarea:focus, input:focus{
   .modal{
     padding-top: 20%;
   }
+  .modal-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: auto;
+    width: 100%;
+
+  }
+  .row{
+    display: block;
+  }
+  .information input[type= submit]{
+    width: 100%;
+  }
 }
 
 
@@ -306,7 +328,9 @@ textarea:focus, input:focus{
   .item3 .all{
     margin-left: 0%;
   }
-
+  /* .modal-content .product-card{
+    width: 35%;
+  } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -323,6 +347,10 @@ textarea:focus, input:focus{
   .item3 .all{
     margin-left: 5%;
   }
+  .row [class*="col-"] {
+    width: 50%;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -339,6 +367,10 @@ textarea:focus, input:focus{
   .item3 .all{
     margin-left: 10%;
   }
+  .row [class*="col-"] {
+    width: 50%;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -351,5 +383,8 @@ textarea:focus, input:focus{
   }
   [class*="col-"] {
     width: 20%;
+  }
+  .row [class*="col-"] {
+    width: 40%;
   }
 }
