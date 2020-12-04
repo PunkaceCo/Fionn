@@ -7,7 +7,7 @@ body {
   position: relative;
 }
 .item2 {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   grid-row: 1;
 }
 
@@ -206,17 +206,6 @@ input[type=text]{
   text-decoration: none;
   cursor: pointer;
 }
-/* Extra small devices (phones, 320px and down) */
-
-@media only screen and (min-width: 320px) {
-  [class*="col-"] {
-    width: 80%;
-  }
-  .item3 .all{
-    margin-left: 0%;
-  }
-
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -226,25 +215,27 @@ input[type=text]{
   .item2{
     display: block;
   }
+  .item3{
+    margin:10px;
+  }
   [class*="col-"] {
-    width: 80%;
+    width: 90%;
   }
   .item3 .all{
     margin-left: 0%;
   }
-  .description {
-    font-size: 10px;
-    line-height: 12px;
+  .product-card h1{
+    font-size: medium;
   }
-  .item3{
-    grid-column: 1 ;
-    flex-direction: column;
-    justify-content: flex-end;
+  .product-card p{
+    font-size: large;
   }
-  .date, .title p{
-    font-size: 10px;
+  .product-card button{
+    font-size: large;
   }
-
+  .modal{
+    padding-top: 20%;
+  }
 }
 
 
