@@ -23,13 +23,11 @@ function mouseLeave(e) {
 }
 
 
-// #action{
-//   background: #FDDB3A;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   border-radius: 0px 0px 30px 0px;
-// }
-// #music{
-//   background: #FF9B04;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   border-radius: 0px 0px 0px 30px;
-// }
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

@@ -1,14 +1,8 @@
 function myFunction() {
-  var x = document.getElementById("mob");
-  var icon = document.getElementById("icon");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    icon.style.display = "block";
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    x.style.display = "block";
-    icon.style.display = "block";
-
+    x.className = "topnav";
   }
 }
-
-

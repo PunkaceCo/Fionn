@@ -397,4 +397,10 @@ img:hover{
   .modal-content {
     width: 100%;
   }
+  .grid-container{
+    padding: 0%;
+  }
+  .grid-item{
+    padding:0%;
+  }
 }

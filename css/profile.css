@@ -218,7 +218,11 @@ color: #000000;
       justify-content: center;
     } 
      .grid-container{
+       padding: 0%;
       grid-template-columns: auto;
+    }
+    .grid-item{
+      padding: 0%;
     }
 
   }

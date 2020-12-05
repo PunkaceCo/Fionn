@@ -272,7 +272,11 @@ background: #FF9B04;
     justify-content: center;
   } 
    .grid-container{
+     padding: 0%;
     grid-template-columns: auto;
+  }
+  .grid-item{
+    padding: 0%;
   }
   .frame{
       border-radius: 0px 200px 0px 0px;
