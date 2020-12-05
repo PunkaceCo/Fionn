@@ -24,7 +24,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-successBuy = document.getElementById('successBuy')
+successBuy = document.getElementById('successBuy');
 var accept = document.getElementById('accept');
 
 accept.onclick = function () {

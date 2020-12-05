@@ -1,4 +1,3 @@
-
   body {
     background: url(../asset/svg/aktuell.svg);
     background-position: center center;
@@ -61,105 +60,7 @@
   .main-information{
       align-self: center;
   }
-  .mobile-container {
-    margin: auto;
-    color: white;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  .topnav a {
-    float: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    justify-content: center;
-    /* border-bottom: 2px solid #FFFFFF; */
-    margin: 0px 10px;
-    padding: 0px 5px;
-    color: #FFFFFF;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 27px;
-    letter-spacing: 0.36em;
-
-  }
-  .topnav i{
-    color: #FDDB3A;
-    border-bottom: none;
-  }
-  .topnav a.icon {
-    float: right;
-  }
-  
-  
-  .active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  /* .grid-container {
-    display: grid;
-    grid-template-columns: 20% 79%;
-    grid-template-rows: auto ;
-    grid-gap: 10px;
-    padding: 10px;
-    height: 100vh;
-
-  } */
-.mobicon{
-  display: flex;
-  justify-content: flex-start;
-  direction: rtl;
-}
-.mobicon .row{
-  display: flex;
-}
-.mobicon a{
-  color:#FF9B04;
-  vertical-align: middle;
-}
-  /* .mobicon .row{
-    justify-self: start;
-  } */
-  .grid-item {
-    /* text-align: center; */
-    padding: 20px;
-  }
-
-  /* .item1 {
-    grid-column: 1;
-    grid-row: 2 / span 2;
-  }
-  
-  .item2 {
-    display: none;
-    grid-column: 1/ span 2;
-    grid-row: 1;
-  }
-
-  .item3 {
-    grid-column: 2;
-    grid-row: 2 / span 2;
-    flex-direction:row;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 20px;
-    margin:30px;
-  }
-  .item4{
-    grid-column: 1/ span 3;
-    grid-row: 5
-    } */
-
+ 
     .item2 {
       grid-column: 1 / span 3;
       grid-row: 1;
@@ -207,108 +108,6 @@
     }
   }
 
-  .hamburger-menu-button {
-    width: 40px;
-    height: 40px;
-    padding: 6px;
-    display: block;
-    position: relative;
-    margin-top: 35px;
-    z-index: 100;
-    background: #2980b9;
-    border: 5px solid white;
-    box-sizing: content-box;
-    border-radius: 50%;
-    text-indent: 100%;
-    color: transparent;
-    white-space: nowrap;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  .hamburger-menu-button-open {
-    top: 50%;
-    margin-top: -1px;
-    left: 50%;
-    margin-left: -12px;
-  }
-  .hamburger-menu-button-open, 
-  .hamburger-menu-button-open::before, 
-  .hamburger-menu-button-open::after {
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    background: #fff;
-    border-radius: 4px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .hamburger-menu-button-open::before, 
-  .hamburger-menu-button-open::after {
-    left: 0;
-    content: "";
-  }
-  .hamburger-menu-button-open::before {
-    top: 6px;
-  }
-  .hamburger-menu-button-open::after {
-    bottom: 6px;
-  }
-  .hamburger-menu-button-close {
-    background: transparent;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  .hamburger-menu-button-close::before {
-    -webkit-transform: translateY(-6px) rotate(45deg);
-            transform: translateY(-6px) rotate(45deg);
-  }
-  .hamburger-menu-button-close::after {
-    -webkit-transform: translateY(6px) rotate(-45deg);
-            transform: translateY(6px) rotate(-45deg);
-  }
-  .ham-menu {
-    position: absolute;
-    top: 42px;
-    left: 48px;
-    margin: auto;
-    max-width: 570px;
-    overflow: hidden;
-  }
-  .ham-menu ul {
-    -webkit-transform: translateX(-110%);
-            transform: translateX(-110%);
-    background-color: #3896d3;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .ham-menu.on ul {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  .ham-menu ul {
-    font-size: 0;
-  }
-  .ham-menu ul li {
-    display: block;
-  }
-  .ham-menu ul li:first-child .ham-menu ul li a {
-    padding-left: 30px;
-  }
-  .ham-menu ul li a {
-    padding: 15px;
-    display: block;
-    background-color: transparent;
-    color: #fff;
-    text-transform: uppercase;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    font-size: 13px;
-  }
-  .ham-menu ul li.active a, .ham-menu ul li a:hover {
-    background-color: #2980b9;
-    color: #fff !important;
-  } 
-  
   
   
 
@@ -316,7 +115,11 @@
     .item1{
       display: none;
     }
+    .grid-container{
+      padding: 0%;
+    }
     .item2{
+      padding: 0%;
       overflow: hidden;
       display: block;
       grid-column: 1;
@@ -342,33 +145,9 @@
       font-family: 'Roboto';
 
     }
-     /* .grid-container{
-      grid-template-columns: auto;
-    } */
   }
 
-  /* @media only screen and (max-width:600px){
-    .item1{
-      display: none;
-    }
-    .item2{
-      display: block;
-    }
-    .description {
-      font-size: 10px;
-      line-height: 12px;
-    }
-    .item3{
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-    .date, .title p{
-      font-size: 10px;
-    }
-    .grid-container{
-      grid-template-columns: auto;
-    }
-  } */
+
   @media (max-width:600) and (min-width:320px) {
 
     .item1{
@@ -397,53 +176,4 @@
       overflow-x : hidden
     }
 
-  }
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
   }

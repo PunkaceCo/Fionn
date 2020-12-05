@@ -10,7 +10,7 @@
 
 
     <title>PROJECT</title>
-    <!-- <link href="../css/main.css" rel="stylesheet"> -->
+    <link href="../css/main.css" rel="stylesheet">
     <link href="../css/project.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
@@ -49,72 +49,29 @@
         </div> 
       </div>
         <div class="grid-item item2">
-          <div id="icon" class="mobicon" style="text-align: right;">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fas fa-bars" style="color:#FF9B04"></i>
-            </a>
+          <div class="topnav" id="myTopnav">
+            <div class="dropdown" id="action">
+              <button class="dropbtn"> ACTION
+              </button>
+              <div class="dropdown-content">
+                <a href="#">PLATFORM</a>
+                <a href="#">CHRONOLOGIE</a>
+                <a href="#">PERFORMANCE</a>
+                <a href="#">STORE</a>
+              </div>
+            </div>   
+            <div class="dropdown" id="music">
+              <button class="dropbtn"> MUSIC
+              </button>
+              <div class="dropdown-content">
+                <a href="#">AKTUELL</a>
+                <a href="#">PROFILE</a>
+                <a href="#">GALLERY</a>
+                <a href="#">PROJECT</a>
+              </div>
+            </div>
+            <!-- <a href="javascript:void(0);" style="font-size:15px;color: #FF9B04;" class="icon" onclick="myFunction()">&#9776;</a> -->
           </div>
-                   
-          <div id="mob">
-            <div class="slider">
-              <div class="row">
-                <a href="#action" class="action">ACTION</a>
-                <a href="#music" class="music">MUSIC</a>
-              </div>
-              
-          
-              <div class="slides">
-                <div id="action">
-                  <ul>
-                    <li>
-                      <a href="./platform.html">
-                        PLATFORM
-                      </a>
-                    </li>
-                    <li>
-                      <a href="./chronologie.html">
-                        CHRONOLOGIE
-                      </a>
-                    </li>
-                    <li>
-                      <a href="./performance.html">
-                        PERFORMANCE
-                      </a>
-                    </li>
-                    <li>
-                      <a href="./store.html">
-                        STORE
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div id="music">
-                  <ul>
-                    <li>
-                      <a href="./aktuell.html">
-                        AKTUELL
-                      </a>
-                    </li>
-                    <li>
-                      <a href="./profile.html">
-                        PROFILE
-                      </a>
-                    </li>
-                    <li>
-                      <a href="./gallery.html">
-                        GALLERY
-                      </a>
-                    </li>
-                    <li>
-                      <a href="./project.html">
-                        PROJECTS
-                      </a>
-                    </li>
-                  </ul> 
-                </div>
-              </div>
-            </div>
-            </div>
           </div>
           
         <div class="grid-item item3">
@@ -124,21 +81,17 @@
                 <i class="fas fa-angle-left"></i>
               </button>
               <div class="slider--feature">
-                <h1 class="slider--title">Tasty</h1>
+                <h1 class="slider--title"></h1>
                 <p class="slider--text"></p>
               </div>
               <button class="slider__btn-right">
                 <i class="fas fa-angle-right"></i>
               </button>
             </div>
-          </div>
-                
-                <!-- <div class="trigger" style="text-align:center">
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                    <span class="dot"></span> 
-                  </div> -->
-        </div>
+            <ul class="slider_navigation_dots"></ul>
+          </div>            
+
+       </div>
     </div>
             
     <script src="https://kit.fontawesome.com/ad8e25574c.js" crossorigin="anonymous"></script>
