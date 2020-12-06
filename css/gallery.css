@@ -394,7 +394,7 @@ display: block;
     }
     .item3 {
         grid-row: 1/ span 3;
-        grid-column: 1/ span 3;
+        grid-column: 1;
         padding: 0%;
         margin: 0%;
     }
