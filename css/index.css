@@ -102,6 +102,89 @@
      display: block;
  }
  
+ #landing-right {
+     position: absolute;
+     width: 50vw;
+     height: 100vh;
+     opacity: 0;
+     left: 50%;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+ 
+ #landing-left {
+     position: absolute;
+     width: 50vw;
+     height: 100vh;
+     opacity: 0;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+ 
+ .sidebar {
+     height: 100%;
+     width: 200px;
+     position: absolute;
+     z-index: 1;
+     top: 0;
+     /* left: 0; */
+     overflow-x: hidden;
+     padding-top: 20px;
+     position: absolute;
+ }
+ /* #landing-right .sidebar {
+     left: 70%;
+ } */
+ 
+ .menu {
+     width: 174px;
+     position: absolute;
+     z-index: 1;
+     top: 220px;
+     padding: 8px 0;
+ }
+ 
+ .menu li {
+     list-style: none;
+ }
+ 
+ .sidebar a {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: normal;
+     width: 174px;
+     height: 48px;
+     color: #FFFFFF;
+     font-size: 18px;
+     line-height: 23px;
+     padding: 10px;
+     text-decoration: none;
+ }
+ 
+ .sidebar a:hover {
+     color: #FF9B04;
+ }
+ 
+ #landing-left .sidebar {
+     left: 10px;
+ }
+ 
+ #landing-left .menu {
+     left: 10px;
+ }
+ 
+ #landing-right .sidebar {
+     right: 0;
+ }
+ 
+ #landing-right .menu {
+     right: 10%;
+ }
+ 
  @media screen and (max-width: 600px) {
      .topnav {
          display: block;
@@ -137,77 +220,9 @@
          width: 100%;
          text-align: left;
      }
-     .landing-right .menu {
-         left: 83%;
-     }
- }
- 
- #landing-right {
-     position: absolute;
-     width: 50vw;
-     height: 100vh;
-     opacity: 0;
-     left: 50%;
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
- }
- 
- #landing-left {
-     position: absolute;
-     width: 50vw;
-     height: 100vh;
-     opacity: 0;
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
- }
- 
- .sidebar {
-     height: 100%;
-     width: 200px;
-     position: fixed;
-     z-index: 1;
-     top: 0;
-     left: 0;
-     overflow-x: hidden;
-     padding-top: 20px;
- }
- 
- .landing-right .sidebar {
-     left: 70%;
- }
- 
- .menu {
-     width: 174px;
-     position: fixed;
-     z-index: 1;
-     top: 220px;
-     left: 10px;
-     padding: 8px 0;
- }
- 
- .menu li {
-     list-style: none;
- }
- 
- .sidebar a {
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: normal;
-     width: 174px;
-     height: 48px;
-     color: #FFFFFF;
-     font-size: 18px;
-     line-height: 23px;
-     padding: 10px;
-     text-decoration: none;
- }
- 
- .sidebar a:hover {
-     color: #FF9B04;
+     /* #landing-right .menu {
+         position: absolute;
+     } */
  }
  
  @media all and (orientation: landscape) {
@@ -231,13 +246,34 @@
  }
  /* Small devices (portrait tablets and large phones, 600px and up) */
  
- @media only screen and (min-width: 600px) {}
+ @media only screen and (min-width: 600px) {
+     /* #landing-right .sidebar {
+         left: 440px;
+     }
+     #landing-right .menu {
+         left: 400px;
+     } */
+ }
  /* Medium devices (landscape tablets, 768px and up) */
  
- @media only screen and (min-width: 768px) {}
+ @media only screen and (min-width: 768px) {
+     /* #landing-right .sidebar {
+         left: 566px;
+     }
+     #landing-right .menu {
+         left: 569px;
+     } */
+ }
  /* Large devices (laptops/desktops, 992px and up) */
  
- @media only screen and (min-width: 992px) {}
+ @media only screen and (min-width: 992px) {
+     /* #landing-right .sidebar {
+         left: 790px;
+     }
+     #landing-right .menu {
+         left: 800px;
+     } */
+ }
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  
  @media only screen and (min-width: 1200px) {
@@ -271,4 +307,10 @@
          background-attachment: fixed;
          background-size: cover;
      }
+     /* #landing-right .sidebar {
+         left: 1588px;
+     }
+     #landing-right .menu {
+         left: 1588px;
+     } */
  }
