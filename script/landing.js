@@ -1,4 +1,5 @@
-document.body.style.background="#52575D url(../asset/svg/landing/main.png) no-repeat center bottom";
+document.body.style.background ="#52575D url(../asset/svg/landing/main.png) no-repeat center bottom fixed";
+
 
 function mouseEnter(e) {
   console.log("e",e.id);

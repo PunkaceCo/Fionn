@@ -17,7 +17,7 @@
  } */
  
  body {
-     background: url(../asset/svg/landing/main.png) no-repeat center bottom fixed;
+     /* background: url(../asset/svg/landing/main.png) no-repeat center bottom fixed; */
      /* -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -137,6 +137,9 @@
          width: 100%;
          text-align: left;
      }
+     .landing-right .menu {
+         left: 83%;
+     }
  }
  
  #landing-right {
@@ -207,8 +210,38 @@
      color: #FF9B04;
  }
  
- @media screen and (min-width: 1200px) {
+ @media all and (orientation: landscape) {
      body {
+         background-size: cover;
+     }
+ }
+ /* Extra small devices (phones, 600px and down) */
+ 
+ @media only screen and (max-width: 600px) {
+     /* body {
+  background-image: url(../asset/svg/LNDA.svg);
+  background-position: center bottom;
+} */
+     .sidebar {
+         display: none !important;
+     }
+     .sidebar-right {
+         display: none !important;
+     }
+ }
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ 
+ @media only screen and (min-width: 600px) {}
+ /* Medium devices (landscape tablets, 768px and up) */
+ 
+ @media only screen and (min-width: 768px) {}
+ /* Large devices (laptops/desktops, 992px and up) */
+ 
+ @media only screen and (min-width: 992px) {}
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ 
+ @media only screen and (min-width: 1200px) {
+     /* body {
          background-image: url(../asset/svg/LNDA.svg);
          background-position: bottom;
          background-repeat: no-repeat;
@@ -216,7 +249,7 @@
          background-size: cover;
          background-color: #52575D;
          position: relative;
-     }
+     } */
      #landing-right {
          position: absolute;
          width: 50vw;
@@ -236,27 +269,6 @@
          background-position: center center;
          background-repeat: no-repeat;
          background-attachment: fixed;
-         background-size: cover;
-     }
- }
- 
- @media screen and (max-width: 960px) {}
- 
- @media screen and (max-width: 600px) {
-     body {
-         background-image: url(../asset/svg/LNDA.svg);
-         background-position: center bottom;
-     }
-     .sidebar {
-         display: none !important;
-     }
-     .sidebar-right {
-         display: none !important;
-     }
- }
- 
- @media all and (orientation: landscape) {
-     body {
          background-size: cover;
      }
  }
