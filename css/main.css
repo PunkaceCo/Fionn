@@ -215,6 +215,7 @@ body {
     font-size: 36px;
     line-height: 51px;
     color: #FF9B04;
+    cursor: pointer;
 }
 
 .grid-container {
