@@ -10,17 +10,17 @@ const btnRight = document.querySelector('.slider__btn-right');
 const sliderImages = [
     {
     src: '../asset/svg/project01.svg',
-    title: 'TITLE',
+    title: 'TITLE1',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
      'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'  },
   {
     src: '../asset/svg/project-page02.svg',
-    title: 'TITLE',
+    title: 'TITLE2',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
      'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'  },
   {
     src: '../asset/svg/project-page03.svg',
-    title: 'TITLE',
+    title: 'TITLE3',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
      'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'
   }
@@ -38,9 +38,22 @@ const startSlider = () => {
 
   sliderText.innerHTML = sliderImages[0].text;
   sliderTitle.innerHTML = sliderImages[0].title;
+
+  // for (let i = 0, len = slideCount; i < len; i++) {
+  //   dotContainer.childNodes[i].addEventListener('click', function(e) {
+  //     lorySlider.slideTo(Array.prototype.indexOf.call(dotContainer.childNodes, e.target));
+  //   });
+  // }
+
+
 };
 
 btnRight.addEventListener('click', function() {
+  // for (let i = 0, len = dotContainer.childNodes.length; i < len; i++) {
+  //   dotContainer.childNodes[i].classList.remove('active');
+  // }
+  // dotContainer.childNodes[e.detail.currentSlide - 1].classList.add('active');
+
   if (slideCounter === sliderImages.length - 1) {
     slideContainer.style.backgroundImage = `url(${sliderImages[0].src})`;
     sliderText.innerHTML = sliderImages[0].text;
@@ -64,6 +77,11 @@ btnRight.addEventListener('click', function() {
 });
 
 btnLeft.addEventListener('click', function() {
+  // for (var i = 0, len = slideCount; i < len; i++) {
+  //   var clone = templateListItem.cloneNode();
+  //   dotContainer.appendChild(clone);
+  // }
+  // dotContainer.childNodes[0].classList.add('active');
   if (slideCounter === 0) {
     slideContainer.style.backgroundImage = `url(${sliderImages[sliderImages.length - 1].src})`;
     sliderText.innerHTML = sliderImages[sliderImages.length - 1].text;
@@ -87,26 +105,23 @@ btnLeft.addEventListener('click', function() {
 
 document.addEventListener('DOMContentLoaded', startSlider);
 
-// var slideIndex = 0;
-// showSlides();
+///////////////////////////////////////////////////////////////
 
-// function showSlides() {
-//   var i;
-//   var dotContainer = slideContainer.querySelector('.slider_navigation_dots');
+// document.addEventListener('DOMContentLoaded', function () {
+//   var slider = document.querySelector('.js_slider');
+//   var slideCount = slider.querySelectorAll('.js_slide').length;
+//   var dotContainer = slider.querySelector('.slider_navigation_dots');
 //   var templateListItem = document.createElement('li');
+  
+//   function handleEvents(e) {
+//     if (e.type === 'before.lory.init') {
 
-//   for (i = 0; i < sliderImages.length; i++) {
-//     slideContainer.style.display = "none"; 
-//     var clone = templateListItem.cloneNode();
-//     dotContainer.appendChild(clone); 
+//     }
+//     if (e.type === 'after.lory.init') {
+
+//     }
+//     if (e.type === 'after.lory.slide') {
+
+//     }
 //   }
 
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1;}    
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slideContainer.style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-//   setTimeout(showSlides, 2000); 
-// }
