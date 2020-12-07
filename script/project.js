@@ -31,6 +31,17 @@ const sliderImages = [
 var dotContainer = slideContainer.querySelector('.slider_navigation_dots');
 var templateListItem = document.createElement('li');
 
+
+
+// if (window.width >=768){
+//   console.log("run");
+//   for (var i = 0, len = sliderImages.length; i < len; i++) {
+//     var clone = templateListItem.cloneNode();
+//     dotContainer.appendChild(clone);
+//   }
+//   dotContainer.childNodes[0].classList.add('active');
+// }
+
 const dots = [];
 
 let slideCounter = 0;
@@ -43,11 +54,12 @@ const startSlider = () => {
   sliderText.innerHTML = sliderImages[0].text;
   sliderTitle.innerHTML = sliderImages[0].title;
 
-  for (var i = 0, len = sliderImages.length; i < len; i++) {
-    var clone = templateListItem.cloneNode();
-    dotContainer.appendChild(clone);
-  }
-  dotContainer.childNodes[0].classList.add('active');
+  // for (var i = 0, len = sliderImages.length; i < len; i++) {
+  //   var clone = templateListItem.cloneNode();
+  //   dotContainer.appendChild(clone);
+  // }
+  // dotContainer.childNodes[0].classList.add('active');
+
 
 
 };
@@ -60,18 +72,26 @@ btnRight.addEventListener('click', function() {
     slideCounter = -1;
 
     slideContainer.classList.add('fadeIn');
+    dotContainer.childNodes[0].classList.add('active');
+
     setTimeout(() => {
       slideContainer.classList.remove('fadeIn');
+      dotContainer.childNodes[0].classList.remove('active');
+
     }, 1000);
   }
   slideContainer.style.backgroundImage = `url(${sliderImages[slideCounter + 1].src})`;
   sliderText.innerHTML = sliderImages[slideCounter + 1].text;
   sliderTitle.innerHTML = sliderImages[slideCounter + 1].title;
+  dotContainer.childNodes[slideCounter + 1].classList.add('active');
+
 
   slideCounter++;
   slideContainer.classList.add('fadeIn');
   setTimeout(() => {
     slideContainer.classList.remove('fadeIn');
+    dotContainer.childNodes[slideCounter + 1].classList.remove('active');
+
   }, 1000);
 });
 
@@ -80,6 +100,8 @@ btnLeft.addEventListener('click', function() {
     slideContainer.style.backgroundImage = `url(${sliderImages[sliderImages.length - 1].src})`;
     sliderText.innerHTML = sliderImages[sliderImages.length - 1].text;
     sliderTitle.innerHTML = sliderImages[sliderImages.length - 1].title;
+    dotContainer.childNodes[slideCounter - 1].classList.add('active');
+
     slideCounter = sliderImages.length;
     slideContainer.classList.add('fadeIn');
     setTimeout(() => {
