@@ -54,13 +54,11 @@ const startSlider = () => {
   sliderText.innerHTML = sliderImages[0].text;
   sliderTitle.innerHTML = sliderImages[0].title;
 
-  // for (var i = 0, len = sliderImages.length; i < len; i++) {
-  //   var clone = templateListItem.cloneNode();
-  //   dotContainer.appendChild(clone);
-  // }
-  // dotContainer.childNodes[0].classList.add('active');
-
-
+  for (var i = 0, len = sliderImages.length; i < len; i++) {
+    var clone = templateListItem.cloneNode();
+    dotContainer.appendChild(clone);
+  }
+  dotContainer.childNodes[0].classList.add('active');
 
 };
 
