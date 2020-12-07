@@ -33,6 +33,9 @@ let slideCounter = 0;
 
 const startSlider = () => {
   slideContainer.style.backgroundImage = ` url(${sliderImages[0].src})`;
+  slideContainer.style.backgroundSize = 'cover';
+  slideContainer.style.width = '100vw';
+
   sliderText.innerHTML = sliderImages[0].text;
   sliderTitle.innerHTML = sliderImages[0].title;
 };
