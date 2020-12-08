@@ -32,16 +32,6 @@ var dotContainer = slideContainer.querySelector('.slider_navigation_dots');
 var templateListItem = document.createElement('li');
 
 
-
-// if (window.width >=768){
-//   console.log("run");
-//   for (var i = 0, len = sliderImages.length; i < len; i++) {
-//     var clone = templateListItem.cloneNode();
-//     dotContainer.appendChild(clone);
-//   }
-//   dotContainer.childNodes[0].classList.add('active');
-// }
-
 const dots = [];
 
 let slideCounter = 0;
@@ -61,6 +51,25 @@ const startSlider = () => {
   dotContainer.childNodes[0].classList.add('active');
 
 };
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  // var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < sliderImages.length; i++) {
+    slideContainer.style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > sliderImages.length) {slideIndex = 1;}
+  slideContainer.style.display = "block";
+  slideContainer.style.background = ` url(${sliderImages[slideIndex-1].src})`;
+  // dotContainer.childNodes[slideIndex].classList.remove('active');
+  // dotContainer.childNodes[slideIndex-1].classList.add('active');
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
 btnRight.addEventListener('click', function() {
   if (slideCounter === sliderImages.length - 1) {
@@ -118,4 +127,3 @@ btnLeft.addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', startSlider);
-
