@@ -91,6 +91,8 @@ body {
 
 .info {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     display: inline-block;
     height: 50%;
@@ -159,7 +161,9 @@ body {
 }
 
 .controls {
-    /* align-self: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .player {
@@ -279,6 +283,13 @@ body {
     .frame {
         border-radius: 0px 200px 0px 0px;
     }
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 65%;
+    }
     /* .avatar {
         display: none;
     } */
@@ -302,6 +313,8 @@ body {
         /* grid-template-columns: auto; */
     }
     .info {
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         height: 65%;
     }
