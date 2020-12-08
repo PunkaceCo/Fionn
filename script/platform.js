@@ -1,16 +1,16 @@
-var frame = document.getElementById('playlist');
+// var frame = document.getElementById('playlist');
 
-function showPlaylist() {
+// function showPlaylist() {
   
-  console.log(frame.style.visibility)
+//   console.log(frame.style.visibility)
 
-  if (frame.style.visibility === "hidden") {
-    frame.style.visibility="visible";
+//   if (frame.style.visibility === "hidden") {
+//     frame.style.visibility="visible";
 
-  } else {
-    frame.style.visibility="hidden";
-  }
-}
+//   } else {
+//     frame.style.visibility="hidden";
+//   }
+// }
 
 function myFunction() {
   var x = document.getElementById("mob");
