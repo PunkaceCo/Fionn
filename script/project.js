@@ -54,20 +54,24 @@ const startSlider = () => {
 
 
 var slideIndex = 0;
+for (i = 0; i < dots.length; i++) {
+  dotContainer.childNodes[i].classList = dotContainer.childNodes[i].classList.replace(" active", "");
+}
+
 showSlides();
 
 function showSlides() {
   var i;
   // var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < sliderImages.length; i++) {
-    slideContainer.style.display = "none";
-  }
+  // for (i = 0; i < sliderImages.length; i++) {
+  //   slideContainer.style.display = "none";
+  // }
+
   slideIndex++;
   if (slideIndex > sliderImages.length) {slideIndex = 1;}
   slideContainer.style.display = "block";
-  slideContainer.style.background = ` url(${sliderImages[slideIndex-1].src})`;
-  // dotContainer.childNodes[slideIndex].classList.remove('active');
-  // dotContainer.childNodes[slideIndex-1].classList.add('active');
+  slideContainer.style.backgroundImage = ` url(${sliderImages[slideIndex-1].src})`;
+  // dotContainer.childNodes[slideIndex-1].classList.add(" active");
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
