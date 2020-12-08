@@ -39,7 +39,7 @@ body {
 .item3 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 86px;
+    margin-right: 125px;
     padding: 0 5px;
 }
 
@@ -199,19 +199,33 @@ img:hover {
 }
 
 
+/* Style the Image Used to Trigger the Modal */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
 /* The Modal (background) */
 
 .modal {
     display: none;
+    /* Hidden by default */
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
-    left: 6%;
-    top: 10%;
-    width: 81%;
-    height: 81%;
+    left: 4%;
+    top: 7%;
+    width: 85%;
+    height: 88%;
     overflow: auto;
-    background-color: #111111ea;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -221,9 +235,7 @@ img:hover {
     margin: auto;
     display: block;
     width: 80%;
-    justify-content: center;
-    opacity: 1;
-    /* max-width: 700px; */
+    max-width: 700px;
 }
 
 
@@ -287,6 +299,15 @@ img:hover {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
 
 

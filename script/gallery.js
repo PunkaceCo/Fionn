@@ -64,3 +64,36 @@ btnLeft.addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', startSlider);
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var images = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img");
+
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modalImg.src = this.src;
+  };
+
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
