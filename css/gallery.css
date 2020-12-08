@@ -302,15 +302,6 @@ img:hover {
 }
 
 
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-
-
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
@@ -399,6 +390,9 @@ display: block;
     .item3::-webkit-scrollbar-thumb:hover {
         display: block;
     }
+    .modal {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -431,6 +425,9 @@ display: block;
         grid-template-columns: auto;
     }
     .item3::-webkit-scrollbar {
+        display: none;
+    }
+    .modal {
         display: none;
     }
 }
