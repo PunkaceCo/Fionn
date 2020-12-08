@@ -63,7 +63,40 @@ body {
 }
 
 .main-information {
+    padding: 10px;
     align-self: center;
+}
+
+.item3::-webkit-scrollbar {
+    display: block !important;
+    background-color: transparent;
+    width: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item3::-webkit-scrollbar-track {
+    display: block !important;
+    width: 10px;
+    height: 35px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Handle */
+
+.item3::-webkit-scrollbar-thumb {
+    display: block !important;
+    background: #F39405;
+    border-radius: 5px;
+}
+
+
+/* Handle on hover */
+
+.item3::-webkit-scrollbar-thumb:hover {
+    display: block !important;
+    background: #F39405;
 }
 
 
@@ -76,6 +109,11 @@ body {
     height: 100vh;
 
   } */
+
+.main-information .info {
+    display: flex;
+    margin-top: 37px;
+}
 
 .grid-item {
     /* text-align: center; */
