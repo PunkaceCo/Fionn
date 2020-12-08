@@ -71,7 +71,7 @@ function showSlides() {
   if (slideIndex > sliderImages.length) {slideIndex = 1;}
   slideContainer.style.display = "block";
   slideContainer.style.backgroundImage = ` url(${sliderImages[slideIndex-1].src})`;
-  // dotContainer.childNodes[slideIndex-1].classList.add(" active");
+  // dotContainer.childNodes[slideIndex-1].classList.add("active");
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
