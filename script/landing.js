@@ -28,9 +28,11 @@ function mouseLeave(e) {
 
 var action = document.getElementById('action');
 var music = document.getElementById('music');
-
+var actionContent = document.getElemetsByClassName('dropdown-content');
+var musicContent = document.getElemetsByClassName('dropdown-content');
 
 action.onmouseover = function (e){
+  actionContent.style.display = "block";
   music.style.backgroundColor = "#FDDB3A";
   music.style.borderRadius = "0 0 0 25px";
   music.innerHTML = "FIONN STACY";
@@ -39,7 +41,6 @@ action.onmouseover = function (e){
   music.style.padding = '14px 16px';
   music.style.fontFamily='inherit';
   music.style.textAlign='center';
-
 };
 
 music.onmouseover = function (e){
@@ -51,6 +52,8 @@ music.onmouseover = function (e){
   action.style.padding = '14px 16px';
   action.style.fontFamily='inherit';
   action.style.textAlign='center';
+  musicContent.style.display = "block";
+
 
 };
 
