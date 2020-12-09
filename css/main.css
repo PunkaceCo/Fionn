@@ -96,6 +96,24 @@ body {
     .topnav {
         display: block;
     }
+    .component-links .call {
+        display: none;
+    }
+    .component-links .email {
+        display: none;
+    }
+    .component-links .instagram {
+        display: none;
+    }
+    .component-links .location {
+        display: none;
+    }
+    .component-links .account {
+        display: block;
+    }
+    .item4 .account {
+        display: block;
+    }
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
         display: block;
@@ -105,6 +123,24 @@ body {
 @media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
+    }
+    .component-links .call {
+        display: none;
+    }
+    .component-links .email {
+        display: none;
+    }
+    .component-links .instagram {
+        display: none;
+    }
+    .component-links .location {
+        display: none;
+    }
+    .component-links .account {
+        display: block;
+    }
+    .item4 .account {
+        display: block;
     }
     .topnav.responsive .icon {
         position: absolute;
@@ -242,6 +278,24 @@ body {
 @media only screen and (max-width:767px) {
     .item1 {
         display: none;
+    }
+    .component-links .call {
+        display: none;
+    }
+    .component-links .email {
+        display: none;
+    }
+    .component-links .instagram {
+        display: none;
+    }
+    .component-links .location {
+        display: none;
+    }
+    .component-links .account {
+        display: block;
+    }
+    .item4 .account {
+        display: block;
     }
     .item2 {
         display: block;

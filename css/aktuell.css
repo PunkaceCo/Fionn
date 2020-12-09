@@ -150,10 +150,34 @@ body {
 }
 
 .component-links {
+    padding: 40px 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    color: #FDDB3A;
+    color: #FFFFFF;
+}
+
+.component-links .location,
+.call {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.component-links .call {
+    transform: rotate(-45deg);
+}
+
+.component-links .account {
+    display: none;
+}
+
+.component-links i {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
 }
 
 .component-links i {
@@ -172,6 +196,24 @@ body {
 @media only screen and (max-width:767px) {
     .item1 {
         display: none;
+    }
+    .component-links .call {
+        display: none;
+    }
+    .component-links .email {
+        display: none;
+    }
+    .component-links .instagram {
+        display: none;
+    }
+    .component-links .location {
+        display: none;
+    }
+    .component-links .account {
+        display: block;
+    }
+    .item4 .account {
+        display: block;
     }
     .grid-container {
         padding: 0%;
@@ -205,6 +247,24 @@ body {
 @media (max-width:600) and (min-width:320px) {
     .item1 {
         display: none;
+    }
+    .component-links .call {
+        display: none;
+    }
+    .component-links .email {
+        display: none;
+    }
+    .component-links .instagram {
+        display: none;
+    }
+    .component-links .location {
+        display: none;
+    }
+    .component-links .account {
+        display: block;
+    }
+    .item4 .account {
+        display: block;
     }
     .item2 {
         display: block;
