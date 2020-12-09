@@ -9,20 +9,26 @@ const btnRight = document.querySelector('.slider__btn-right');
 
 const sliderImages = [
     {
-    src: '../asset/svg/project01.svg',
-    title: 'TITLE1',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
-     'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'  },
-  {
-    src: '../asset/svg/project-page02.svg',
-    title: 'TITLE2',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
-     'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'  },
-  {
-    src: '../asset/svg/project-page03.svg',
-    title: 'TITLE3',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
-     'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'
+      src: '../asset/svg/project01.svg',
+      title: 'TITLE1',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
+       'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.' +
+       'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
+       'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'},
+    {
+      src: '../asset/svg/project-page02.svg',
+      title: 'TITLE2',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
+      'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.' +
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
+      'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'},
+    {
+      src: '../asset/svg/project-page03.svg',
+      title: 'TITLE3',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
+      'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.' +
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit' +
+      'Suscipit fugiat repellat fugit possimus, minima voluptates culpa quia a odio dolores.'
   }
 
 ];
@@ -36,6 +42,37 @@ const dots = [];
 
 let slideCounter = 0;
 
+var slideIndex = 0;
+
+// showSlides();
+
+// function showSlides() {
+//   var i;
+//   var dot= dotContainer.getElementsByTagName('li')[slideIndex - 1];
+//   slideIndex++;
+//   if (slideIndex > sliderImages.length) {slideIndex = 1;}
+//   slideContainer.style.display = "block";
+//   slideContainer.style.backgroundImage = ` url(${sliderImages[slideIndex-1].src})`;
+//   slideContainer.classList.add('fadeIn');
+//   console.log(dotContainer.childElementCount);
+  
+
+//   setTimeout(() => {
+//     slideContainer.classList.remove('fadeIn');
+
+//   }, 1000);
+//   setTimeout(showSlides, 2000); 
+
+// }
+function handleCurrentSlide(n){
+  console.log("click");
+  slideContainer.style.backgroundImage = ` url(${sliderImages[n].src})`;
+  slideContainer.style.backgroundSize = 'cover';
+  slideContainer.style.width = '100vw';
+  sliderText.innerHTML = sliderImages[n].text;
+  sliderTitle.innerHTML = sliderImages[n].title;
+}
+
 const startSlider = () => {
   slideContainer.style.backgroundImage = ` url(${sliderImages[0].src})`;
   slideContainer.style.backgroundSize = 'cover';
@@ -45,35 +82,15 @@ const startSlider = () => {
   sliderTitle.innerHTML = sliderImages[0].title;
 
   for (var i = 0, len = sliderImages.length; i < len; i++) {
+    templateListItem.addEventListener('click', handleCurrentSlide(i));
     var clone = templateListItem.cloneNode();
     dotContainer.appendChild(clone);
   }
+  console.log(dotContainer);
   dotContainer.childNodes[0].classList.add('active');
 
 };
 
-
-var slideIndex = 0;
-for (i = 0; i < dots.length; i++) {
-  dotContainer.childNodes[i].classList = dotContainer.childNodes[i].classList.replace(" active", "");
-}
-
-showSlides();
-
-function showSlides() {
-  var i;
-  // var slides = document.getElementsByClassName("mySlides");
-  // for (i = 0; i < sliderImages.length; i++) {
-  //   slideContainer.style.display = "none";
-  // }
-
-  slideIndex++;
-  if (slideIndex > sliderImages.length) {slideIndex = 1;}
-  slideContainer.style.display = "block";
-  slideContainer.style.backgroundImage = ` url(${sliderImages[slideIndex-1].src})`;
-  // dotContainer.childNodes[slideIndex-1].classList.add("active");
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 
 btnRight.addEventListener('click', function() {
   if (slideCounter === sliderImages.length - 1) {

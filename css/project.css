@@ -95,14 +95,14 @@ body {
 
 .slider--title {
     font-size: 2.5rem;
-    color: #fff;
+    color: #FDDB3A;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .slider--text {
     font-size: 1rem;
-    color: #fff;
+    color: #FDDB3A;
     text-transform: uppercase;
     margin: 0.5rem 0;
 }
