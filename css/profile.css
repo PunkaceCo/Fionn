@@ -112,7 +112,7 @@
   .main-timeline {
       /* overflow:hidden; */
       position: relative;
-      left: -380px;
+      left:-40%;
   }
   
   .main-timeline .timeline {
@@ -388,101 +388,3 @@
       left: 60%;
       display: none;
   }
-  /* @media (max-width:1160px) and (min-width:1030px) {
-  .main-timeline .timeline{
-    margin-top:-211px
-  }
-
-}
-
-@media (max-width:1029px) and (min-width:991px) {
-  .main-timeline .timeline{
-    margin-top:-211px
-  }
-
-}
-@media (max-width:940px) and (min-width:804px) {
-  .main-timeline .timeline{
-    margin-top:-283px
-  }
-
-}
-@media (max-width:804px) and (min-width:792px) {
-  .main-timeline .timeline{
-    margin-top:-307px
-  }
-
-}
-@media (max-width:791px) and (min-width:790px) {
-  .main-timeline .timeline{
-    margin-top:-331px
-  }
-
-}
-@media (max-width:789px) and (min-width:768px) {
-  .main-timeline .timeline{
-    margin-top:-355px
-  }
-
-}
-@media (max-width:757px) and (min-width:650px) {
-  .main-timeline .timeline{
-    margin-top:-283px
-  }
-
-}
-@media (max-width:649px) and (min-width:640px) {
-  .main-timeline .timeline{
-    margin-top:-307px
-  }
-
-}
-@media (max-width:639px) and (min-width:636px) {
-  .main-timeline .timeline{
-    margin-top:-331px
-  }
-
-}
-@media (max-width:635px) and (min-width:606px) {
-  .main-timeline .timeline{
-    margin-top:-355px
-  }
-
-}
-@media (max-width:605px) and (min-width:568px) {
-  .main-timeline .timeline{
-    margin-top:-379px
-  }
-}
-@media (max-width:567px) and (min-width:566px) {
-  .main-timeline .timeline{
-    margin-top:-403px
-  }
-}
-@media (max-width:565px) and (min-width:530px) {
-  .main-timeline .timeline{
-    margin-top:-403px
-  }
-}
-@media (max-width:529px) and (min-width:503px) {
-  .main-timeline .timeline{
-    margin-top:-427px
-  }
-}
-@media (max-width:461px) and (min-width:454px) {
-  .main-timeline .timeline{
-    margin-top:-499px
-  }
-}
-@media (max-width:462px) and (min-width:449px) {
-  .main-timeline .timeline{
-    margin-top:-499px
-  }
-}
-@media (max-width:453px) and (min-width:320px) {
-  .main-timeline .timeline{
-    margin-top:-523px
-  }
-  .main-timeline .timeline:first-child{margin-top:-316px}
-
-} */
