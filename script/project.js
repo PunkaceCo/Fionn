@@ -46,24 +46,16 @@ var slideIndex = 0;
 
 
 function showSlides() {
-  // if(dotContainer.childElementCount != 0 ) dotContainer.childNodes[slideIndex].classList.remove('active');
 
-  console.log(  slideIndex);
-  
   slideIndex++;
-  console.log( "++", slideIndex);
 
   if (slideIndex > sliderImages.length) {slideIndex = 1;}
+  for (i = 0; i < dotContainer.childElementCount; i++) {
+    dotContainer.childNodes[ i ] = dotContainer.childNodes[ i ].classList.remove('active');
+  }
   slideContainer.style.display = "block";
-  
-  console.log( "show", slideIndex-1);
   slideContainer.style.backgroundImage = ` url(${sliderImages[slideIndex-1].src})`;
-  
-  console.log( "add", slideIndex -1);
-  if(dotContainer.childElementCount != 0 ) dotContainer.childNodes[slideIndex -1].classList.add('active');
-
-  console.log( "remove", slideIndex -2);
-  if(dotContainer.childElementCount != 0 && slideIndex <= 3 && slideIndex >=-1) dotContainer.childNodes[slideIndex - 2 ].classList.remove('active');
+  if(dotContainer.childElementCount != 0 ) dotContainer.childNodes[slideIndex -1 ].classList.add('active');
 
   sliderText.innerHTML = sliderImages[slideIndex-1].text;
   sliderTitle.innerHTML = sliderImages[slideIndex-1].title;
