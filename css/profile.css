@@ -111,7 +111,8 @@
   
   .main-timeline {
       /* overflow:hidden; */
-      position: relative
+      position: relative;
+      left: -380px;
   }
   
   .main-timeline .timeline {
