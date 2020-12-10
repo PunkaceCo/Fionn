@@ -68,8 +68,8 @@ function showSlides() {
   setTimeout(showSlides, 2000); 
 
 }
+
 function handleCurrentSlide(n){
-  console.log("click");
   slideContainer.style.backgroundImage = ` url(${sliderImages[n].src})`;
   slideContainer.style.backgroundSize = 'cover';
   slideContainer.style.width = '100vw';
@@ -90,7 +90,6 @@ const startSlider = () => {
     var clone = templateListItem.cloneNode();
     dotContainer.appendChild(clone);
   }
-  console.log(dotContainer);
   dotContainer.childNodes[0].classList.add('active');
 
 };

@@ -105,7 +105,6 @@ body {
     position: absolute;
     bottom: 0px;
     /* left: 30%; */
-    background: linear-gradient(90.06deg, #C4C4C4 7.82%, rgba(255, 255, 255, 0) 76.66%), rgba(255, 155, 4, 0.8);
 }
 
 .frame img {
@@ -120,7 +119,7 @@ body {
     flex-direction: row;
     display: inline-block;
     height: 50%;
-}
+visibility: hidden;}
 
 .avatar {
     display: inline-block
@@ -307,7 +306,7 @@ body {
       width: 10px;
       border-radius: 50px;
       margin-top: 100px; */
-        display: none;
+        display: block;
     }
     .item1 {
         display: none;
@@ -332,9 +331,21 @@ body {
         flex-direction: column;
         height: 65%;
     }
-    /* .avatar {
-        display: none;
-    } */
+    .frame {
+        border-radius: 0px 200px 0px 0px;
+        left: 0%;
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        flex-direction: row;
+    }
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+        height: 65%;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -376,7 +387,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         height: 65%;
     }
     .grid-item {
@@ -388,5 +399,6 @@ body {
         width: 100%;
         height: 80%;
         overflow: hidden;
+        flex-direction: column;
     }
 }
