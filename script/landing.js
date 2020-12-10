@@ -26,45 +26,46 @@ function mouseLeave(e) {
 }
 
 
-var action = document.getElementById('action');
-var music = document.getElementById('music');
-var actionContent = document.getElemetsByClassName('dropdown-content');
-var musicContent = document.getElemetsByClassName('dropdown-content');
+// var action = document.getElementById('action');
+// var music = document.getElementById('music');
+// var actionContent = document.getElementsByClassName('dropdown-content');
+// console.log(actionContent);
+// var musicContent = music.getElementsByClassName('dropdown-content');
+// console.log(musicContent);
 
-action.onmouseover = function (e){
-  actionContent.style.display = "block";
-  music.style.backgroundColor = "#FDDB3A";
-  music.style.borderRadius = "0 0 0 25px";
-  music.innerHTML = "FIONN STACY";
-  music.style.fontSize = '17px';
-  music.style.color = 'white';
-  music.style.padding = '14px 16px';
-  music.style.fontFamily='inherit';
-  music.style.textAlign='center';
-};
+// action.onmouseover = function (e){
+//   music.style.backgroundColor = "#FDDB3A";
+//   music.style.borderRadius = "0 0 0 25px";
+//   music.innerHTML = "FIONN STACY";
+//   music.style.fontSize = '17px';
+//   music.style.color = 'white';
+//   music.style.padding = '14px 16px';
+//   music.style.fontFamily='inherit';
+//   music.style.textAlign='center';
+//   // actionContent.style.display = "block";
 
-music.onmouseover = function (e){
-  action.style.backgroundColor = "#FF9B04";
-  action.style.borderRadius = "0 0 25px 0";
-  action.innerHTML = "FIONN STACY";
-  action.style.fontSize = '17px';
-  action.style.color = 'white';
-  action.style.padding = '14px 16px';
-  action.style.fontFamily='inherit';
-  action.style.textAlign='center';
-  musicContent.style.display = "block";
+// };
 
+// music.onmouseover = function (e){
+//   action.style.backgroundColor = "#FF9B04";
+//   action.style.borderRadius = "0 0 25px 0";
+//   action.innerHTML = "FIONN STACY";
+//   action.style.fontSize = '17px';
+//   action.style.color = 'white';
+//   action.style.padding = '14px 16px';
+//   action.style.fontFamily='inherit';
+//   action.style.textAlign='center';
+//   // musicContent.style.display = "block";
+// };
 
-};
+// action.onmouseleave = function(e){
+//   music.style.backgroundColor = "transparent";
+//   music.innerHTML = "MUSIC";
 
-action.onmouseleave = function(e){
-  music.style.backgroundColor = "transparent";
-  music.innerHTML = "MUSIC";
+// };
 
-};
+// music.onmouseleave = function(e){
+//   action.style.backgroundColor = "transparent";
+//   action.innerHTML = "ACTION";
 
-music.onmouseleave = function(e){
-  action.style.backgroundColor = "transparent";
-  action.innerHTML = "ACTION";
-
-};
+// };

@@ -30,11 +30,46 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+#logo a{
+    width: 100%;
+    background-color: #FDDB3A;
+    border-radius: 0 0 25px 0;
+}
+.left ~ #logo a{
+    width: 100%;
+    background-color: #FF9B04;
+    border-radius: 0 0 0 25px;
+}
 
 .dropdown {
     width: 50%;
-    float: left;
+    float: right;
     overflow: hidden;
+}
+
+.dropdown .left{
+    left:0;
+}
+.left {
+    float: left;
+}
+
+.topnav #close{
+    display: none;
+    float: right;
+    color: #FDDB3A; 
+
+}
+.topnav .icon{
+    font-size:15px;
+    color: #FDDB3A; 
+    float:right;
+}
+#menu{
+    display: none;
+}
+#logo{
+    display: none;
 }
 
 #music .dropdown-content a {
@@ -53,12 +88,12 @@ body {
     margin: 0;
 }
 
-#action:hover {
+#action:hover ~ #music {
     background-color: #FF9B04;
     border-radius: 0 0 25px 0;
 }
 
-#music:hover {
+#music:hover ~ #action{
     background-color: #FDDB3A;
     border-radius: 0 0 0 25px;
 }
@@ -68,6 +103,11 @@ body {
     position: absolute;
     min-width: 160px;
     z-index: 1;
+    right: 0;
+}
+
+#music {
+    display: none;
 }
 
 .dropdown-content a {
@@ -79,23 +119,27 @@ body {
     text-align: left;
 }
 
+
+/* 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
     color: white;
-}
+} */
 
-.dropdown-content a:hover {
+
+/* .dropdown-content a:hover {
     color: #FF9B04;
-}
+} */
 
-.dropdown:hover .dropdown-content {
+
+/* .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 @media screen and (max-width: 600px) {
-    .topnav {
+    /* .topnav {
         display: block;
-    }
+    } */
     .component-links .call {
         display: none;
     }
@@ -114,10 +158,9 @@ body {
     .item4 .account {
         display: block;
     }
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
+    /* .topnav .dropdown .dropbtn {
         display: block;
-    }
+    } */
 }
 
 @media screen and (max-width: 600px) {
@@ -147,22 +190,22 @@ body {
         right: 0;
         top: 0;
     }
-    .topnav.responsive a {
+    /* .topnav.responsive a {
         float: none;
         display: block;
         text-align: left;
-    }
+    } */
     .topnav.responsive .dropdown {
         float: none;
     }
     .topnav.responsive .dropdown-content {
         position: relative;
     }
-    .topnav.responsive .dropdown .dropbtn {
+    /* .topnav.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
         text-align: left;
-    }
+    } */
 }
 
 
@@ -257,7 +300,7 @@ body {
 .grid-container {
     display: grid;
     grid-gap: 10px;
-    padding: 10px;
+    /* padding: 10px; */
     height: 100vh;
 }
 

@@ -7,6 +7,9 @@ body {
     position: relative;
 }
 
+/* #music-menu{
+    display: none;
+} */
 .menu {
     top: 30%;
     right: 1%;
@@ -14,12 +17,22 @@ body {
     border-left: none;
 }
 
+/* .topnav .icon{
+    font-size:15px;
+    color: #FDDB3A; 
+    float:right;
+} */
 .sidebar {
     position: absolute;
     /* left: 84%; */
     right: 0%;
 }
+/* .topnav #close{
+    display: none;
+    float: right;
+    color: #FDDB3A; 
 
+} */
 .description {
     background-color: #595B83;
     color: #FDDB3A;
@@ -76,7 +89,7 @@ body {
 }
 
 .main-information {
-    padding: 30px 10px;
+    padding: 30px 50px;
     align-self: center;
     overflow: scroll;
     direction: rtl;

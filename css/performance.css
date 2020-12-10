@@ -223,9 +223,9 @@ body {
         justify-content: left;
         align-self: flex-end;
     }
-    .grid-container {
+    /* .grid-container {
         grid-template-columns: auto;
-    }
+    } */
 }
 
 @media only screen and (max-width:600px) {
@@ -264,9 +264,6 @@ body {
     .date,
     .title p {
         font-size: 10px;
-    }
-    .grid-container {
-        grid-template-columns: auto;
     }
 }
 

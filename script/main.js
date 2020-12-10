@@ -1,36 +1,31 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var images = document.getElementsByClassName('myImg');
-var modalImg = document.getElementById("img");
-
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  // and attach our click listener for this image.
-  img.onclick = function(evt) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-  };
-
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 function myFunction() {
-  var x = document.getElementById("mob");
-  var icon = document.getElementById("icon");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    icon.style.display = "block";
-  } else {
-    x.style.display = "block";
-    icon.style.display = "block";
+var content = document.getElementById('content');
+var menu = document.getElementById('menu');
+var icon = document.getElementById('icon');
+var close = document.getElementById('close');
+var logo = document.getElementById('logo');
+
+  if(menu.style.display === 'block'){
+    icon.style.display = 'block';
+    menu.style.display = 'none';
+    content.style.display = 'none'; 
+    // close.style.display = 'none';
+    logo.style.display = 'none';
 
   }
+  else{
+    icon.style.display = 'none';
+    // close.style.display = 'block';
+    menu.style.display = 'block';
+    content.style.display = 'block';
+    logo.style.display = 'block';
+  }
 }
+// var item = document.getElementById('item3');
 
+// window.onclick = function(event) {
+//   if (event.target == item) {
+//     menu.style.display = "none";
+//   }
+// };

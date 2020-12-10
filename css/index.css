@@ -89,15 +89,15 @@
              margin: 0;
          }
          
-         #action:hover {
-             /* background-color: #FF9B04; */
-             border-radius: 0 0 25px 0;
-         }
-         
-         #music:hover {
-             /* background-color: #FDDB3A; */
+         #action:hover ~ #music {
+             background-color: #FDDB3A;
              border-radius: 0 0 0 25px;
          }
+
+         #music:hover #action .dropbtn {
+            background-color: #FF9B04;
+            border-radius: 0 0 25px 0;
+        }
          
          .dropdown-content {
              display: none;
