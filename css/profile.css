@@ -6,6 +6,7 @@
       background-size: cover;
       background-color: #868585;
       position: relative;
+      overflow: hidden;
   }
   
   .menu {
@@ -112,7 +113,7 @@
   .main-timeline {
       /* overflow:hidden; */
       position: relative;
-      left:-40%;
+      left:-30%;
   }
   
   .main-timeline .timeline {
@@ -385,6 +386,6 @@
   .desc {
       position: absolute;
       bottom: 100px;
-      left: 60%;
-      display: none;
+      left: 35%;
+      /* display: none; */
   }

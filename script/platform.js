@@ -6,8 +6,8 @@ function showPlaylist() {
     info.style.visibility = 'visible';
     frame.style.background= 
     '-webkit-gradient(linear, left top,left bottom, '+
-    'from(rgb(196,196,196)), color-stop(50%, rgba(255, 255, 255, 0)),'+
-    'color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(255, 155, 4, 0.8)))';
+    'from(rgba(196,196,196, 1)), color-stop(76.66%, rgba(255, 255, 255, 0)),'+
+    'color-stop(76.66%, rgba(255, 255, 255, 0)), to(rgba(255, 155, 4, 0.8)))';
       
       // background: -moz-linear-gradient(top, rgba(255,255, 255, .5), rgba(255, 255, 255, .2) 50%, rgba(0, 0, 0, .2) 50%, rgba(255, 255, 255,.1));';
 
@@ -56,27 +56,45 @@ let songs = [
     singer: 'FIONN STACY',
   },
 ];
-
+function start(n){
+  // slideContainer.style.backgroundImage = ` url(${sliderImages[n].src})`;
+  // slideContainer.style.backgroundSize = 'cover';
+  // slideContainer.style.width = '100vw';
+  songName.innerHTML = songs[n].name;
+  singerName.innerHTML = songs[n].singer;
+}
 //add songs in play list
 function addSongs(){
-  for(var i=0; i< songs.length; i++){
-    console.log("list", list);
-    var name = document.createTextNode(songs[i].name);
-    var singer = document.createTextNode(songs[i].singer + ' - ' );
-    songName.appendChild(name);
-    singerName.appendChild(singer);
+  for (var i = 0, len = songs.length; i < len; i++) {
+        console.log("list", list);
 
-    console.log("p-song",songName);
-    console.log("p-singer",singerName);
+    list.addEventListener('DOMContentLoaded', start);
+        console.log("s",songName);
 
-    list.appendChild(singerName);
+        list.appendChild(singerName);
     list.appendChild(songName);
-    console.log("list2", list);
-
     var clone = list.cloneNode(true);
-      playlist.appendChild(clone);
+    playlist.appendChild(clone);
   }
-  console.log("list3", playlist);
+//   for(var i=0; i< songs.length; i++){
+//     console.log("list", list);
+//     var name = document.createTextNode(songs[i].name);
+//     console.log("name",name);
+//     var singer = document.createTextNode(songs[i].singer + ' - ' );
+//     songName.appendChild(name);
+//     singerName.appendChild(singer);
+
+//     console.log("p-song",songName.innerHTML);
+//     console.log("p-singer",singerName.innerHTML);
+
+//     list.appendChild(singerName);
+//     list.appendChild(songName);
+//     console.log("list2", list);
+
+//     var clone = list.cloneNode(true);
+//       playlist.appendChild(clone);
+//   }
+//   console.log("list3", playlist);
 
 }
 
