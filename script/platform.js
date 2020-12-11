@@ -1,16 +1,22 @@
 var frame = document.getElementById('playlist');
 var info = document.getElementById('info');
+
 function showPlaylist() {
   if (info.style.visibility === 'hidden') {
     info.style.visibility = 'visible';
-    frame.style.transform = 'fade 2s';
-    frame.style.background =
-      'linear-gradient(90.06deg, #C4C4C4 7.82%,  76.66% rgba(255, 255, 255, 0) , rgba(255, 155, 4, 0.8))';
+    frame.style.background= 
+    '-webkit-gradient(linear, left top,left bottom, '+
+    'from(rgb(196,196,196)), color-stop(50%, rgba(255, 255, 255, 0)),'+
+    'color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(255, 155, 4, 0.8)))';
+      
+      // background: -moz-linear-gradient(top, rgba(255,255, 255, .5), rgba(255, 255, 255, .2) 50%, rgba(0, 0, 0, .2) 50%, rgba(255, 255, 255,.1));';
 
-    // 'linear-gradient(90.06deg, #C4C4C4 7.82%,  76.66% rgba(255, 255, 255, 0) , rgba(255, 155, 4, 0.8))';
+    // frame.style.transform = 'fade 2s';
+      // 'linear-gradient(90.06deg, #C4C4C4 7.82%,  76.66% rgba(255, 255, 255, 0) , rgba(255, 155, 4, 0.8))';
   } else {
     info.style.visibility = 'hidden';
     frame.style.background = 'transparent';
+
   }
 }
 
@@ -55,12 +61,16 @@ let songs = [
 function addSongs(){
   for(var i=0; i< songs.length; i++){
     console.log("list", list);
-    var text = document.createTextNode("Water");
-    songName.appendChild(text);
+    var name = document.createTextNode(songs[i].name);
+    var singer = document.createTextNode(songs[i].singer + ' - ' );
+    songName.appendChild(name);
+    singerName.appendChild(singer);
+
     console.log("p-song",songName);
     console.log("p-singer",singerName);
-    list.appendChild(songName);
+
     list.appendChild(singerName);
+    list.appendChild(songName);
     console.log("list2", list);
 
     var clone = list.cloneNode(true);
