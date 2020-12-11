@@ -61,15 +61,15 @@ function start(n){
   // slideContainer.style.backgroundSize = 'cover';
   // slideContainer.style.width = '100vw';
   songName.innerHTML = songs[n].name;
-  singerName.innerHTML = songs[n].singer;
+  singerName.innerHTML = songs[n].singer + ' - ';
 }
 //add songs in play list
 function addSongs(){
   for (var i = 0, len = songs.length; i < len; i++) {
         console.log("list", list);
 
-    list.addEventListener('DOMContentLoaded', start);
-        console.log("s",songName);
+    list.addEventListener('DOMContentLoaded', start(i));
+        console.log("s",songName.innerHTML);
 
         list.appendChild(singerName);
     list.appendChild(songName);
