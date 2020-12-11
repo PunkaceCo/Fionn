@@ -76,26 +76,6 @@ function addSongs(){
     var clone = list.cloneNode(true);
     playlist.appendChild(clone);
   }
-//   for(var i=0; i< songs.length; i++){
-//     console.log("list", list);
-//     var name = document.createTextNode(songs[i].name);
-//     console.log("name",name);
-//     var singer = document.createTextNode(songs[i].singer + ' - ' );
-//     songName.appendChild(name);
-//     singerName.appendChild(singer);
-
-//     console.log("p-song",songName.innerHTML);
-//     console.log("p-singer",singerName.innerHTML);
-
-//     list.appendChild(singerName);
-//     list.appendChild(songName);
-//     console.log("list2", list);
-
-//     var clone = list.cloneNode(true);
-//       playlist.appendChild(clone);
-//   }
-//   console.log("list3", playlist);
-
 }
 
 
@@ -109,11 +89,11 @@ function load_track(index) {
 load_track(index);
 
 //mute sound function
-// function mute_sound(){
-// 	track.volume = 0;
-// 	volume.value = 0;
-// 	volume_show.innerHTML = 0;
-// }
+function mute_sound(){
+	track.volume = 0;
+	volume.value = 0;
+	volume_show.innerHTML = 0;
+}
 
 // checking.. the song is playing or not
 function justplay() {

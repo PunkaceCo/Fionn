@@ -33,7 +33,7 @@ body {
     position: fixed;
     grid-column: 3;
     grid-row: 5;
-    right: 0%;
+    /* right: 0%; */
     bottom: 0%;
 }
 
