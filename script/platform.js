@@ -18,41 +18,64 @@ function showPlaylist() {
 let singer = document.querySelector('#singer');
 let name = document.querySelector('#title');
 let slider = document.querySelector('#duration_slider');
-let playlistContainer = document.querySelector('.playlist');
+
+let playlistContainer = document.querySelector('#playlist');
+
 let track = document.createElement('audio');
 let Playing_song = false;
 let index = 0;
 let timer;
 let playlist = playlistContainer.querySelector('.listItems');
+
 let list = document.createElement('li');
+let songName =document.createElement("p");
+songName.setAttribute("id", "name");
+let singerName = document.createElement('p');
+singerName.setAttribute("id", "singer");
 
 let songs = [
   {
     name: 'song1',
-    path: '../../../Downloads/Telegram Desktop/Marjan-Farsad-Porteghale-Man-320.mp3',
+    path: '../asset/song/Marjan-Farsad-Porteghale-Man-320.mp3',
     singer: 'FIONN STACY',
   },
   {
     name: 'song2',
-    path: '',
+    path: '../asset/song/Marjan-Farsad-Porteghale-Man-320.mp3',
+    singer: 'FIONN STACY',
+  },
+  {
+    name: 'song3',
+    path: '../asset/song/Marjan-Farsad-Porteghale-Man-320.mp3',
     singer: 'FIONN STACY',
   },
 ];
+
 //add songs in play list
 function addSongs(){
-  for(var i=0; i<songs.length; i++){
-    list.addEventListener('click', handle(i));
-    var clone = templateListItem.cloneNode();
-    playlist.appendChild(clone);
+  for(var i=0; i< songs.length; i++){
+    console.log("list", list);
+    var text = document.createTextNode("Water");
+    songName.appendChild(text);
+    console.log("p-song",songName);
+    console.log("p-singer",singerName);
+    list.appendChild(songName);
+    list.appendChild(singerName);
+    console.log("list2", list);
+
+    var clone = list.cloneNode(true);
+      playlist.appendChild(clone);
   }
+  console.log("list3", playlist);
+
 }
+
 
 addSongs();
 
 function load_track(index) {
   track.src = songs[index].path;
-  title.innerHTML = songs[index].name;
-  singer.innerHTML = songs[index].singer;
+
 }
 
 load_track(index);
