@@ -20,7 +20,9 @@ body {
     display: none;
     overflow: hidden;
 }
-
+.sidebar .current {
+    color:#FF9B04;
+}
 .topnav a {
     float: left;
     display: block;

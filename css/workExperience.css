@@ -17,7 +17,9 @@ body {
   grid-column: 1;
   grid-row: 2 / span 4;
 }
-
+.current{
+  color: #FF9B04;
+}
 .item3 {
   grid-column: 2 / span 2;
   grid-row: 2 / span 4;
