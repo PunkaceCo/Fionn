@@ -16,32 +16,38 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 successBuy = document.getElementById('successBuy');
 var accept = document.getElementById('accept');
-
+var done = document.getElementById('ok');
 accept.onclick = function () {
   modal.style.display = "none";
   successBuy.style.display = "block";
 
-}
+};
+
+done.onclick = function () {
+  modal.style.display = "none";
+  successBuy.style.display = "none";
+
+};
 
 function myFunction() {
   var x = document.getElementById("mob");
-  var icon = document.getElementById("icon")
+  var icon = document.getElementById("icon");
   if (x.style.display === "block") {
     x.style.display = "none";
-    icon.style.display = "block"
+    icon.style.display = "block";
   } else {
     x.style.display = "block";
-    icon.style.display = "block"
+    icon.style.display = "block";
 
   }
 }
