@@ -26,8 +26,32 @@ function mouseLeave(e) {
 }
 
 
-// var action = document.getElementById('action');
-// var music = document.getElementById('music');
+var action = document.getElementById('action');
+var music = document.getElementById('music');
+console.log(action);
+btnAction = action.querySelector('.dropbtn');
+console.log(btnAction);
+btnMusic = music.querySelector('.dropbtn');
+console.log(btnMusic);
+
+btnMusic.onmouseover = function (){
+ btnAction.style.background = "#FF9B04";
+ btnAction.style.borderRadius = "0 0 25px 0";
+ btnAction.innerHTML = "FIONN STACY";
+};
+btnMusic.onmouseLeave = function (){
+ btnAction.style.background = "#transparent";
+ btnAction.innerHTML = "ACTION";
+};
+btnAction.onmouseover = function (){
+  btnMusic.style.background = "#FDDB3A";
+  btnMusic.style.borderRadius = "0 0 0 25px";
+  btnMusic.innerHTML = "FIONN STACY";
+};
+btnAction.onmouseLeave = function (){
+  btnMusic.style.background = "#transparent";
+  btnMusic.innerHTML = "MUSIC";
+};
 // var actionContent = document.getElementsByClassName('dropdown-content');
 // console.log(actionContent);
 // var musicContent = music.getElementsByClassName('dropdown-content');

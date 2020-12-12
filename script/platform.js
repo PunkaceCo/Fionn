@@ -97,15 +97,17 @@ function load_track(index) {
 
 
 load_track(index);
-
+var mute = document.querySelector('#mute');
 //mute sound function
 function mute_sound(){
-  var current = track.volume;
-
-  if(track.volume == 0){
-    track.volume = current;
+  if(track.muted){
+    track.muted = false;
+    mute.innerHTML = '<i class="fas fa-volume-up fa-sm" style="margin-top: 10px;"></i>';
   }
-	track.volume = 0;
+	else{
+    track.muted = true;
+    mute.innerHTML = '<i class="fas fa-volume-mute fa-sm" style="margin-top: 10px;"></i>';
+  }
 }
 
 // checking.. the song is playing or not
