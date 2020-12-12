@@ -82,17 +82,30 @@ function addSongs(){
 addSongs();
 
 function load_track(index) {
-  track.src = songs[index].path;
+	clearInterval(timer);
+	reset_slider();
 
+	track.src = songs[index].path;
+	// title.innerHTML = songs[index].name;	
+  //   artist.innerHTML = songs[index].singer;
+    track.load();
+
+	timer = setInterval(range_slider ,1000);
+	// total.innerHTML = All_song.length;
+	// present.innerHTML = index_no + 1;
 }
+
 
 load_track(index);
 
 //mute sound function
 function mute_sound(){
+  var current = track.volume;
+
+  if(track.volume == 0){
+    track.volume = current;
+  }
 	track.volume = 0;
-	volume.value = 0;
-	volume_show.innerHTML = 0;
 }
 
 // checking.. the song is playing or not
