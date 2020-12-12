@@ -25,7 +25,7 @@ function mouseLeave(e) {
   e.style.opacity ="0";
 }
 
-
+var content = document.querySelector('#content');
 var action = document.getElementById('action');
 var music = document.getElementById('music');
 console.log(action);
@@ -38,19 +38,37 @@ btnMusic.onmouseover = function (){
  btnAction.style.background = "#FF9B04";
  btnAction.style.borderRadius = "0 0 25px 0";
  btnAction.innerHTML = "FIONN STACY";
+ document.body.style.background ="#52575D url(../asset/svg/landing/right.png) no-repeat center bottom fixed ";
+    document.body.style.transition = 'background-image 1s';
 };
-btnMusic.onmouseLeave = function (){
+btnMusic.mouseLeave = function (){
  btnAction.style.background = "#transparent";
  btnAction.innerHTML = "ACTION";
 };
+
 btnAction.onmouseover = function (){
   btnMusic.style.background = "#FDDB3A";
   btnMusic.style.borderRadius = "0 0 0 25px";
   btnMusic.innerHTML = "FIONN STACY";
-};
-btnAction.onmouseLeave = function (){
+  document.body.style.background ="#595B83 url(../asset/svg/landing/left.png) no-repeat center bottom fixed";
+    document.body.style.transition = 'background-image 1s';
+  };
+
+btnAction.mouseLeave = function (){
   btnMusic.style.background = "#transparent";
   btnMusic.innerHTML = "MUSIC";
+};
+
+window.onclick = function (e) {
+  console.log("E", e.target.id);
+  if(e.target.id == 'landing-left'){
+    btnAction.style.background = "transparent";
+    btnAction.innerHTML = "ACTING";
+  }
+  if(e.target.id == 'landing-right'){
+    btnMusic.style.background = "transparent";
+    btnMusic.innerHTML = "MUSIC";
+  }
 };
 // var actionContent = document.getElementsByClassName('dropdown-content');
 // console.log(actionContent);

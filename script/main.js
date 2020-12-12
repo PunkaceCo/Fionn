@@ -20,6 +20,7 @@ var logo = document.getElementById('logo');
     menu.style.display = 'block';
     content.style.display = 'block';
     logo.style.display = 'block';
+
   }
 }
 // var item = document.getElementById('item3');

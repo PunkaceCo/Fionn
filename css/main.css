@@ -53,6 +53,7 @@ body {
     left:0;
 }
 .left {
+    color: #FF9B04 !important; 
     float: left !important;
 }
 
@@ -67,6 +68,8 @@ body {
     color: #FDDB3A; 
     float:right;
 }
+
+
 #menu{
     display: none;
 }
@@ -106,6 +109,7 @@ body {
     min-width: 160px;
     z-index: 1;
     right: 0;
+    max-width: fit-content;
 }
 
 #music {

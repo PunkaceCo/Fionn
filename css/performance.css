@@ -150,7 +150,7 @@ body {
 }
 
 .component-links {
-    padding: 40px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -220,8 +220,11 @@ body {
     }
     .item3 {
         flex-direction: row;
-        justify-content: left;
-        align-self: flex-end;
+        grid-row: 2;
+        grid-column: 1;
+        justify-content: center;
+        align-self: center;
+        margin: 0px;
     }
     /* .grid-container {
         grid-template-columns: auto;
