@@ -125,14 +125,14 @@ function reset_slider() {
 function playsong() {
   track.play();
   Playing_song = true;
-  play.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
+  play.innerHTML = '<i class="fas fa-pause fa-lg" aria-hidden="true" style="margin-top: 15px;"></i>';
 }
 
 //pause song
 function pausesong(){
 	track.pause();
 	Playing_song = false;
-	play.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+	play.innerHTML = '<i class="fas fa-play fa-lg" aria-hidden="true" style="margin-top: 15px;"></i>';
 }
 
 // change slider position
