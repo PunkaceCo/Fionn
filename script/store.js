@@ -51,3 +51,38 @@ function myFunction() {
 
   }
 }
+
+var all = document.querySelector('.all');
+var card = all.querySelector('.product-card');
+
+var image = document.createElement('img');
+var title = document.createElement('h1');
+var description = document.createElement('p');
+var btn = document.createElement('button');
+
+let product =[
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/coffe.png.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+];
+
+function addItems(){
+
+}
+
+addItems();
