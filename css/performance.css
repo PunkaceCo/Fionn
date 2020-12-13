@@ -28,7 +28,7 @@ body {
     text-align: center;
 }
 
-#pointer {
+.pointer {
     width: 97.86px;
     height: 34.35px;
     position: relative;
@@ -37,7 +37,7 @@ body {
     background: #FF9B04;
 }
 
-#pointer:nth-child(3):after {
+.pointer:nth-child(3):after {
     content: "";
     position: absolute;
     left: -14px;
@@ -50,7 +50,7 @@ body {
     border-bottom: 17px solid transparent;
 }
 
-#pointer:nth-child(1)::before {
+.pointer:nth-child(1)::before {
     content: "";
     position: absolute;
     right: -14px;
@@ -270,7 +270,7 @@ body {
     }
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (max-width:600px) {
     /* .item2{
       display: block;
     } */
