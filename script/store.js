@@ -2,16 +2,16 @@
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("buy")
-console.log(btn)
+var btn = document.getElementById("buy");
+console.log(btn);
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  console.log("buy")
-  modal.style.display = "block";
-}
+// btn.onclick = function() {
+//   console.log("buy");
+//   modal.style.display = "block";
+// };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -53,14 +53,14 @@ function myFunction() {
 }
 
 var all = document.querySelector('.all');
-var card = all.querySelector('.product-card');
+console.log('all',all);
 
 var image = document.createElement('img');
 var title = document.createElement('h1');
 var description = document.createElement('p');
 var btn = document.createElement('button');
 
-let product =[
+let products =[
   {
     img:'../asset/png/cd.png',
     title:'TITEL',
@@ -68,7 +68,25 @@ let product =[
     desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
   },
   {
-    img:'../asset/png/coffe.png.png',
+    img:'../asset/png/coffe.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/coffe.png',
     title:'TITEL',
     price:'66$',
     desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
@@ -81,8 +99,32 @@ let product =[
   },
 ];
 
-function addItems(){
+var all = document.querySelector('.all');
+var card = document.createElement('div');
+card.setAttribute('class', 'product-card col-3');
 
+
+
+function load(n){
+  image.src = products[n].img;
+  console.log(image);
+  title.innerHTML = products[n].title;
+  description.innerHTML = products[n].desc;
+  btn.innerHTML = 'BUY';
+}
+
+function addItems(){
+  for (var i = 0; i < products.length; i++) {
+    card.addEventListener('DOMContentLoaded', load(i));
+
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(description);
+    card.appendChild(btn);
+
+    var clone = card.cloneNode(true);
+    all.appendChild(clone);
+  }
 }
 
 addItems();

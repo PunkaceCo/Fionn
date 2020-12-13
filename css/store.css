@@ -10,6 +10,7 @@ body {
 .item2 {
     grid-column: 1 / span 4;
     grid-row: 1;
+    z-index: 1;
 }
 
 .item1 {
@@ -24,7 +25,7 @@ body {
     display: flex;
     justify-content: flex-end;
     font-size: 20px;
-    margin: 30px;
+    /* margin: 30px; */
     overflow: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -122,9 +123,12 @@ body {
 
 .product-card {
     border-radius: 20px;
-    margin: 10px;
+    margin: 20px 10px;
 }
-
+.product-card img {
+    width:100%; 
+    border-radius:20px
+}
 .product-card button {
     background-color: #F39405;
     border-radius: 20px;
@@ -157,10 +161,10 @@ body {
     line-height: 22px;
     height: 45px;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.product-card p button {
+.product-card button {
     margin-bottom: 0%;
 }
 
@@ -400,10 +404,11 @@ input:focus {
     }
     .item2 {
         display: block;
+        grid-column: 1 / span 1;
     }
-    .item3 {
+    /* .item3 {
         margin: 10px;
-    }
+    } */
     .information {
         display: inline;
     }
@@ -453,6 +458,10 @@ input:focus {
     .grid-item {
         padding: 0%;
     }
+    .item3{
+        grid-column: 1 ;
+        grid-row: 1;
+    }
 }
 
 
@@ -495,6 +504,10 @@ input:focus {
     .item4 .account {
         display: block;
     }
+    .item3{
+        grid-column: 1 ;
+        grid-row: 1;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -508,7 +521,7 @@ input:focus {
         width: 35%;
     }
     .item3 .all {
-        margin-left: 5%;
+        margin-left: 24%;
     }
     .row [class*="col-"] {
         width: 50%;
@@ -532,7 +545,7 @@ input:focus {
         width: 30%;
     }
     .item3 .all {
-        margin-left: 10%;
+        margin-left: 17%;
     }
     .row [class*="col-"] {
         width: 50%;
