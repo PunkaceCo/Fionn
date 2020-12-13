@@ -40,10 +40,12 @@ btnMusic.onmouseover = function (){
  btnAction.innerHTML = "FIONN STACY";
  document.body.style.background ="#52575D url(../asset/svg/landing/right.png) no-repeat center bottom fixed ";
     document.body.style.transition = 'background-image 1s';
+    btnMusic.style.background = "transparent";
+    btnMusic.innerHTML = "MUSIC";
 };
 btnMusic.mouseLeave = function (){
  btnAction.style.background = "#transparent";
- btnAction.innerHTML = "ACTION";
+ btnAction.innerHTML = "ACTING";
 };
 
 btnAction.onmouseover = function (){
@@ -53,6 +55,8 @@ btnAction.onmouseover = function (){
   btnAction.style.padding="28px 32px";
   document.body.style.background ="#595B83 url(../asset/svg/landing/left.png) no-repeat center bottom fixed";
     document.body.style.transition = 'background-image 1s';
+    btnAction.style.background = "transparent";
+    btnAction.innerHTML = "ACTING";
   };
 
 btnAction.mouseLeave = function (){
