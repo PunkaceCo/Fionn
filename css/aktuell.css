@@ -54,7 +54,7 @@ body {
     text-align: center;
 }
 
-#pointer {
+.pointer {
     width: 97.86px;
     height: 34.35px;
     position: relative;
@@ -63,7 +63,7 @@ body {
     background: #FDDB3A;
 }
 
-#pointer:nth-child(3):after {
+.pointer:nth-child(3):after {
     content: "";
     position: absolute;
     left: -14px;
@@ -76,7 +76,7 @@ body {
     border-bottom: 17px solid transparent;
 }
 
-#pointer:nth-child(1)::before {
+.pointer:nth-child(1)::before {
     content: "";
     position: absolute;
     right: -14px;
