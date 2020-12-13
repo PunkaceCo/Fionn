@@ -1,10 +1,15 @@
+  :root{
+    --thisgray: #868585;
+    --thisorange:#FF9B04;
+    --thisyellow:#FDDB3A;
+  }
   body {
       background: url(../asset/svg/profile-back.svg);
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-      background-color: #868585;
+      background-color:var(--thisgray);
       position: relative;
       overflow: hidden;
   }
@@ -13,7 +18,7 @@
       top: 30%;
       right: 1%;
       z-index: 1;
-      border-right: 2px solid #FFFFFF;
+      border-right: 2px solid white;
       border-left: none;
   }
   /* .menu ul {
@@ -71,14 +76,14 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      color: #FFFFFF;
+      color: white;
   }
   
   .component-links .location,
   .call {
       color: transparent;
       -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #FFFFFF;
+      -webkit-text-stroke-color:white;
   }
   
   .component-links .call {
@@ -93,7 +98,7 @@
       width: 25px;
       height: 25px;
       padding: 3px;
-      border: 2px solid #FFFFFF;
+      border: 2px solid white;
       border-radius: 50%;
   }
   
@@ -107,7 +112,7 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 21px;
-      color: #FF9B04;
+      color:var(--thisorange)
   }
   
   .main-timeline {
@@ -159,8 +164,8 @@
       height: 130px;
       border-radius: 50%;
       border: 3px solid transparent;
-      border-top-color: #FDDB3A;
-      border-right-color: #FDDB3A;
+      border-top-color: var(--thisyellow);
+      border-right-color: var(--thisyellow);
       z-index: 1;
       transform: rotate(45deg)
   }
@@ -171,11 +176,11 @@
       height: 90px;
       line-height: 110px;
       border-radius: 50%;
-      background: #FDDB3A;
+      background: var(--thisyellow);
       box-shadow: 0 0 20px rgba(0, 0, 0, .4);
       font-size: 30px;
       font-weight: 700;
-      color: #000000;
+      color: black;
       text-align: center;
       transform: rotate(-45deg)
   }
@@ -192,22 +197,22 @@
   .main-timeline .title {
       font-size: 20px;
       font-weight: 700;
-      color: #fff;
+      color:white;
       margin: 0 0 10px
   }
   
   .main-timeline .description {
       visibility: hidden;
       font-size: 16px;
-      color: #fff;
+      color: white;
       line-height: 24px;
       margin: 0
   }
   
   .main-timeline .timeline:nth-child(even) .timeline-icon {
       transform: rotate(-135deg);
-      border-top-color: #FDDB3A;
-      border-right-color: #FDDB3A
+      border-top-color: var(--thisyellow);
+      border-right-color: var(--thisyellow)
   }
   
   .main-timeline .timeline:nth-child(even) .year {
@@ -217,14 +222,14 @@
       font-size: 17px;
       line-height: 86px;
       text-align: center;
-      color: #000000;
+      color: black;
       transform: rotate(135deg);
-      color: #000000
+      color: black;
   }
   
   .main-timeline .timeline:nth-child(odd) .timeline-icon {
-      border-top-color: #FDDB3A;
-      border-right-color: #FDDB3A
+      border-top-color: var(--thisyellow);
+      border-right-color: var(--thisyellow);
   }
   
   .main-timeline .timeline:nth-child(odd) .year {
@@ -234,17 +239,17 @@
       font-size: 17px;
       line-height: 86px;
       text-align: center;
-      color: #000000;
-      color: #000000
+      color: black;
+      color: black
   }
   
   .main-timeline .timeline:nth-child(even) .timeline-icon {
-      border-top-color: #FDDB3A;
-      border-right-color: #FDDB3A
+      border-top-color: var(--thisyellow);
+      border-right-color: var(--thisyellow);
   }
   
   .main-timeline .timeline:nth-child(even) .year {
-      color: #000000
+      color: black
   }
   
   @media only screen and (max-width:1920px) {
@@ -369,7 +374,7 @@
       font-size: 34px;
       line-height: 40px;
       text-align: center;
-      color: #FDDB3A;
+      color:var(--thisyellow);
   }
   
   .desc p {
@@ -380,7 +385,7 @@
       font-size: 19px;
       line-height: 22px;
       text-align: justify;
-      color: #FDDB3A;
+      color: var(--thisyellow);
   }
   
   .desc {
