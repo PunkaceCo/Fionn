@@ -44,7 +44,6 @@ content.appendChild(desc);
 var mainDesc = document.querySelector('.main-description');
 var descr = document.createElement('div');
 descr.setAttribute('class', 'desc');
-mainDesc.appendChild(descr);
 
 var titleDes = document.createElement('h1');
 titleDes.setAttribute('class', 'Title');
