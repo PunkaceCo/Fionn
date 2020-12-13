@@ -1,132 +1,112 @@
 <!DOCTYPE html>
 <html lang="">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+      maximum-scale=1.0, user-scalable=no, height=device-height" />
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
     <title>PROFILE</title>
     <link href="../css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/profile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet">
+  </head>
 
-<body>
+  <body>
     <div class="grid-container">
-        <div class="grid-item item1">
-            <div class="sidebar">
-                <a href="./index.html">
-                    <div class="logo" style="color:#FDDB3A;">FIONN STACY</div>
+      <div class="grid-item item1">
+        <div class="sidebar">
+          <a href="./index.html">
+            <div class="logo" style="color:#FDDB3A;">FIONN STACY</div>
+          </a>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="./aktuell.html">
+                  <p>AKTUELL</p>
                 </a>
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="./aktuell.html">
-                                <p>AKTUELL</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="current" href="./profile.html">
-                                <p>PROFILE</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./gallery.html">
-                                <p>GALLERY</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./project.html">
-                                <p>PROJECT</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="grid-item item2">
-            <div class="topnav" id="myTopnav">
-                <div class="dropdown" id="menu">
-                    <button class="dropbtn"> MUSIC
-                    </button>
-                    <div class="dropdown-content" id='content'>
-                        <a href="./aktuell.html">AKTUELL</a>
-                        <a href="./profile.html">PROFILE</a>
-                        <a href="./gallery.html">GALLERY</a>
-                        <a href="./project.html">PROJECT</a>
-                    </div>
-                </div>
-                <div class="dropdown" id="logo">
-                    <a href="./index.html">
-                        <button class="dropbtn"> FIONN STACY
-                    </button>
+              </li>
+              <li>
+                <a class="current" href="./profile.html">
+                  <p>PROFILE</p>
                 </a>
-                </div>
-                <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">&#9776;</a>
-                <a href="javascript:void(0);" id="close" onclick="myFunction()">&#10006;</a>
+              </li>
+              <li>
+                <a href="./gallery.html">
+                  <p>GALLERY</p>
+                </a>
+              </li>
+              <li>
+                <a href="./project.html">
+                  <p>PROJECT</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item item2">
+        <div class="topnav" id="myTopnav">
+          <div class="dropdown" id="menu">
+            <button class="dropbtn"> MUSIC
+            </button>
+            <div class="dropdown-content" id='content'>
+              <a href="./aktuell.html">AKTUELL</a>
+              <a href="./profile.html">PROFILE</a>
+              <a href="./gallery.html">GALLERY</a>
+              <a href="./project.html">PROJECT</a>
             </div>
+          </div>
+          <div class="dropdown" id="logo">
+            <a href="./index.html">
+              <button class="dropbtn"> FIONN STACY
+              </button>
+            </a>
+          </div>
+          <a href="javascript:void(0);" class="icon" id="icon"
+            onclick="myFunction()">&#9776;</a>
+          <a href="javascript:void(0);" id="close" onclick="myFunction()">&#10006;</a>
+        </div>
+      </div>
+
+      <div class="grid-item item3">
+        <div class="main-timeline" style="display: block;">
+          <!-- margin-top:20%;font-size:15px;line-height:20px; -->
         </div>
 
-        <div class="grid-item item3">
-            <div class="main-timeline" style="display: block;">
-<!-- margin-top:20%;font-size:15px;line-height:20px; -->
-
-                <!-- <div class="timeline">
-                    <div class="timeline-icon" id="skills"><span class="year">SKILLS</span></div>
-                    <div class="timeline-content">
-                        <h3 class="title"></h3>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-icon" id="work"><span class="year">
-                      <p style="margin-top:20%;font-size:15px;line-height:20px;">WORK EXPERIENCE</p></span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="title"></h3>
-                        <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-
-                        </p>
-                    </div>
-                </div> -->
-
-            </div>
-            <div class="desc">
-                <div id="aboutme" class="aboutme">
-                    <h1 class="Title">Title</h1>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur corrupti adipisci libero a rerum ipsa natus dignissimos repellat voluptatum!</p>
-                </div>
-            </div>
-
+        <div class="main-description">
+          
         </div>
 
-        <div class="item4">
-            <div class="component-links">
-                <i class="location fas fa-map-marker-alt"></i>
-                <i class="call fas fa-phone-volume"></i>
-                <i class="email fas fa-at"></i>
-                <i class="instagram fab fa-instagram"></i>
-                <i class="account far fa-user-circle"></i>
-            </div>
+      </div>
+
+      <div class="item4">
+        <div class="component-links">
+          <i class="location fas fa-map-marker-alt"></i>
+          <i class="call fas fa-phone-volume"></i>
+          <i class="email fas fa-at"></i>
+          <i class="instagram fab fa-instagram"></i>
+          <i class="account far fa-user-circle"></i>
         </div>
+      </div>
     </div>
 
 
-    <script src="https://kit.fontawesome.com/ad8e25574c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ad8e25574c.js"
+      crossorigin="anonymous"></script>
     <script src="../script/profile.js"></script>
     <script src="../script/main.js"></script>
 
-</body>
+  </body>
 
 </html>

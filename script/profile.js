@@ -18,11 +18,9 @@ let information =[
 ];
 
 var main = document.querySelector('.main-timeline');
-console.log('main',main);
 var timeline = document.createElement('div');
 timeline.setAttribute('class', 'timeline');
 console.log('timeline',timeline);
-
 
 var icon = document.createElement('div');
 icon.setAttribute('class', 'timeline-icon');
@@ -43,19 +41,35 @@ var desc = document.createElement('p');
 desc.setAttribute('class', 'description');
 content.appendChild(desc);
 
-// pointerDate.appendChild(date);
+var mainDesc = document.querySelector('.main-description');
+var descr = document.createElement('div');
+descr.setAttribute('class', 'desc');
+mainDesc.appendChild(descr);
+
+var titleDes = document.createElement('h1');
+titleDes.setAttribute('class', 'Title');
+descr.appendChild(titleDes);
+
+var br = document.createElement('br');
+descr.appendChild(br);
+
+var descParag = document.createElement('p');
+descr.appendChild(descParag);
 
 function load(n){
 span.innerHTML = information[n].title;
-desc.innerHTML = information[n].description;
+titleDes.innerHTML = information[n].title;
+descParag.innerHTML = information[n].description;
 }
 
 function addItems(){
   for (var i = 0; i < information.length; i++) {
     timeline.addEventListener('DOMContentLoaded', load(i));
-
     var clone = timeline.cloneNode(true);
     main.appendChild(clone);
+
+    clone = descr.cloneNode(true);
+    mainDesc.appendChild(clone);
   }
 }
 
