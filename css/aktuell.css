@@ -184,23 +184,28 @@
         margin: 5px;
     }
     
-    @media only screen and (min-width:768px) {
+    /* @media only screen and (min-width:768px) {
         .item1 {
             display: block;
         }
         .item2 {
             display: none;
         }
-    }
+    } */
     
-    @media only screen and (max-width:767px) {
+    @media only screen and (max-width:1024px) {
         .item1 {
             display: none;
         }
         
         .item2 {
             display: block;
+            padding: 0%;
         }
+        .item2 .topnav{
+            display: block;
+        }
+
         .item3 {
             flex-direction: row;
             grid-row: 2;

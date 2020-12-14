@@ -1,5 +1,5 @@
 body {
-    background: url(../asset/svg/performance.svg);
+    background: url(../asset/svg/aktuell.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,7 +34,7 @@ body {
     position: relative;
     border-radius: 5px;
     padding: 5px;
-    background: #FF9B04;
+    background:#FF9B04;
 }
 
 .pointer:nth-child(3):after {
@@ -87,7 +87,7 @@ body {
 /* Handle */
 
 .main-information::-webkit-scrollbar-thumb {
-    background: #F39405;
+    background:#FF9B04;
     border-radius: 5px;
 }
 
@@ -95,7 +95,7 @@ body {
 /* Handle on hover */
 
 .main-information::-webkit-scrollbar-thumb:hover {
-    background: #F39405;
+    background:#FF9B04;
 }
 
 
@@ -183,37 +183,29 @@ body {
 .component-links i {
     margin: 5px;
 }
-@media only screen and (orientation: landscape) {
-    .item2 {
-        padding: 0%;
-    }
-  }
-@media only screen and (min-width:768px) {
+
+/* @media only screen and (min-width:768px) {
     .item1 {
+        display: block;
+    }
+    .item2 {
         display: none;
     }
-    .item2 {
-        display: block;
-        padding: 0%;
-    }
-    .item2 .topnav{
-        display: block;
+} */
 
-    }
-    .item3{
-        grid-column: 1;
-
-    }
-}
-
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1024px) {
     .item1 {
         display: none;
     }
     
     .item2 {
         display: block;
+        padding: 0%;
     }
+    .item2 .topnav{
+        display: block;
+    }
+
     .item3 {
         flex-direction: row;
         grid-row: 2;
