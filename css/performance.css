@@ -183,13 +183,26 @@ body {
 .component-links i {
     margin: 5px;
 }
-
+@media only screen and (orientation: landscape) {
+    .item2 {
+        padding: 0%;
+    }
+  }
 @media only screen and (min-width:768px) {
     .item1 {
-        display: block;
+        display: none;
     }
     .item2 {
-        display: none;
+        display: block;
+        padding: 0%;
+    }
+    .item2 .topnav{
+        display: block;
+
+    }
+    .item3{
+        grid-column: 1;
+
     }
 }
 
@@ -228,7 +241,7 @@ body {
     }
     .item3 {
         /* flex-direction: column; */
-        justify-content: flex-end;
+        justify-content: center;
     }
     .date,
     .title p {

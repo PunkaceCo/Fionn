@@ -228,7 +228,7 @@
         }
         .item3 {
             /* flex-direction: column; */
-            justify-content: flex-end;
+            justify-content: center;
         }
         .date,
         .title p {
