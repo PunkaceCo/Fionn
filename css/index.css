@@ -1,3 +1,8 @@
+:root{
+    --thisorange:#FF9B04;
+    --thisgray: #52575D;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -8,10 +13,13 @@
     overflow: hidden;
 }
 
+/* a{
+    cursor: pointer;
+} */
 
 body {
 
-    background-color: #52575D;
+    background-color: var(--thisgray);
 }
 
 .topnav {
@@ -34,32 +42,6 @@ body {
     float: left;
     overflow: hidden;
 }
-/* 
-}
-
-.dropdown::after,
-.dropdown::before {
-background-color: white;
-content: "";
-display: block;
-position: absolute;
-width: 20px;
-height: 20px;
-}
-
-.dropdown::after {
-bottom: -5px;
-right: -5px;
-border-bottom: 1px solid orange;
-border-left: 1px solid orange;
-}
-
-.dropdown::before {
-bottom: -5px;
-left: -5px;
-border-bottom: 1px solid orange;
-border-right: 1px solid orange;
-} */
 
 #music .dropdown-content a {
     text-align: right;
@@ -83,7 +65,7 @@ border-right: 1px solid orange;
 }
 
 #music:hover #action .dropbtn {
-  background-color: #FF9B04;
+  background-color: var(--thisorange);
   border-radius: 0 0 25px 0;
 }
 
@@ -92,6 +74,10 @@ border-right: 1px solid orange;
     position: absolute;
     min-width: 160px;
     z-index: 1;
+    width: 50%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #ff9b045b;
 }
 
 .dropdown-content a {
@@ -102,14 +88,65 @@ border-right: 1px solid orange;
     display: block;
     text-align: left;
 }
+.item4 {
+    position: fixed;
+    grid-column: 3;
+    grid-row: 5;
+    /* right: 0%; */
+    bottom: 0%;
+}
+
+.component-links {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #FFFFFF;
+}
+
+.component-links a{
+    max-width: fit-content;
+}
+#landing-right .item4{
+ right: 0%;
+}
+.component-links .location,
+.call {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.component-links .call {
+    transform: rotate(-45deg);
+}
+
+.component-links .account {
+    display: none;
+}
+
+.component-links i {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.component-links i {
+    margin: 5px;
+}
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
     color: white;
 }
 
-.dropdown-content a:hover {
+#action .dropdown-content a:hover {
     color: #FF9B04;
+}
+#music .dropdown-content a:hover {
+    color: #FDDB3A;
 }
 
 .dropdown:hover .dropdown-content {
@@ -199,18 +236,19 @@ left: 70%;
     right: 10%;
 }
 
+
+
 @media screen and (max-width: 600px) {
     .topnav {
         display: block;
     }
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-        display: block;
+    .sidebar {
+        display: none !important;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {
+    /* .sidebar-right {
+        display: none !important;
+    } */
+    /* .topnav.responsive {
         position: relative;
     }
     .topnav.responsive .icon {
@@ -233,7 +271,7 @@ left: 70%;
         display: block;
         width: 100%;
         text-align: left;
-    }
+    } */
     /* #landing-right .menu {
 position: absolute;
 } */
@@ -243,6 +281,13 @@ position: absolute;
     body {
         background-size: cover;
     }
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
 }
 /* Extra small devices (phones, 600px and down) */
 
@@ -251,55 +296,51 @@ position: absolute;
 background-image: url(../asset/svg/LNDA.svg);
 background-position: center bottom;
 } */
-    .sidebar {
-        display: none !important;
-    }
-    .sidebar-right {
-        display: none !important;
-    }
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {
-    /* #landing-right .sidebar {
-left: 440px;
-}
-#landing-right .menu {
-left: 400px;
-} */
+@media only screen and (min-width: 768px) {
+    .sidebar{
+        display: block !important;
+    }
+    .topnav{
+        display: none;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {
-    /* #landing-right .sidebar {
-left: 566px;
-}
-#landing-right .menu {
-left: 569px;
+/* @media only screen and (min-width: 768px) {
+    .topnav{
+        display: block;
+    }
+
 } */
+@media only screen and (max-width: 1024px) {
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
 }
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {
-    /* #landing-right .sidebar {
-left: 790px;
-}
-#landing-right .menu {
-left: 800px;
-} */
-}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    /* body {
-background-image: url(../asset/svg/LNDA.svg);
-background-position: bottom;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-background-color: #52575D;
-position: relative;
-} */
+
     #landing-right {
         position: absolute;
         width: 50vw;
@@ -321,10 +362,5 @@ position: relative;
         background-attachment: fixed;
         background-size: cover;
     }
-    /* #landing-right .sidebar {
-left: 1588px;
-}
-#landing-right .menu {
-left: 1588px;
-} */
+
 }
