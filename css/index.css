@@ -191,6 +191,14 @@ body {
 left: 70%;
 } */
 
+.item4 a:hover{
+    color: #FF9B04;
+
+}
+#landing-right a:hover{
+        color: #FDDB3A;
+
+}
 .menu {
     width: 174px;
     position: absolute;
