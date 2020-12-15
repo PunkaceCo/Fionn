@@ -39,12 +39,13 @@ body {
 }
 .thumb {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: flex-end;
     padding: 0%;
+    overflow-x: scroll;
 }
 .thumb li{
-    width: 12%;
+    width: 20%;
     padding: 3px;
     background-color: white;
     margin: 1%;
@@ -76,9 +77,11 @@ body {
     justify-content: flex-end;
     color: #FFFFFF;
 }
-.item2 a{
-    max-width: fit-content;
-}
+/* .component-links a{
+    padding: 4%;
+
+}  */
+
 .component-links .location,
 .call {
     color: transparent;
@@ -427,9 +430,7 @@ display: block;
     .item1 {
         display: block;
     }
-    .item4 .account {
-        display: none;
-    }
+
     .item2 {
         display: none;
     }

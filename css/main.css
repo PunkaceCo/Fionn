@@ -102,14 +102,17 @@ body {
     background-color: #FDDB3A;
     border-radius: 0 0 0 25px;
 }
-
+.component-links a {
+    max-width: fit-content;
+    padding: 4%;
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    min-width: 50%;
+    height: 100%;
     z-index: 1;
-    right: 0;
-
+    right: 0;    
 }
 
 #music {
@@ -146,24 +149,7 @@ body {
     /* .topnav {
         display: block;
     } */
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
     /* .topnav .dropdown .dropbtn {
         display: block;
     } */
@@ -173,24 +159,7 @@ body {
     .topnav.responsive {
         position: relative;
     }
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
@@ -328,24 +297,7 @@ body {
     .item1 {
         display: none;
     }
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
     .item2 {
         display: block;
     }

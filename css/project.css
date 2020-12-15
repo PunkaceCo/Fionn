@@ -155,7 +155,9 @@ body {
     padding: 0.8rem 2rem;
     cursor: pointer;
 }
-
+.component-links .account {
+    display: none;
+}
 .slider__btn-left:hover,
 .slider__btn-right:hover {
     transform: scale(0.95);
@@ -203,24 +205,7 @@ body {
     .item1 {
         display: none;
     }
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
     .item2 {
         z-index: 1;
         display: block;
@@ -259,24 +244,7 @@ body {
     .item1 {
         display: none;
     }
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
     .item2 {
         display: block;
         grid-column: 1 / span 3;

@@ -90,9 +90,7 @@
       transform: rotate(-45deg);
   }
   
-  .component-links .account {
-      display: none;
-  }
+
   
   .component-links i {
       width: 25px;
@@ -251,7 +249,9 @@
   .main-timeline .timeline:nth-child(even) .year {
       color: black
   }
-  
+  .component-links .account {
+    display: none;
+}
   @media only screen and (max-width:1920px) {
       .main-timeline .timeline {
           margin-top: -163px
@@ -292,24 +292,7 @@
       .item1 {
           display: none;
       }
-      .component-links .call {
-          display: none;
-      }
-      .component-links .email {
-          display: none;
-      }
-      .component-links .instagram {
-          display: none;
-      }
-      .component-links .location {
-          display: none;
-      }
-      .component-links .account {
-          display: block;
-      }
-      .item4 .account {
-          display: block;
-      }
+
       .item2 {
           display: block;
       }
@@ -331,24 +314,6 @@
   @media only screen and (max-width:767px) {
       .item1 {
           display: none;
-      }
-      .component-links .call {
-          display: none;
-      }
-      .component-links .email {
-          display: none;
-      }
-      .component-links .instagram {
-          display: none;
-      }
-      .component-links .location {
-          display: none;
-      }
-      .component-links .account {
-          display: block;
-      }
-      .item4 .account {
-          display: block;
       }
       .item2 {
           display: block;
