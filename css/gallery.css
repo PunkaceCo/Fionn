@@ -51,6 +51,7 @@ body {
 }
 .thumb img{
     width: 100%;
+    vertical-align: middle;
 }
 .item3 .row {
     display: flex;
