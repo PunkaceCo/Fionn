@@ -354,10 +354,12 @@ img:hover {
     text-decoration: none;
     cursor: pointer;
 }
-.sidebar .current {
-    color:#FDDB3A;
-}
-
+.sidebar a:hover{
+    color: #FDDB3A;
+  }
+  .sidebar .current{
+      color: #FDDB3A;
+  }
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {

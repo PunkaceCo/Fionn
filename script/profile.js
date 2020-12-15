@@ -73,3 +73,43 @@ function addItems(){
 }
 
 addItems();
+
+var span = document.getElementsByClassName('year');
+
+function show(i){
+
+switch(i){
+  case 0:{
+    console.log(span[i]);
+    break;
+  }
+  case 'PERSONAL':{
+    console.log('span',e.target.innerHTML);
+
+    break;
+
+  }    
+  case 'SKILLS':{
+    console.log('span',e.target.innerHTML);
+
+    break;
+
+  }    
+  case 'WORK EXPERIENCE':{
+    console.log('span',e.target.innerHTML);
+
+    break;
+
+  }
+  default:{
+
+  }
+}
+}
+
+
+
+
+for(let i=0; i<=3; i++){
+  span[i].onclick = show(i);
+}

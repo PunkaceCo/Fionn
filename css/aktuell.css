@@ -111,7 +111,12 @@
         background:#FDDB3A;
     }
     
-    
+    .sidebar a:hover{
+        color: #FDDB3A;
+      }
+      .sidebar .current{
+          color: #FDDB3A;
+      }
     /* .grid-container {
         display: grid;
         grid-template-columns: 20% 79%;

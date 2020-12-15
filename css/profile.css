@@ -70,7 +70,7 @@
       right: 0%;
       bottom: 0%;
   }
-  
+
   .component-links {
     padding: 20px 20px;
       display: flex;
@@ -78,7 +78,12 @@
       justify-content: flex-end;
       color: white;
   }
-  
+  .sidebar a:hover{
+    color: #FDDB3A;
+  }
+  .sidebar .current{
+      color: #FDDB3A;
+  }
   .component-links .location,
   .call {
       color: transparent;
@@ -125,7 +130,7 @@
   }
   
   .main-timeline .timeline:first-child {
-      margin-top: -100px
+      margin-top: 0px
   }
   
   .main-timeline .timeline-icon,

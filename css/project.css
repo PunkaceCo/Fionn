@@ -5,7 +5,12 @@ body {
     background-size: cover;
     position: relative;
 }
-
+.sidebar a:hover{
+    color: #FDDB3A;
+}
+.sidebar .current{
+    color: #FDDB3A;
+}
 .menu {
     top: 30%;
     right: 1%;
