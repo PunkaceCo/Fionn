@@ -7,6 +7,8 @@ const sliderTitle = document.querySelector('.slider--title');
 const btnLeft = document.querySelector('.slider__btn-left');
 const btnRight = document.querySelector('.slider__btn-right');
 
+
+
 const sliderImages = [
 {src:'../asset/png/pic02.png'},
 {src:'../asset/png/pic03.png'},
@@ -92,8 +94,29 @@ window.onclick = function(event) {
   }
 };
 
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
+var row = document.querySelector('.row');
+var column = document.getElementsByClassName('column');
+console.log(column);
+
+var thumbnail = document.querySelector('.thumb');
+var list = document.createElement('li');
+
+var img = document.createElement('img');
+img.setAttribute('class','myImg');
+list.appendChild(img);
+console.log(list);
+
+function add(n){
+img.src = sliderImages[n].src;
+}
+
+function addtogrid(){
+  for (var i = 0; i < sliderImages.length; i++) {
+    list.addEventListener('DOMContentLoaded', add(i));
+    var clone = list.cloneNode(true);
+    thumbnail.appendChild(clone);
+    }
+  
+}
+
+addtogrid();
