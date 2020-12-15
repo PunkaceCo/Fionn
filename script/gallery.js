@@ -16,6 +16,11 @@ const sliderImages = [
 {src:'../asset/png/pic05.png'},
 {src:'../asset/png/pic06.png'},
 {src:'../asset/png/pic07.png'},
+{src:'../asset/png/pic02.png'},
+{src:'../asset/png/pic06.png'},
+{src:'../asset/png/pic05.png'},
+{src:'../asset/png/pic05.png'},
+
 ];
 
 
@@ -107,6 +112,7 @@ list.appendChild(img);
 console.log(list);
 
 function add(n){
+  list.setAttribute('onclick',`thumbChange(${n})`);
 img.src = sliderImages[n].src;
 }
 
@@ -120,3 +126,8 @@ function addtogrid(){
 }
 
 addtogrid();
+
+//show img with click on thumbnail
+function thumbChange(n){
+  slideContainer.style.backgroundImage = `url(${sliderImages[n].src})`;
+}
