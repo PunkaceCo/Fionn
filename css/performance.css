@@ -1,5 +1,5 @@
 body {
-    background: url(../asset/svg/aktuell.svg);
+    background: url(../asset/svg/performance.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -113,11 +113,13 @@ body {
     display: flex;
     margin-top: 37px;
 }
-
-.grid-item {
-    /* text-align: center; */
-    padding: 20px;
+.grid-container{
+    padding-left: 10px;
 }
+/* .grid-item {
+    text-align: center; 
+     padding: 20px;
+} */
 
 .item1 {
     grid-column: 1;

@@ -109,7 +109,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 50%;
+    max-width: 50%;
     height: 100%;
     z-index: 1;
     right: 0;    

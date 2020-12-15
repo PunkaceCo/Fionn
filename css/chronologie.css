@@ -80,7 +80,9 @@ body {
     line-height: 21px;
     color: #FF9B04;
 }
-
+.grid-container {
+    padding-left: 10px;
+    }
 .main-timeline {
     /* overflow:hidden; */
     position: relative
@@ -315,24 +317,7 @@ body {
 }
 
 @media only screen and (max-width:767px) {
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
 }
 
 
@@ -397,24 +382,7 @@ body {
     .item2 {
         display: block;
     }
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
     /* .description {
         font-size: 10px;
         line-height: 12px;

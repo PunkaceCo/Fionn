@@ -68,11 +68,10 @@ body {
     padding: 3px;
     border: 2px solid #FFFFFF;
     border-radius: 50%;
+    margin: 5px;
+
 }
 
-.component-links i {
-    margin: 5px;
-}
 
 .item3::-webkit-scrollbar {
     display: block !important;
@@ -322,7 +321,9 @@ body {
     margin: 20px;
     width: 100%;
 }
-
+.grid-container {
+    padding-left: 10px;
+    }
 .information input[type=submit] {
     background-color: #F39405;
     color: #FFFFFF;
@@ -383,24 +384,6 @@ input:focus {
 @media only screen and (max-width: 600px) {
     .item1 {
         display: none;
-    }
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
     }
     .item2 {
         display: block;
@@ -486,24 +469,7 @@ input:focus {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (max-width: 767px) {
-    .component-links .call {
-        display: none;
-    }
-    .component-links .email {
-        display: none;
-    }
-    .component-links .instagram {
-        display: none;
-    }
-    .component-links .location {
-        display: none;
-    }
-    .component-links .account {
-        display: block;
-    }
-    .item4 .account {
-        display: block;
-    }
+
     .item3{
         grid-column: 1 ;
         grid-row: 1;
