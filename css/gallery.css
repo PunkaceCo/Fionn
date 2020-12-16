@@ -429,13 +429,13 @@ display: block;
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .item1 {
+    /* .item1 {
         display: block;
     }
 
     .item2 {
         display: none;
-    }
+    } */
     .item3::-webkit-scrollbar,
     .item3::-webkit-scrollbar-track,
     .item3::-webkit-scrollbar-thumb,
@@ -445,6 +445,24 @@ display: block;
     .modal {
         display: none;
     }
+}
+@media only screen and (max-width: 1024px) {
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {

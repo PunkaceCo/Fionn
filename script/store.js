@@ -39,18 +39,7 @@ done.onclick = function () {
 
 };
 
-function myFunction() {
-  var x = document.getElementById("mob");
-  var icon = document.getElementById("icon");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    icon.style.display = "block";
-  } else {
-    x.style.display = "block";
-    icon.style.display = "block";
 
-  }
-}
 
 var all = document.querySelector('.all');
 console.log('all',all);
@@ -99,15 +88,24 @@ let products =[
   },
 ];
 
+let buyForm = {
+  fullName:'',
+  email:'',
+  phone:'',
+  address:'',
+};
+
 var all = document.querySelector('.all');
 var card = document.createElement('div');
 card.setAttribute('class', 'product-card col-3');
 
-
+function showBuyForm(e){
+console.log("show buy form",e);
+modal.style.display = "block";
+}
 
 function load(n){
   image.src = products[n].img;
-  console.log(image);
   title.innerHTML = products[n].title;
   description.innerHTML = products[n].desc;
   btn.innerHTML = 'BUY';
@@ -116,6 +114,7 @@ function load(n){
 function addItems(){
   for (var i = 0; i < products.length; i++) {
     card.addEventListener('DOMContentLoaded', load(i));
+    card.setAttribute("onclick",'showBuyForm(this)');
 
     card.appendChild(image);
     card.appendChild(title);

@@ -109,7 +109,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    max-width: 50%;
+    width: 50%;
     height: 100%;
     z-index: 1;
     right: 0;    
@@ -284,13 +284,23 @@ body {
     padding: 20px;
 } */
 
-@media only screen and (min-width:768px) {
-    .item1 {
+@media only screen and (max-width: 1024px) {
+    .topnav{
         display: block;
     }
-    .item2 {
-        display: none;
+    .sidebar {
+        display: none !important;
     }
+
+}
+@media only screen and (max-width: 768px) {
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
 }
 
 @media only screen and (max-width:767px) {

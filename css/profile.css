@@ -1,5 +1,5 @@
   :root{
-    --thisgray: #868585;
+    --bodyBg: #868585;
     --thisorange:#FF9B04;
     --thisyellow:#FDDB3A;
   }
@@ -9,7 +9,7 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-      background-color:var(--thisgray);
+      background-color:var(--bodyBg);
       position: relative;
       overflow: hidden;
   }
@@ -272,12 +272,12 @@
   }
   
   @media only screen and (max-width:1199px) {
-      .item1 {
+      /* .item1 {
           display: block;
       }
       .item2 {
           display: none;
-      }
+      } */
       .main-timeline .timeline {
           margin-top: -163px
       }
@@ -366,3 +366,22 @@
       left: 35%;
       display: none;
   }
+
+  @media only screen and (max-width: 1024px) {
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .topnav{
+        display: block;
+    }
+    .sidebar {
+        display: none !important;
+    }
+
+}

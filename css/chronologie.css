@@ -318,10 +318,10 @@ body {
 
 @media only screen and (max-width:767px) {
 
-}
 
 
-/* .main-timeline .timeline{
+
+.main-timeline .timeline{
         overflow:hidden
     }
     .main-timeline .timeline:before,.main-timeline .timeline:nth-child(even):before{
@@ -344,7 +344,7 @@ body {
     } */
 
 
-/* } */
+/* }
 
 @media only screen and (min-width:768px) {
     .item1 {

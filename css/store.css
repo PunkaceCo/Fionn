@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: flex-end;
     font-size: 20px;
-    /* margin: 30px; */
+    margin: 5px 30px;
     overflow: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -78,6 +78,8 @@ body {
     background-color: transparent;
     width: 10px;
     border-radius: 10px;
+    /* margin-top: 10px;
+    padding: 10px; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
