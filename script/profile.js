@@ -1,33 +1,37 @@
-let information =[
+let information = [
   {
-    title:'ABOUT ME',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
+    id: 'about-me',
+    title: 'ABOUT ME',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
   },
   {
-    title:'PERSONAL',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
+    id: 'personal',
+    title: 'PERSONAL',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
   },
   {
-    title:'SKILLS',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
+    id: 'skills',
+    title: 'SKILLS',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
   },
   {
-    title:'WORK EXPERIENCE',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
+    id: 'work-experience',
+    title: 'WORK EXPERIENCE',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.',
   },
 ];
 
 var main = document.querySelector('.main-timeline');
 var timeline = document.createElement('div');
 timeline.setAttribute('class', 'timeline');
-console.log('timeline',timeline);
+// console.log('timeline',timeline);
 
 var icon = document.createElement('div');
 icon.setAttribute('class', 'timeline-icon');
 timeline.appendChild(icon);
 
 var span = document.createElement('span');
-span.setAttribute('class','year');
+span.setAttribute('class', 'year');
 icon.appendChild(span);
 
 var content = document.createElement('div');
@@ -55,13 +59,16 @@ descr.appendChild(br);
 var descParag = document.createElement('p');
 descr.appendChild(descParag);
 
-function load(n){
-span.innerHTML = information[n].title;
-titleDes.innerHTML = information[n].title;
-descParag.innerHTML = information[n].description;
+function load(n) {
+  span.setAttribute('id', information[n].id);
+  span.setAttribute('onclick', `show(${n})`);
+  span.innerHTML = information[n].title;
+  titleDes.innerHTML = information[n].title;
+  descParag.innerHTML = information[n].description;
+  descr.setAttribute('id',information[n].id);
 }
 
-function addItems(){
+function addItems() {
   for (var i = 0; i < information.length; i++) {
     timeline.addEventListener('DOMContentLoaded', load(i));
     var clone = timeline.cloneNode(true);
@@ -74,42 +81,41 @@ function addItems(){
 
 addItems();
 
-var span = document.getElementsByClassName('year');
+var spans = document.querySelectorAll('.year');
+var descriptions = document.querySelectorAll('.desc');
+console.log(descriptions);
+function show(n) {
 
-function show(i){
+  console.log('click', spans[n].id);
+  switch (n) {
+    case 0: {
+      descriptions[n].style.display ="block";
+      descriptions[1].style.display ="none";
+      descriptions[2].style.display ="none";
+      break;
+    }
+    case 1: {
+      descriptions[n].style.display ="block";
+      descriptions[0].style.display ="none";
+      descriptions[2].style.display ="none";
+      break;
+    }
+    case 2: {
+      descriptions[1].style.display ="none";
+      descriptions[0].style.display ="none";
+      descriptions[n].style.display ="block";
+      break;
 
-switch(i){
-  case 0:{
-    console.log(span[i]);
-    break;
-  }
-  case 'PERSONAL':{
-    console.log('span',e.target.innerHTML);
+    }
+    case 3: {
+      location.href = "../html/workExperience.html";
+      break;
 
-    break;
+    }
 
-  }    
-  case 'SKILLS':{
-    console.log('span',e.target.innerHTML);
-
-    break;
-
-  }    
-  case 'WORK EXPERIENCE':{
-    console.log('span',e.target.innerHTML);
-
-    break;
-
-  }
-  default:{
-
+    default: {
+      descriptions.style.display ="none";
+    }
   }
 }
-}
 
-
-
-
-for(let i=0; i<=3; i++){
-  span[i].onclick = show(i);
-}

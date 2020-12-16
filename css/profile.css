@@ -13,7 +13,9 @@
       position: relative;
       overflow: hidden;
   }
-  
+  span:hover{
+    cursor: pointer;
+  }
   .menu {
       top: 30%;
       right: 1%;
