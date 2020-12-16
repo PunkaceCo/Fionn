@@ -13,13 +13,19 @@
         border-right: 2px solid white;
         border-left: none;
     }
-
+    .dropbtn
+    .dropdown-content a:hover {
+        color: #FDDB3A;
+    }
     .sidebar {
         position: absolute;
         /* left: 84%; */
         right: 0%;
     }
-
+#logo a{
+    padding: 0%;
+    /* border-radius: 0 0 25px 0 !important; */
+}
     .description {
         background-color: #595B83;
         color: #FDDB3A;
@@ -132,10 +138,10 @@
         margin-top: 37px;
     }
     
-    .grid-item {
-        /* text-align: center; */
-        /* padding: 20px; */
-    }
+    /* .grid-item {
+        text-align: center;
+        padding: 20px;
+    } */
     
     .item1 {
         grid-column: 3;

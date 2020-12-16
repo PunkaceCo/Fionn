@@ -49,13 +49,15 @@ btnMusic.onmouseover = function (){
 
 };
 btnMusic.mouseLeave = function (){
- btnAction.style.background = "#transparent";
- btnAction.innerHTML = "ACTING";
+  console.log('leave music');
+  btnMusic.style.background = "#transparent";
+  btnAction.innerHTML = "ACTING";
+  btnAction.style.background = "transparent";
 };
 
 btnAction.onmouseover = function (){
   btnMusic.style.background = "#FDDB3A";
-  btnMusic.style.borderRadius = "0 0 25px 0";
+  btnAction.style.borderRadius = "0 0 25px 0";
   btnMusic.innerHTML = "FIONN STACY";
   btnAction.style.padding="28px 32px";
   document.body.style.background ="#595B83 url(../asset/svg/landing/left.png) no-repeat center bottom fixed";
@@ -67,9 +69,11 @@ btnAction.onmouseover = function (){
   };
 
 btnAction.mouseLeave = function (){
+  console.log('leave action');
+
   btnMusic.style.background = "#transparent";
   btnMusic.innerHTML = "MUSIC";
-  // btnAction.style.background = "transparent";
+  btnAction.style.background = "transparent";
 
 };
 

@@ -1,3 +1,10 @@
+:root{
+    --actingMenuColor:#FF9B04;
+    /* --bodyBg: #52575D; */
+    --musicMenuColor:#FDDB3A;
+    --topnavLinkColor:#f2f2f2;
+    --contentMenuBg:#ff9b045b;
+}
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -6,13 +13,15 @@
     text-decoration: none;
     list-style: none;
 }
-
+.dropdown-content {
+    border-radius: 25px;
+}
 body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
+    /* background-color: #464646; */
     position: relative;
 }
 
@@ -21,25 +30,34 @@ body {
     overflow: hidden;
 }
 .sidebar .current {
-    color:#FF9B04;
+    color:var(--actingMenuColor);
 }
+/* .topnav a{
+    float: left;
+    display: block;
+    color: var(--topnavLinkColor);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+} */
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: var(--topnavLinkColor);
     text-align: center;
-    padding: 14px 16px;
+    padding: 28px 32px;
     text-decoration: none;
     font-size: 17px;
 }
 #logo a{
     width: 100%;
-    background-color: #FDDB3A;
+    background-color:var(--musicMenuColor);
     border-radius: 0 0 25px 0;
 }
 .left ~ #logo a{
     width: 100%;
-    background-color: #FF9B04;
+    background-color: var(--actingMenuColor);
     border-radius: 0 0 0 25px;
 }
 
@@ -53,19 +71,19 @@ body {
     left:0;
 }
 .left {
-    color: #FF9B04 !important; 
+    color: var(--actingMenuColor) !important; 
     float: left !important;
 }
 
 .topnav #close{
     display: none;
     float: right;
-    color: #FDDB3A; 
+    color: var(--musicMenuColor); 
 
 }
 .topnav .icon{
     font-size:15px;
-    color: #FDDB3A; 
+    color: var(--musicMenuColor); ; 
     float:right;
 }
 
@@ -87,19 +105,20 @@ body {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 28px 32px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    border-radius: 0 0 0 25px;
 }
 
 #action:hover ~ #music {
-    background-color: #FF9B04;
+    background-color:var(--actingMenuColor);
     border-radius: 0 0 25px 0;
 }
 
 #music:hover ~ #action{
-    background-color: #FDDB3A;
+    background-color: var(--musicMenuColor); ;
     border-radius: 0 0 0 25px;
 }
 .component-links a {
@@ -201,7 +220,7 @@ body {
     font-weight: normal;
     width: 174px;
     height: 48px;
-    color: #FFFFFF;
+    color: white;
     font-size: 18px;
     line-height: 23px;
     padding: 10px;
@@ -209,7 +228,7 @@ body {
 }
 
 .sidebar a:hover {
-    color: #FF9B04;
+    color:var(--actingMenuColor);
 }
 
 .sidebar .icon {
@@ -234,7 +253,7 @@ body {
     top: 220px;
     /* left: 10px; */
     padding: 8px 0;
-    border-left: 2px solid #FFFFFF;
+    border-left: 2px solid white;
 }
 
 .menu li {
@@ -247,7 +266,7 @@ body {
     font-weight: normal;
     width: 174px;
     height: 48px;
-    color: #FFFFFF;
+    color: white;
     font-size: 18px;
     line-height: 23px;
     padding: 10px;
@@ -255,7 +274,7 @@ body {
 }
 
 .sidebar a:hover {
-    color: #FF9B04;
+    color: var(--actingMenuColor);
 }
 
 .logo {
@@ -268,7 +287,7 @@ body {
     font-weight: normal;
     font-size: 36px;
     line-height: 51px;
-    color: #FF9B04;
+    color: var(--actingMenuColor);
     cursor: pointer;
 }
 

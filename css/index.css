@@ -1,6 +1,9 @@
 :root{
-    --thisorange:#FF9B04;
-    --thisgray: #52575D;
+    --actingMenuColor:#FF9B04;
+    --bodyBg: #52575D;
+    --musicMenuColor:#FDDB3A;
+    --topnavLinkColor:#f2f2f2;
+    --contentMenuBg:#ff9b045b;
 }
 
 * {
@@ -19,7 +22,7 @@
 
 body {
 
-    background-color: var(--thisgray);
+    background-color: var(--bodyBg);
 }
 
 .topnav {
@@ -30,7 +33,7 @@ body {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: var(--topnavLinkColor);
     text-align: center;
     padding: 28px 32px;
     text-decoration: none;
@@ -46,7 +49,9 @@ body {
 #music .dropdown-content a {
     text-align: right;
 }
-
+#music .item4{
+    right: 0%;
+}
 .dropdown .dropbtn {
     width: 100%;
     font-size: 17px;
@@ -60,12 +65,12 @@ body {
 }
 
 #action:hover ~ #music {
-    background-color: #FDDB3A;
+    background-color: var(--musicMenuColor);
     border-radius: 0 0 0 25px;
 }
 
 #music:hover #action .dropbtn {
-  background-color: var(--thisorange);
+  background-color: var(--actingMenuColor);
   border-radius: 0 0 25px 0;
 }
 
@@ -77,7 +82,7 @@ body {
     width: 50%;
     height: 100%;
     border-radius: 25px;
-    background-color: #ff9b045b;
+    background-color: var(--contentMenuBg);
 }
 
 .dropdown-content a {
@@ -101,7 +106,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    color: #FFFFFF;
+    color: white;
 }
 
 .component-links a{
@@ -114,7 +119,7 @@ body {
 .call {
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFFFFF;
+    -webkit-text-stroke-color: white;
 }
 
 .component-links .call {
@@ -129,7 +134,7 @@ body {
     width: 25px;
     height: 25px;
     padding: 3px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid white;
     border-radius: 50%;
 }
 
@@ -143,10 +148,10 @@ body {
 }
 
 #action .dropdown-content a:hover {
-    color: #FF9B04;
+    color:var(--actingMenuColor);
 }
 #music .dropdown-content a:hover {
-    color: #FDDB3A;
+    color: var(--musicMenuColor);
 }
 
 .dropdown:hover .dropdown-content {
@@ -192,11 +197,11 @@ left: 70%;
 } */
 
 .item4 a:hover{
-    color: #FF9B04;
+    color: var(--actingMenuColor);
 
 }
 #landing-right a:hover{
-        color: #FDDB3A;
+        color: var(--musicMenuColor);
 
 }
 .menu {
@@ -217,7 +222,7 @@ left: 70%;
     font-weight: normal;
     width: 174px;
     height: 48px;
-    color: #FFFFFF;
+    color: white;
     font-size: 18px;
     line-height: 23px;
     padding: 10px;
@@ -225,7 +230,7 @@ left: 70%;
 }
 
 .sidebar a:hover {
-    color: #FF9B04;
+    color: var(--actingMenuColor);
 }
 
 #landing-left .sidebar {

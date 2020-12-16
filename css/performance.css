@@ -142,7 +142,9 @@ body {
     font-size: 20px;
     margin: 30px;
 }
-
+.dropdown-content a:hover {
+    color: #FF9B04;
+}
 .item4 {
     position: fixed;
     grid-column: 3;
@@ -150,7 +152,10 @@ body {
     /* right: 0%; */
     bottom: 0%;
 }
-
+#logo a{
+    padding: 0%;
+    /* border-radius: 0 0 25px 0 !important; */
+}
 .component-links {
     padding: 20px 20px;
     display: flex;
