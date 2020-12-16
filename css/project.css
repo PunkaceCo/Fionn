@@ -131,7 +131,7 @@ body {
 
 .slider--text {
     font-size: 1rem;
-    color: #FDDB3A;
+    color: white;
     text-transform: uppercase;
     margin: 0.5rem 0;
 }
@@ -237,9 +237,9 @@ body {
     .slider--title {
         text-align: center;
     }
-    .slider_navigation_dots {
+    /* .slider_navigation_dots {
         display: none;
-    }
+    } */
 }
 
 
@@ -359,7 +359,7 @@ body {
     }
     .slider--feature {
         padding: 20px;
-        margin: 50px;
+        margin: 100px;
         width: 30%;
         align-self: flex-end;
     }
