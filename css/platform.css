@@ -361,6 +361,12 @@ input[type="range"]::-webkit-slider-thumb{
         flex-direction: column !important;
         height: 65%;
     }
+    /* .item4{
+        width: 100px;
+    } */
+    .component-links a{
+        padding: 0%;
+    }
 }
 
 @media only screen and (max-width:767px) {

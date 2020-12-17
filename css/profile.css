@@ -323,6 +323,12 @@
       .main-timeline .timeline:first-child {
           margin-top: -235px;
       }
+      .item4{
+        width: 100px;
+    }
+    .component-links a{
+        padding: 0%;
+    }
   }
   
   @media only screen and (max-width:767px) {

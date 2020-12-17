@@ -420,6 +420,12 @@ body {
   /* .date, .title p{
       font-size: 10px;
   } */
+  .item4{
+    width: 100px;
+}
+.component-links a{
+    padding: 0%;
+}
 
 }
 

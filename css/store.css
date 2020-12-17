@@ -448,6 +448,12 @@ input:focus {
         grid-column: 1 ;
         grid-row: 1;
     }
+    /* .item4{
+        width: 100px;
+    } */
+    .component-links a{
+        padding: 0%;
+    }
 }
 
 

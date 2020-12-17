@@ -409,8 +409,14 @@ body {
     /* .date, .title p{
         font-size: 10px;
     } */
-    .grid-container {
+    /* .grid-container {
         grid-template-columns: auto;
+    } */
+    /* .item4{
+        width: 100px;
+    } */
+    .component-links a{
+        padding: 0%;
     }
 }
 

@@ -426,6 +426,12 @@ display: block;
     .item3::-webkit-scrollbar-thumb:hover {
         display: none !important;
     }
+    .item4{
+        width: 100px;
+    }
+    .component-links a{
+        padding: 0%;
+    }
 }
 
 

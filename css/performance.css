@@ -266,4 +266,10 @@ body {
     .grid-item {
         padding: 0%;
     }
+    /* .item4{
+        width: 100px;
+    } */
+    .component-links a{
+        padding: 0%;
+    }
 }
