@@ -5,7 +5,7 @@ var menu = document.getElementById('menu');
 var icon = document.getElementById('icon');
 var close = document.getElementById('close');
 var logo = document.getElementById('logo');
-console.log(content);
+console.log(menu);
   if(menu.style.display === 'block'){
     icon.style.display = 'block';
     menu.style.display = 'none';
@@ -21,8 +21,7 @@ console.log(content);
     content.style.display = 'block';
     logo.style.display = 'block';
     content.style.backgroundColor= '#ff9b045b' ;
-
-
+    // menu.style.backgroundColor= '#ff9b045b' ;
   }
 }
 // var item = document.getElementById('item3');
