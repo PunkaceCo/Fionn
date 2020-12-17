@@ -138,7 +138,7 @@
   .main-timeline {
       /* overflow:hidden; */
       position: relative;
-      left:-40%;
+      left:-27%;
   }
   
   .main-timeline .timeline {
@@ -283,7 +283,7 @@
   
   @media only screen and (max-width:1280px) {
       .main-timeline .timeline {
-          margin-top: -163px
+          margin-top: -153px
       }
   }
   
@@ -295,7 +295,7 @@
           display: none;
       } */
       .main-timeline .timeline {
-          margin-top: -177px
+          margin-top: -153px
       }
   }
   
@@ -311,6 +311,21 @@
       }
   }
   
+  @media only screen and (max-width: 1119px) {
+    .main-timeline .timeline {
+        margin-top: -177px
+    }
+  }
+  /* @media only screen and (max-width: 1012px) {
+    .main-timeline .timeline {
+        margin-top: -201px
+    }
+  }
+  @media only screen and (max-width: 895px) {
+    .main-timeline .timeline {
+        margin-top: -225px
+    }
+  } */
   @media only screen and (max-width: 600px) {
       .item1 {
           display: none;
@@ -321,27 +336,40 @@
       }
       .item3 {
           flex-direction: column;
-          justify-content: flex-end;
+          justify-content: flex-start;
       }
-      .grid-container {
+      /* .grid-container {
           grid-template-columns: auto;
-      }
+      } */
       .main-timeline .timeline {
-          margin-top: -513px;
+          margin-top: -513px !important;
           left: 45%;          
       }
-      .main-timeline .timeline:first-child {
+      /* .main-timeline .timeline:first-child {
           margin-top: -235px;
-      }
+      } */
       .item4{
         width: 100px;
     }
     .component-links a{
         padding: 0%;
     }
+    .main-timeline{
+        left: -109px;
+    top: 110px;
+    }
   }
-  
-  @media only screen and (max-width:767px) {
+  /* @media only screen and (max-width:1012px) {
+    .main-timeline .timeline {
+        margin-top: -201px !important;
+    }
+  } */
+  /* @media only screen and (max-width:895px) {
+    .main-timeline .timeline {
+        margin-top: -225px !important;
+    }
+  } */
+  /* @media only screen and (max-width:767px) {
       .item1 {
           display: none;
       }
@@ -360,7 +388,7 @@
       .grid-item {
           padding: 0%;
       }
-  }
+  } */
   
   .desc h1 {
       font-family: 'Roboto';
@@ -405,6 +433,9 @@
     }
     .sidebar {
         display: none !important;
+    }
+    .main-timeline .timeline {
+        margin-top: -273px !important;
     }
 
 }
