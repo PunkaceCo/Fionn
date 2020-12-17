@@ -192,9 +192,6 @@ body {
     padding-top: 20px;
     position: absolute;
 }
-/* #landing-right .sidebar {
-left: 70%;
-} */
 
 .item4 a:hover{
     color: var(--actingMenuColor);

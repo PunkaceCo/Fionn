@@ -22,39 +22,14 @@ body {
 .dropdown-content a:hover {
   color: #FDDB3A;
 }
-#logo a{
-  padding: 0%;
-  /* border-radius: 0 0 25px 0 !important; */
-}
-span:hover{
-  cursor: pointer;
-}
-.menu {
-    top: 30%;
-    right: 1%;
-    z-index: 1;
-    border-right: 2px solid white;
-    border-left: none;
-}
-/* .menu ul {
-    padding-left: 20%;
-} */
-
-.menu li {
-    max-width: fit-content;
-}
-
-.sidebar {
-    position: absolute;
-    /* left: 84%; */
-    right: 0%;
-}
-
 .item2 {
     grid-column: 1 / span 3;
     grid-row: 1;
+    z-index: 1;
 }
-
+.dropdown-content a:hover {
+    color: var(--musicMenuColor)
+}
 .item1 {
     grid-column: 3;
     grid-row: 2 / span 4;
@@ -66,44 +41,38 @@ span:hover{
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     font-size: 20px;
     margin: 30px;
-    margin-right: 12%;
-    padding: 0%;
+    z-index: -1;
 }
 
-.grid-item {
-    padding: 0%;
-    ;
-}
-.timeline #work-experience{
-  /* margin-top:20%; */
-  font-size:15px;
-  line-height:20px;
-  padding-top: 15% ;
-
-}
 .item4 {
     position: fixed;
     grid-column: 3;
     grid-row: 5;
-    right: 0%;
+    /* right: 0%; */
     bottom: 0%;
 }
 
 .component-links {
-  padding: 20px 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     color: white;
 }
-.sidebar a:hover{
-  color: #FDDB3A;
+.sidebar {
+  position: absolute;
+  /* left: 84%; */
+  right: 0%;
 }
-.sidebar .current{
-    color: #FDDB3A;
+.menu {
+  top: 30%;
+  right: 1%;
+  z-index: 1;
+  border-right: 2px solid white;
+  border-left: none;
 }
 .component-links .location,
 .call {
@@ -116,7 +85,9 @@ span:hover{
     transform: rotate(-45deg);
 }
 
-
+.component-links .account {
+    display: none;
+}
 
 .component-links i {
     width: 25px;
@@ -540,16 +511,13 @@ span:hover{
     .item2 {
         display: block;
     }
-    .item3{
-      grid-column: 1 / span 3;
-      grid-row: 2 / span 4;
-  }
+
     .component-links a{
         padding: 0%;
     }
     .main-timeline {
         margin-top: 0px;
-        left:-7px !important;
+        left:-35px !important;
         max-width: fit-content;
 
     }
