@@ -62,15 +62,18 @@ descr.appendChild(descParag);
 function load(n) {
   span.setAttribute('id', information[n].id);
   span.setAttribute('onclick', `show(${n})`);
+  desc.innerHTML = information[n].description;
   span.innerHTML = information[n].title;
   titleDes.innerHTML = information[n].title;
   descParag.innerHTML = information[n].description;
   descr.setAttribute('id',information[n].id);
+  timeline.setAttribute('id',information[n].id);
 }
 
 function addItems() {
   for (var i = 0; i < information.length; i++) {
     timeline.addEventListener('DOMContentLoaded', load(i));
+
     var clone = timeline.cloneNode(true);
     main.appendChild(clone);
 
