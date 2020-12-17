@@ -110,7 +110,9 @@ body {
     position: relative;
     margin-top: -119px
 }
-
+.main-timeline .timeline-content h1{
+    color:#FF9B04;
+}
 .main-timeline .timeline:first-child {
     margin-top: 0
 }
@@ -480,13 +482,13 @@ body {
         padding: 0%;
     }
     .main-timeline {
-        margin-top: 148px;
-        left:-25%;
+        margin-top: 0px;
+        left:0 !important;
     }
     .main-timeline .timeline {
-        margin-top: -253px !important;
+        margin-top: 35px !important;
     }
-    .main-timeline .timeline-content {
+    /* .main-timeline .timeline-content {
         width: 35%;
         float: left;
         padding: 30px 20px;
@@ -494,11 +496,16 @@ body {
         z-index: 1;
         position: relative;
         /* display: none; */
-    }
+    /* }  */
     .main-timeline .timeline:nth-child(odd) .timeline-content, .main-timeline .timeline:nth-child(odd) .timeline-content {
-    text-align: right;
-    left: 285px;
+    text-align: center;
+    left: 0px;    
 }
+.main-timeline .timeline-content:before {
+    display:none
+}
+.main-timeline .timeline:nth-child(even) .timeline-content {
+    right: 0px;}
 .main-timeline .timeline-icon, .main-timeline .timeline:nth-child(2n) .timeline-icon {
     margin-top: -10px;
     margin-bottom: 20px;
@@ -511,14 +518,14 @@ body {
 .main-timeline .timeline:nth-child(2n) .year, .main-timeline .year {
     transform: rotate(-135deg);
 }
-/* .main-timeline .timeline-content, .main-timeline .timeline:nth-child(2n) .timeline-content {
-    width: 100%;
+.main-timeline .timeline-content, .main-timeline .timeline:nth-child(2n) .timeline-content {
+    width: 100% !important;
     float: none;
     border-radius: 0 0 20px 20px;
     text-align: center;
     padding: 25px 20px;
     margin: 0 auto;
-} */
+}
 }
 
 
