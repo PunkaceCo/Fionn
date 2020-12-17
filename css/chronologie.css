@@ -496,9 +496,9 @@ body {
         /* display: none; */
     }
     .main-timeline .timeline:nth-child(odd) .timeline-content, .main-timeline .timeline:nth-child(odd) .timeline-content {
-        text-align: right;
-        left: 285px;
-    }
+    text-align: right;
+    left: 285px;
+}
 }
 
 
