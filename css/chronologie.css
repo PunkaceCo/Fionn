@@ -499,6 +499,26 @@ body {
     text-align: right;
     left: 285px;
 }
+.main-timeline .timeline-icon, .main-timeline .timeline:nth-child(2n) .timeline-icon {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    position: relative;
+    transform: rotate(135deg);
+}
+.main-timeline .year {
+    transform: rotate(-135deg);
+}
+.main-timeline .timeline:nth-child(2n) .year, .main-timeline .year {
+    transform: rotate(-135deg);
+}
+/* .main-timeline .timeline-content, .main-timeline .timeline:nth-child(2n) .timeline-content {
+    width: 100%;
+    float: none;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    padding: 25px 20px;
+    margin: 0 auto;
+} */
 }
 
 
