@@ -103,7 +103,7 @@ body {
     }
 .main-timeline {
     /* overflow:hidden; */
-    position: relative
+    position: relative;
 }
 
 .main-timeline .timeline {
@@ -278,7 +278,27 @@ body {
 
 @media only screen and (max-width:1920px) {
     .main-timeline .timeline {
-        margin-top: -140px
+        margin-top: -137px
+    }
+    .main-timeline .timeline-content:before {
+        left: 96%
+    }
+    .main-timeline .timeline:nth-child(even) .timeline-content:before {
+        right: 96%
+    }
+    .main-timeline .timeline-content {
+        width: 35%;
+        float: left;
+        padding: 20px 20px;
+        margin: 50px 0;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .main-timeline .timeline {
+        margin-top: -137px
     }
     .main-timeline .timeline-content:before {
         left: 96%
@@ -287,16 +307,17 @@ body {
         right: 96%
     }
 }
-
-@media only screen and (max-width:1280px) {
+@media only screen and (max-width:894px) {
     .main-timeline .timeline {
-        margin-top: -140px
+        margin-top: -141px !important;
     }
-    .main-timeline .timeline-content:before {
-        left: 96%
-    }
-    .main-timeline .timeline:nth-child(even) .timeline-content:before {
-        right: 96%
+    .main-timeline .timeline-content {
+        width: 35%;
+        float: left;
+        padding: 10px 20px !important;
+        margin: 50px 0;
+        z-index: 1;
+        position: relative;
     }
 }
 
@@ -305,13 +326,21 @@ body {
         display: none;
     }
     .main-timeline .timeline {
-        margin-top: -140px
+        margin-top: -137px
     }
     .main-timeline .timeline-content:before {
         left: 97%
     }
     .main-timeline .timeline:nth-child(even) .timeline-content:before {
         right: 97%
+    }
+    .main-timeline .timeline-content {
+        width: 35%;
+        float: left;
+        padding: 20px 20px;
+        margin: 50px 0;
+        z-index: 1;
+        position: relative;
     }
 }
 
@@ -326,13 +355,13 @@ body {
         display: block;
     }
     .main-timeline .timeline {
-        margin-top: -142px
-    }
-    .main-timeline .timeline-content:before {
-        left: -2%
+        margin-top: -137px
     }
     .main-timeline .timeline:nth-child(even) .timeline-content:before {
-        right: -2%
+        right: 96%;
+    }
+    .main-timeline .timeline-content:before {
+        right: 96%;
     }
 }
 
@@ -374,6 +403,19 @@ body {
     } */
 }
 
+@media only screen and (max-width:741px) {
+    .main-timeline .timeline {
+        margin-top: -117px !important;
+    }
+        .main-timeline .timeline-content {
+            width: 50% !important;
+            float: left;
+            padding: 10px 20px !important;
+            margin: 50px 0;
+            z-index: 1;
+            position: relative;
+        }
+    }
 
 @media only screen and (max-width:768px) {
     .item1 {
@@ -383,19 +425,28 @@ body {
         display: block;
     }
     .main-timeline .timeline {
-        margin-top: -133px !important;
+        margin-top: -117px !important;
     }
     .main-timeline {
         /* overflow: hidden; */
         position: relative;
-        left: -35%;
+        left: -40%;
+        width: max-content;
+
+    }
+    .main-timeline .timeline-content h1 {
+        color: #FF9B04;
+        text-align: left;
+    }
+    .main-timeline .timeline-content p {
+        text-align: left;
     }
     .main-timeline .timeline:nth-child(even) .timeline-content {
-        right: -117px;
+        right: 8px;
         float: right
     }
     .main-timeline .timeline-content {
-        width: 50% !important;
+        width: 35% !important;
         float: left;
         padding: 30px 20px;
         margin: 50px 0;
@@ -404,13 +455,13 @@ body {
     }
     .main-timeline .timeline:nth-child(odd) .timeline-content, .main-timeline .timeline:nth-child(odd) .timeline-content {
         text-align: right;
-        left: 470px;
+        left: 625px;
     }
     .main-timeline .timeline:nth-child(even) .timeline-content:before {
         right: 96%;
     }
     .main-timeline .timeline-content:before {
-        right: 96%;
+        left: -14% !important;
     }
     .grid-container {
         padding: 0%;
@@ -423,30 +474,19 @@ body {
         margin: 0%;
     }
 }
-/*
-@media only screen and (max-width:767px) {
-    .item1 {
-        display: none;
-    }
-    .item2 {
-        display: block;
-    }
-    /* .item3{
-        flex-direction: row;
-        justify-content: center;
-    }  */
+
 
 @media only screen and (max-width:1024px) {
     .grid-container{
         padding-left: 0%;
     }
     .main-timeline .timeline {
-        margin-top: -157px;
+        margin-top: -137px;
     }
     .main-timeline .timeline-content {
         width: 35%;
         float: left;
-        padding: 30px 20px;
+        padding: 20px 20px;
         margin: 50px 0;
         z-index: 1;
         position: relative;
@@ -461,34 +501,19 @@ body {
         display: block;
     }
 
-    /* .description {
-        font-size: 10px;
-        line-height: 12px;
-    } */
-    /* .item3{
-        flex-direction: column;
-        justify-content: flex-end;
-    } */
-    /* .date, .title p{
-        font-size: 10px;
-    } */
-    /* .grid-container {
-        grid-template-columns: auto;
-    } */
-    /* .item4{
-        width: 100px;
-    } */
     .component-links a{
         padding: 0%;
     }
     .main-timeline {
         margin-top: 0px;
-        left:0 !important;
+        left:-35px !important;
+        max-width: fit-content;
+
     }
     .main-timeline .timeline {
         margin-top: 35px !important;
     }
-    /* .main-timeline .timeline-content {
+     .main-timeline .timeline-content {
         width: 35%;
         float: left;
         padding: 30px 20px;
@@ -496,7 +521,14 @@ body {
         z-index: 1;
         position: relative;
         /* display: none; */
-    /* }  */
+    } 
+    .main-timeline .timeline-content h1 {
+        color: #FF9B04;
+        text-align: center;
+    }
+    .main-timeline .timeline-content p {
+        text-align: center;
+    }
     .main-timeline .timeline:nth-child(odd) .timeline-content, .main-timeline .timeline:nth-child(odd) .timeline-content {
     text-align: center;
     left: 0px;    
