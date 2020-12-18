@@ -1,17 +1,17 @@
 
 :root{
     --actingMenuColor:#FF9B04;
-    --bodyBg: #52575D;
+    --bodyBg: #A6A49E;
     --musicMenuColor:#FDDB3A;
     --topnavLinkColor:#f2f2f2;
     --contentMenuBg:#ff9b045b;
-
-}body {
+}
+body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #A6A49E;
+    background-color: var(--bodyBg);
     position: relative;
 }
 #logo a{
@@ -19,25 +19,25 @@
     /* border-radius: 0 0 25px 0 !important; */
 }
 .dropdown-content a:hover {
-    color: #FDDB3A;
+    color: var(--musicMenuColor);
 }
-.item2 {
+.top-nav {
     grid-column: 1 / span 4;
     grid-row: 1;
 }
 
-.item1 {
+.side-nav {
     grid-column: 4;
     grid-row: 2 / span 4;
 }
 
-.item3 .slider {
+.main .slider {
     display: none;
 }
 .column img{
     width: 100%;
 }
-.item3 {
+.main {
     grid-column: 1 / span 3;
     grid-row: 2 / span 4;
     flex-direction: row;
@@ -69,14 +69,14 @@
     width: 100%;
     vertical-align: middle;
 }
-.item3 .row {
+.main .row {
     display: flex;
     flex-wrap: wrap;
     /* margin-right: 125px; */
     padding: 0 5px;
 }
 
-.item4 {
+.socialmedia-icons {
     position: fixed;
     grid-column: 3;
     grid-row: 5;
@@ -136,14 +136,14 @@
     right: 0%;
 }
 
-.item3::-webkit-scrollbar {
+.main::-webkit-scrollbar {
     background-color: #464646;
     width: 10px;
     border-radius: 10px;
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-.item3::-webkit-scrollbar-track {
+.main::-webkit-scrollbar-track {
     width: 10px;
     height: 35px;
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -152,16 +152,16 @@
 
 /* Handle */
 
-.item3::-webkit-scrollbar-thumb {
-    background: #FDDB3A;
+.main::-webkit-scrollbar-thumb {
+    background: var(--musicMenuColor);
     border-radius: 5px;
 }
 
 
 /* Handle on hover */
 
-.item3::-webkit-scrollbar-thumb:hover {
-    background: #FDDB3A;
+.main::-webkit-scrollbar-thumb:hover {
+    background: var(--musicMenuColor);
 }
 
 
@@ -369,35 +369,35 @@ img:hover {
     cursor: pointer;
 }
 .sidebar a:hover{
-    color: #FDDB3A;
+    color: var(--musicMenuColor);
   }
   .sidebar .current{
-      color: #FDDB3A;
+      color: var(--musicMenuColor);
   }
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    /* .item2{
+    /* .top-nav{
 display: block;
 } */
     .column {
         flex: 100%;
         max-width: 100%;
     }
-    /* .item3::-webkit-scrollbar,
-    .item3::-webkit-scrollbar-track,
-    .item3::-webkit-scrollbar-thumb,
-    .item3::-webkit-scrollbar-thumb:hover {
+    /* .main::-webkit-scrollbar,
+    .main::-webkit-scrollbar-track,
+    .main::-webkit-scrollbar-thumb,
+    .main::-webkit-scrollbar-thumb:hover {
         display: block !important;
     } */
-    .item1 {
+    .side-nav {
         display: none;
     }
     .description {
         font-size: 10px;
         line-height: 12px;
     }
-    .item3 {
+    .main {
         /* flex-direction: column; */
         justify-content: flex-end;
         grid-column: 1 /span 2;
@@ -420,13 +420,13 @@ display: block;
         line-height: 10px;
     }
 
-    .item3::-webkit-scrollbar,
-    .item3::-webkit-scrollbar-track,
-    .item3::-webkit-scrollbar-thumb,
-    .item3::-webkit-scrollbar-thumb:hover {
+    .main::-webkit-scrollbar,
+    .main::-webkit-scrollbar-track,
+    .main::-webkit-scrollbar-thumb,
+    .main::-webkit-scrollbar-thumb:hover {
         display: none !important;
     }
-    .item4{
+    .socialmedia-icons{
         width: 100px;
     }
     .component-links a{
@@ -449,17 +449,17 @@ display: block;
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    /* .item1 {
+    /* .side-nav {
         display: block;
     }
 
-    .item2 {
+    .top-nav {
         display: none;
     } */
-    .item3::-webkit-scrollbar,
-    .item3::-webkit-scrollbar-track,
-    .item3::-webkit-scrollbar-thumb,
-    .item3::-webkit-scrollbar-thumb:hover {
+    .main::-webkit-scrollbar,
+    .main::-webkit-scrollbar-track,
+    .main::-webkit-scrollbar-thumb,
+    .main::-webkit-scrollbar-thumb:hover {
         display: block;
     }
     .modal {
@@ -486,17 +486,17 @@ display: block;
 }
 
 @media only screen and (max-width: 767px) {
-    .item1 {
+    .side-nav {
         display: none;
     }
-    .item2 {
+    .top-nav {
         z-index: 1;
         padding: 0%;
         overflow: hidden;
         display: block;
         grid-column: 1;
     }
-    .item3 {
+    .main {
         grid-row: 1/ span 3;
         grid-column: 1;
         padding: 0%;
@@ -505,14 +505,14 @@ display: block;
     .grid-container {
         padding: 0%;
     }
-    .item3 .row {
+    .main .row {
         display: none !important;
     }
-    .item3 .slider {
+    .main .slider {
         display: block;
     }
 
-    .item3::-webkit-scrollbar {
+    .main::-webkit-scrollbar {
         display: none;
     }
     .modal {
@@ -528,10 +528,10 @@ display: block;
         flex: 25%;
         max-width: 50%;
     }
-    .item3::-webkit-scrollbar,
-    .item3::-webkit-scrollbar-track,
-    .item3::-webkit-scrollbar-thumb,
-    .item3::-webkit-scrollbar-thumb:hover {
+    .main::-webkit-scrollbar,
+    .main::-webkit-scrollbar-track,
+    .main::-webkit-scrollbar-thumb,
+    .main::-webkit-scrollbar-thumb:hover {
         display: block;
     }
 }
@@ -540,10 +540,10 @@ display: block;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-    .item3::-webkit-scrollbar,
-    .item3::-webkit-scrollbar-track,
-    .item3::-webkit-scrollbar-thumb,
-    .item3::-webkit-scrollbar-thumb:hover {
+    .main::-webkit-scrollbar,
+    .main::-webkit-scrollbar-track,
+    .main::-webkit-scrollbar-thumb,
+    .main::-webkit-scrollbar-thumb:hover {
         display: block;
     }
 }

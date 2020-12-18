@@ -1,3 +1,9 @@
+:root{
+    --actingMenuColor:#FF9B04;
+    --musicMenuColor:#FDDB3A;
+    --topnavLinkColor:#f2f2f2;
+    --contentMenuBg:#ff9b045b;
+}
 body {
     background-position: center center;
     background-repeat: no-repeat;
@@ -6,10 +12,10 @@ body {
     position: relative;
 }
 .sidebar a:hover{
-    color: #FDDB3A;
+    color:var(--musicMenuColor);
 }
 .sidebar .current{
-    color: #FDDB3A;
+    color: var(--musicMenuColor);
 }
 .menu {
     top: 30%;
@@ -18,7 +24,7 @@ body {
     border-left: none;
 }
 .dropdown-content a:hover {
-    color: #FDDB3A;
+    color:var(--musicMenuColor);
 }
 #logo a{
     padding: 0%;
@@ -35,21 +41,21 @@ body {
     grid-gap: 0px;
 }
 
-.grid-item {
+/* .grid-item {
     padding: 0%;
-}
+} */
 
-.item2 {
+.top-nav {
     grid-column: 1 / span 3;
     grid-row: 1;
 }
 
-.item1 {
+.side-nav {
     grid-column: 1;
     grid-row: 2 / span 4;
 }
 
-.item3 {
+.main {
     grid-column: 1 / span 2;
     grid-row: 2 / span 4;
     flex-direction: row;
@@ -66,7 +72,7 @@ body {
     font-size: 20px; */
 }
 
-.item4 {
+.socialmedia-icons {
     position: fixed;
     grid-column: 3;
     grid-row: 5;
@@ -130,7 +136,7 @@ body {
 
 .slider--title {
     font-size: 2.5rem;
-    color: #FDDB3A;
+    color:var(--musicMenuColor);
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -208,22 +214,22 @@ body {
 }
 
 .slider_navigation_dots li.active {
-    background-color: #FDDB3A;
+    background-color: var(--musicMenuColor);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media only screen and (max-width:767px) {
-    .item1 {
+    .side-nav {
         display: none;
     }
 
-    .item2 {
+    .top-nav {
         z-index: 1;
         display: block;
         grid-column: 1 / span 3;
         grid-row: 1;
     }
-    .item3 {
+    .main {
         flex-direction: row;
         grid-row: 1/ span 3;
         grid-column: 1 / span 3;
@@ -252,16 +258,16 @@ body {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    .item1 {
+    .side-nav {
         display: none;
     }
 
-    .item2 {
+    .top-nav {
         display: block;
         grid-column: 1 / span 3;
         grid-row: 1;
     }
-    .item3 {
+    .main {
         flex-direction: row;
         grid-row: 1 /span 2;
         grid-column: 1;
@@ -282,7 +288,7 @@ body {
     .slider--title {
         text-align: center;
     }
-    .item4{
+    .socialmedia-icons{
         width: 100px;
     }
     .component-links a{
@@ -293,17 +299,17 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .sidebar{
         display: none !important;
     }
-    .item2 {
+    .top-nav {
         display: block;
         grid-column: 1 / span 3;
         grid-row: 1;
         z-index: 1;
     }
-    .item3 {
+    .main {
         flex-direction: row;
         grid-row: 1 /span 2;
         grid-column: 1;
@@ -312,17 +318,17 @@ body {
         padding: 0%;
     }
 }
-@media only screen and (min-width: 768px) {
-    .item1 {
-        display: block;
+@media only screen and (max-width: 768px) {
+    .side-nav {
+        display: none;
     }
-    .item2 {
+    .top-nav {
         display: block;
         grid-column: 1 / span 3;
         grid-row: 1;
         z-index: 1;
     }
-    .item3 {
+    .main {
         flex-direction: row;
         grid-row: 1 /span 2;
         grid-column: 1;
@@ -336,7 +342,7 @@ body {
     .slider--feature {
         padding: 20px;
         margin: 50px;
-        width: 30%;
+        width: 100% !important;
         align-self: flex-end;
     }
     .slider--title {
@@ -347,7 +353,21 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
+    .slider__btn-right .slider__btn-left {
+        display: none;
+    }
+    .slider--feature {
+        padding: 20px;
+        margin: 50px;
+        width: 100%;
+        align-self: flex-end;
+    }
+    .slider--title {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1199px) {
     .slider__btn-right .slider__btn-left {
         display: none;
     }
@@ -361,7 +381,6 @@ body {
         text-align: center;
     }
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 

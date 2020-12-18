@@ -1,3 +1,11 @@
+:root{
+    --actingMenuColor:#FF9B04;
+    --bodyBg: #464646;
+    --musicMenuColor:#FDDB3A;
+    --topnavLinkColor:#f2f2f2;
+    --contentMenuBg:#ff9b045b;
+    --descriptionBg:#595B83;
+}
 body {
     background: url(../asset/svg/performance.svg);
     background-position: center center;
@@ -8,8 +16,8 @@ body {
 }
 
 .description {
-    background-color: #595B83;
-    color: #FF9B04;
+    background-color:var(--descriptionBg);
+    color: var(--actingMenuColor);
     padding: 5px 30px;
     text-align: left;
 }
@@ -24,7 +32,7 @@ body {
     font-weight: normal;
     font-size: 15px;
     line-height: 12px;
-    color: #595B83;
+    color: var(--descriptionBg);
     text-align: center;
 }
 
@@ -34,7 +42,7 @@ body {
     position: relative;
     border-radius: 5px;
     padding: 5px;
-    background:#FF9B04;
+    background:var(--actingMenuColor);
 }
 
 .pointer:nth-child(3):after {
@@ -45,7 +53,7 @@ body {
     width: 0;
     height: 0;
     transform: rotate(-180deg);
-    border-left: 17px solid #FF9B04;
+    border-left: 17px solid var(--actingMenuColor);
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
 }
@@ -57,7 +65,7 @@ body {
     bottom: 0px;
     width: 0;
     height: 0;
-    border-left: 17px solid #FF9B04;
+    border-left: 17px solid var(--actingMenuColor);
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
 }
@@ -71,7 +79,7 @@ body {
 }
 
 .main-information::-webkit-scrollbar {
-    background-color: #464646;
+    background-color: var(--bodyBg);
     width: 10px;
     border-radius: 10px;
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -87,7 +95,7 @@ body {
 /* Handle */
 
 .main-information::-webkit-scrollbar-thumb {
-    background:#FF9B04;
+    background:var(--actingMenuColor);
     border-radius: 5px;
 }
 
@@ -95,7 +103,7 @@ body {
 /* Handle on hover */
 
 .main-information::-webkit-scrollbar-thumb:hover {
-    background:#FF9B04;
+    background:var(--actingMenuColor);
 }
 
 
@@ -121,18 +129,18 @@ body {
      padding: 20px;
 } */
 
-.item1 {
+.side-nav {
     grid-column: 1;
     grid-row: 2 / span 2;
 }
 
-.item2 {
+.top-nav {
     display: none;
     grid-column: 1/ span 2;
     grid-row: 1;
 }
 
-.item3 {
+.main {
     grid-column: 2;
     grid-row: 2 / span 2;
     flex-direction: row;
@@ -143,9 +151,9 @@ body {
     margin: 30px;
 }
 .dropdown-content a:hover {
-    color: #FF9B04;
+    color: var(--actingMenuColor);
 }
-.item4 {
+.socialmedia-icons {
     position: fixed;
     grid-column: 3;
     grid-row: 5;
@@ -192,28 +200,28 @@ body {
 }
 
 /* @media only screen and (min-width:768px) {
-    .item1 {
+    .side-nav {
         display: block;
     }
-    .item2 {
+    .top-nav {
         display: none;
     }
 } */
 
 @media only screen and (max-width:1024px) {
-    .item1 {
+    .side-nav {
         display: none;
     }
     
-    .item2 {
+    .top-nav {
         display: block;
         padding: 0%;
     }
-    .item2 .topnav{
+    .top-nav .topnav{
         display: block;
     }
 
-    .item3 {
+    .main {
         flex-direction: row;
         grid-row: 2;
         grid-column: 1 / span 2;
@@ -228,17 +236,17 @@ body {
 }
 
 @media only screen and (max-width:600px) {
-    .item1 {
+    .side-nav {
         display: none;
     }
-    .item2 {
+    .top-nav {
         display: block;
     }
     .description {
         font-size: 10px;
         line-height: 12px;
     }
-    .item3 {
+    .main {
         /* flex-direction: column; */
         justify-content: center;
     }
@@ -249,24 +257,24 @@ body {
 }
 
 @media only screen and (max-width:600px) {
-    /* .item2{
+    /* .top-nav{
       display: block;
     } */
     .description {
         font-size: 10px;
         line-height: 12px;
     }
-    .item3{
+    .main{
         margin-right:10px;
     }
     /* .grid-container{
       padding: 0%;
       grid-template-columns: auto;
     } */
-    .grid-item {
+    /* .grid-item {
         padding: 0%;
-    }
-    /* .item4{
+    } */
+    /* .socialmedia-icons{
         width: 100px;
     } */
     .component-links a{

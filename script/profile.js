@@ -60,8 +60,8 @@ var descParag = document.createElement('p');
 descr.appendChild(descParag);
 
 function load(n) {
+  icon.setAttribute('onclick', `show(${n})`);
   span.setAttribute('id', information[n].id);
-  span.setAttribute('onclick', `show(${n})`);
   desc.innerHTML = information[n].description;
   span.innerHTML = information[n].title;
   titleDes.innerHTML = information[n].title;
