@@ -52,22 +52,43 @@ body {
     scroll-behavior: smooth;
 }
 .thumb {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0%;
-    overflow-x: scroll;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: flex-end; */
+    display: -webkit-box;
+    padding: 5%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    /* width: 100%;
+    overflow: auto; */
 }
-.thumb li{
-    width: 20%;
+.item{
+    display: inline-block;
+    display: flex; 
+    width: 50% !important;
     padding: 3px;
     background-color: white;
     margin: 1%;
     box-shadow: 1px 1px 10px 5px gray;
 }
-.thumb img{
+
+.item img{
     width: 100%;
+}
+.thumb li{
+    display: flex; 
+    width: 50% !important;
+    padding: 3px;
+    background-color: white;
+    margin: 1%;
+    box-shadow: 1px 1px 10px 5px gray;
+}
+.thumb  li  img{
+    width: 100%;
+    /* display: block; */
     vertical-align: middle;
+
 }
 .main .row {
     display: flex;

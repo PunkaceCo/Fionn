@@ -104,7 +104,8 @@ var column = document.getElementsByClassName('column');
 console.log(column);
 
 var thumbnail = document.querySelector('.thumb');
-var list = document.createElement('li');
+var list = document.createElement('div');
+list.setAttribute('class','item');
 
 var img = document.createElement('img');
 img.setAttribute('class','myImg');
