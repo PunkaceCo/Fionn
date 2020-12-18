@@ -102,7 +102,16 @@ body {
 .component-links i {
     margin: 5px;
 }
-
+.timeline #work-experience{
+    /* margin-top:20%; */
+    font-size:15px;
+    line-height:20px;
+    padding-top: 15% ;
+  
+  }
+  .timeline-content{
+      visibility: hidden;
+  }
 .main-timeline .timeline .timeline-content .title {
     font-family: 'Roboto';
     font-style: normal;
