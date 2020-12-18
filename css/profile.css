@@ -127,6 +127,7 @@ body {
     /* overflow:hidden; */
     position: relative;
     left:-30%;
+    z-index: -2;
 }
 
 .main-timeline .timeline {
@@ -176,14 +177,18 @@ body {
     border: 3px solid transparent;
     border-top-color:var(--musicMenuColor);
     border-right-color: var(--musicMenuColor);
-    z-index: 1;
-    transform: rotate(45deg)
+    z-index: 100;
+    transform: rotate(45deg);
+    cursor:  !important;
 }
-span{
+.timeline-icon span{
     cursor: pointer;
     z-index: 100 !important;
 }
+.year{
+    z-index: 100 !important;
 
+}
 .main-timeline .year {
     display: block;
     width: 110px;

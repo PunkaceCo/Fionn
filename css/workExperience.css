@@ -102,7 +102,14 @@ body {
 .component-links i {
     margin: 5px;
 }
-
+    .main-timeline .timeline-content {
+        width: 35%;
+        float: left;
+        padding: 30px 20px;
+        margin: 50px 0;
+        z-index: 1;
+        position: relative;
+    }
 .main-timeline .timeline .timeline-content .title {
     font-family: 'Roboto';
     font-style: normal;
