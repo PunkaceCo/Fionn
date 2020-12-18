@@ -366,6 +366,9 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    .sidebar{
+        display: block !important;
+    }
     .slider__btn-right .slider__btn-left {
         display: none;
     }

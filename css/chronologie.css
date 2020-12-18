@@ -104,6 +104,7 @@ body {
 .main-timeline {
     /* overflow:hidden; */
     position: relative;
+    left:3%;
 }
 
 .main-timeline .timeline {
@@ -323,7 +324,7 @@ body {
 
 @media only screen and (max-width:1199px) {
     .sidebar {
-        display: none;
+        display: block;
     }
     .main-timeline .timeline {
         margin-top: -137px
