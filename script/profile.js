@@ -84,6 +84,10 @@ function addItems() {
 
 addItems();
 
+
+
+
+
 var spans = document.querySelectorAll('.year');
 var descriptions = document.querySelectorAll('.desc');
 console.log(descriptions);
