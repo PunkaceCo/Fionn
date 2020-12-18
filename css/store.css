@@ -391,8 +391,154 @@ input:focus {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1920px) {
+    .side-nav {
+        display: block;
+    }
+    .top-nav {
+        display: none;
+    }
+    [class*="col-"] {
+        width: 20% !important;
+    }
+    .row [class*="col-"] {
+        width: 40% !important;
+    }
+    .main .all {
+
+        margin-left: 140px !important;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .side-nav {
+        display: block;
+    }
+    .top-nav {
+        display: none;
+    }
+    [class*="col-"] {
+        width: 20%;
+    }
+    .row [class*="col-"] {
+        width: 40%;
+    }
+    .main .all {
+
+        margin-left: 160px !important;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .side-nav {
+        display: block;
+    }
+    .top-nav {
+        display: none;
+    }
+    [class*="col-"] {
+        width: 30%;
+    }
+    .row [class*="col-"] {
+        width: 40%;
+    }
+    .main .all {
+
+        margin-left: 220px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .side-nav {
+        display: none;
+    }
+    .top-nav {
+        display: block;
+    }
+    [class*="col-"] {
+        width: 40%;
+    }
+    .main{
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        margin-right: 10px;
+    }
+    .row [class*="col-"] {
+        width: 50% !important;
+    }
+    .grid-container {
+        padding-left: 0px;
+        }
+    #successBuy p {
+        font-size: 28px;
+    }
+    .main .all {
+
+        margin-left: 0px !important;
+    }
+}
 
 /* Extra small devices (phones, 600px and down) */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* @media only screen and (max-width: 767px) {
+
+    .main{
+        grid-column: 1 ;
+        grid-row: 1;
+    }
+} */
+
+@media only screen and (max-width: 768px) {
+    .side-nav {
+        display: block;
+    }
+    /* .top-nav{
+    display: none;
+  } */
+    [class*="col-"] {
+        width: 40% !important;
+    }
+    .main .all {
+        /* margin-left: 24%; */
+        margin-left: 0%;
+    }
+    .row [class*="col-"] {
+        width: 50%;
+    }
+    #successBuy p {
+        font-size: 28px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/* 
+@media only screen and (min-width: 600px) {
+    [class*="col-"] {
+        width: 45%;
+    }
+    .main .all {
+        margin-left: 0%;
+    }
+    .modal-content .product-card{
+    width: 35%;
+  }
+    #successBuy p {
+        font-size: 25px;
+    }
+} */
 
 @media only screen and (max-width: 600px) {
     .side-nav {
@@ -454,10 +600,10 @@ input:focus {
     /* .grid-item {
         padding: 0%;
     } */
-    .main{
+    /* .main{
         grid-column: 1 ;
         grid-row: 1;
-    }
+    } */
     /* .socialmedia-icons{
         width: 100px;
     } */
@@ -467,99 +613,3 @@ input:focus {
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    [class*="col-"] {
-        width: 45%;
-    }
-    .main .all {
-        margin-left: 0%;
-    }
-    /* .modal-content .product-card{
-    width: 35%;
-  } */
-    #successBuy p {
-        font-size: 25px;
-    }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (max-width: 767px) {
-
-    .main{
-        grid-column: 1 ;
-        grid-row: 1;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .side-nav {
-        display: block;
-    }
-    /* .top-nav{
-    display: none;
-  } */
-    [class*="col-"] {
-        width: 35%;
-    }
-    .main .all {
-        /* margin-left: 24%; */
-        margin-left: 0%;
-    }
-    .row [class*="col-"] {
-        width: 50%;
-    }
-    #successBuy p {
-        font-size: 28px;
-    }
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (max-width: 1024px) {
-    .side-nav {
-        display: none;
-    }
-    .top-nav {
-        display: block;
-    }
-    [class*="col-"] {
-        width: 40%;
-    }
-    .main{
-        grid-column: 1 / span 4;
-        grid-row: 1;
-        margin-right: 10px;
-    }
-    .row [class*="col-"] {
-        width: 50%;
-    }
-    .grid-container {
-        padding-left: 0px;
-        }
-    #successBuy p {
-        font-size: 28px;
-    }
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
-    .side-nav {
-        display: block;
-    }
-    .top-nav {
-        display: none;
-    }
-    [class*="col-"] {
-        width: 20%;
-    }
-    .row [class*="col-"] {
-        width: 40%;
-    }
-}
