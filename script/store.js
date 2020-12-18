@@ -14,14 +14,9 @@ window.onclick = function(event) {
   }
 };
 successBuy = document.getElementById('successBuy');
-var accept = document.getElementById('accept');
 var done = document.getElementById('ok');
 
-// accept.onclick = function () {
-//   modal.style.display = "none";
-//   successBuy.style.display = "block";
 
-// };
 
 done.onclick = function () {
   modal.style.display = "none";
@@ -76,6 +71,78 @@ let products =[
     price:'66$',
     desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
   },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/coffe.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/coffe.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/coffe.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
+  {
+    img:'../asset/png/cd.png',
+    title:'TITEL',
+    price:'66$',
+    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, veritatis.',
+  },
 ];
 
 let buyForm = {
@@ -95,7 +162,7 @@ function showBuyForm(event){
   modal.style.display = "block";
   img.src = thisProduct[0].src;
   h.innerHTML = thisProduct[1].innerHTML;
-
+  value.innerHTML = " $66";
   d.innerHTML = thisProduct[2].innerHTML;
 }
 
@@ -268,4 +335,13 @@ console.log("S",span);
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+};
+
+var accept = document.getElementById('accept');
+console.log("L",accept);
+
+accept.onclick = function () {
+  modal.style.display = "none";
+  successBuy.style.display = "block";
+
 };

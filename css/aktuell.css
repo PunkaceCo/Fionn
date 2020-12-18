@@ -21,6 +21,7 @@
         border-right: 2px solid white;
         border-left: none;
     }
+
     .dropbtn
     .dropdown-content a:hover {
         color: var(--musicMenuColor);

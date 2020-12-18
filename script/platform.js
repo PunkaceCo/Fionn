@@ -41,19 +41,44 @@ singerName.setAttribute("id", "singer");
 
 let songs = [
   {
-    name: 'song1',
-    path: '../asset/song/Marjan-Farsad-Porteghale-Man-320.mp3',
+    name: 'Diary of Dreams',
+    path: '../asset/song/DiaryofDreams.mp3',
     singer: 'FIONN STACY',
   },
   {
-    name: 'song2',
-    path: '../asset/song/Marjan-Farsad-Porteghale-Man-320.mp3',
+    name: 'Lithium',
+    path: '../asset/song/Lithium.mp3',
     singer: 'FIONN STACY',
   },
   {
-    name: 'song3',
-    path: '../asset/song/Marjan-Farsad-Porteghale-Man-320.mp3',
+    name: 'My warm tears',
+    path: '../asset/song/Rana-Farhan_My-Warm-Tears.mp3',
     singer: 'FIONN STACY',
+    icon:'',
+  },
+  {
+    name: 'Love',
+    path: '../asset/song/RooPanesLullabyLove.mp3',
+    singer: 'FIONN STACY',
+    icon:'',
+  },
+  {
+    name: 'Someone like you',
+    path: '../asset/song/SomeoneLikeYou.mp3',
+    singer: 'FIONN STACY',
+    icon:'',
+  },
+  {
+    name: 'Stay here',
+    path: '../asset/song/StayHere.mp3',
+    singer: 'FIONN STACY',
+    icon:'',
+  },
+  {
+    name: 'The wild one',
+    path: '../asset/song/TheWildOne.mp3',
+    singer: 'FIONN STACY',
+    icon:'',
   },
 ];
 function start(n){
@@ -85,7 +110,9 @@ function load_track(index) {
 	clearInterval(timer);
 	reset_slider();
 
-	track.src = songs[index].path;
+  track.src = songs[index].path;
+  // songs[index-1].icon = "";
+  songs[index].icon = "<i class='fas fa-music'></i>";
 	// title.innerHTML = songs[index].name;	
   //   artist.innerHTML = songs[index].singer;
     track.load();
@@ -143,6 +170,8 @@ function change_duration() {
   track.currentTime = slider_position;
 }
 
+
+
 function range_slider() {
   let position = 0;
 
@@ -155,10 +184,8 @@ function range_slider() {
   // function will run when the song is over
   if (track.ended) {
     play.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
-    if (autoplay == 1) {
-      index_no += 1;
-      load_track(index_no);
+      index++;
+      load_track(index);
       playsong();
-    }
   }
 }

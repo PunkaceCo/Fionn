@@ -13,6 +13,9 @@ body {
     background-color: var(--bodyBg);
     position: relative;
 }
+a:hover{
+    color: var(--actingMenuColor);
+}
 #logo a{
     padding: 0%;
     /* border-radius: 0 0 25px 0 !important; */

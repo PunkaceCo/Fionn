@@ -16,6 +16,9 @@
 .dropdown-content {
     border-radius: 25px;
 }
+a{
+    cursor: pointer !important;
+}
 body {
     background-position: center center;
     background-repeat: no-repeat;
