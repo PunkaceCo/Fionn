@@ -131,3 +131,4 @@ addtogrid();
 function thumbChange(n){
   slideContainer.style.backgroundImage = `url(${sliderImages[n].src})`;
 }
+
