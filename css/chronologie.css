@@ -12,17 +12,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
+    background-color: var(--bodyBg);
     position: relative;
 }
 #logo a{
     padding: 0%;
     /* border-radius: 0 0 25px 0 !important; */
 }
-/* a{
-    cursor: pointer;
-} */
-.item2 {
+
+.top-nav {
     grid-column: 1 / span 3;
     grid-row: 1;
     z-index: 1;
@@ -30,12 +28,12 @@ body {
 .dropdown-content a:hover {
     color: var(--actingMenuColor);
 }
-.item1 {
+.side-nav {
     grid-column: 1;
     grid-row: 2 / span 4;
 }
 
-.item3 {
+.main {
     grid-column: 2 / span 2;
     grid-row: 2 / span 4;
     flex-direction: row;
@@ -47,14 +45,16 @@ body {
     z-index: -1;
 }
 
-.item4 {
+.socialmedia-icons {
     position: fixed;
     grid-column: 3;
     grid-row: 5;
     /* right: 0%; */
     bottom: 0%;
 }
-
+.component-links a{
+    padding: 0% !important;
+}
 .component-links {
     padding: 20px 20px;
     display: flex;
@@ -112,7 +112,7 @@ body {
     margin-top: -119px
 }
 .main-timeline .timeline-content h1{
-    color:#FF9B04;
+    color:var(--actingMenuColor);
 }
 .main-timeline .timeline:first-child {
     margin-top: 0
@@ -352,7 +352,7 @@ body {
 } */
 
 @media only screen and (max-width:990px) {
-    .item1 {
+    .side-nav {
         display: block;
     }
     .main-timeline .timeline {
@@ -419,10 +419,10 @@ body {
     }
 
 @media only screen and (max-width:768px) {
-    .item1 {
+    .side-nav {
         display: none;
     }
-    .item2 {
+    .top-nav {
         display: block;
     }
     .main-timeline .timeline {
@@ -436,7 +436,7 @@ body {
 
     }
     .main-timeline .timeline-content h1 {
-        color: #FF9B04;
+        color: var(--actingMenuColor);
         text-align: left;
     }
     .main-timeline .timeline-content p {
@@ -468,10 +468,8 @@ body {
         padding: 0%;
         grid-template-columns: auto;
     }
-    .grid-item {
-        padding: 0%;
-    }
-    .item3{
+
+    .main{
         margin: 0%;
     }
 }
@@ -495,13 +493,13 @@ body {
 }
 
 @media only screen and (max-width:600px) {
-    .item1 {
+    .side-nav {
         display: none;
     }
-    .item2 {
+    .top-nav {
         display: block;
     }
-.item3{
+.main{
     grid-column: 1 / span 3;
     grid-row: 2 / span 4;
 }
@@ -527,7 +525,7 @@ body {
         /* display: none; */
     } 
     .main-timeline .timeline-content h1 {
-        color: #FF9B04;
+        color: var(--actingMenuColor);
         text-align: center;
     }
     .main-timeline .timeline-content p {
@@ -568,7 +566,7 @@ body {
 /* @media only screen and (min-width:320px){ */
 
 
-/* .item2{
+/* .top-nav{
         display: block;
     } */
 
