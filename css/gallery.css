@@ -44,7 +44,7 @@ body {
     font-size: 20px;
     direction: rtl;
     margin: 30px;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
     direction: rtl;
     scroll-behavior: smooth;
@@ -560,6 +560,7 @@ display: block;
     .main .row{
         margin-right:0% ;
     }
+
 
 }
 @media only screen and (max-width: 768px) {

@@ -462,8 +462,9 @@ input:focus {
     }
     .main{
         grid-column: 1 / span 4;
-        grid-row: 1;
+        grid-row: 2;
         margin-right: 10px;
+        /* z-index: 100; */
     }
     .row [class*="col-"] {
         width: 50% !important;
