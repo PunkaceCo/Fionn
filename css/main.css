@@ -69,6 +69,7 @@ body {
 
 .component-links a{
     padding: 0% !important;
+    width: fit-content !important;
 }
 .dropdown {
     width: 50%;
@@ -130,10 +131,10 @@ body {
     background-color: var(--musicMenuColor); ;
     border-radius: 0 0 0 25px;
 }
-.component-links a {
+/* .component-links a {
     max-width: fit-content;
     padding: 4%;
-}
+} */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -227,7 +228,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    width: 174px;
+    /* width: 174px; */
     height: 48px;
     color: white;
     font-size: 18px;
@@ -269,7 +270,7 @@ body {
     list-style: none;
 }
 
-.sidebar a {
+/* .sidebar a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -284,7 +285,7 @@ body {
 
 .sidebar a:hover {
     color: var(--actingMenuColor);
-}
+} */
 
 .logo {
     position: absolute;
