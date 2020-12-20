@@ -11,41 +11,41 @@ const sliderImages = [
   {src:'../asset/png/pic05.png'},
   
   ];
-var gallery = document.querySelector('.gallery');
-var container = document.createElement('div');
-container.setAttribute('class', 'container');
-var grid = document.createElement('div');
-grid.setAttribute('class', 'grid');
-container.appendChild(grid);
-gallery.appendChild(container);
+// var gallery = document.querySelector('.gallery');
+// var container = document.createElement('div');
+// container.setAttribute('class', 'container');
+// var grid = document.createElement('div');
+// grid.setAttribute('class', 'grid');
+// container.appendChild(grid);
+// gallery.appendChild(container);
 
-function makeSection(){
-  for(let i=0; i<=5 ; i++){
-    var column = document.createElement('div');
-    var img = document.createElement('img');
-    if( i==0 || i==1 || i==2){
-      console.log("1",i);
-      column.setAttribute('class','column-xs-12 column-md-4');
-      img.src = sliderImages[i].src;
-      column.appendChild(img);
-    }
-    else if(i==3 || i==4){
-      console.log("2",i);
-      column.setAttribute('class','column-xs-12 column-md-6');
-      img.src = sliderImages[i].src;
-      column.appendChild(img);
-    }
-    else{
-      console.log("3",i);
-      column.setAttribute('class','column-xs-12');
-      img.src = sliderImages[i].src;
-      column.appendChild(img);
-    }
-    grid.appendChild(column);
-  }
+// function makeSection(){
+//   for(let i=0; i<=5 ; i++){
+//     var column = document.createElement('div');
+//     var img = document.createElement('img');
+//     if( i==0 || i==1 || i==2){
+//       console.log("1",i);
+//       column.setAttribute('class','col-4');
+//       img.src = sliderImages[i].src;
+//       column.appendChild(img);
+//     }
+//     else if(i==3 || i==4){
+//       console.log("2",i);
+//       column.setAttribute('class','col-6');
+//       img.src = sliderImages[i].src;
+//       column.appendChild(img);
+//     }
+//     else{
+//       console.log("3",i);
+//       column.setAttribute('class','col-12');
+//       img.src = sliderImages[i].src;
+//       column.appendChild(img);
+//     }
+//     grid.appendChild(column);
+//   }
 
-}
-makeSection();
+// }
+// makeSection();
 
 const slideContainer = document.querySelector('.slider');
 

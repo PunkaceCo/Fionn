@@ -34,9 +34,7 @@ body {
 .main .slider {
     display: none;
 }
-.column img{
-    width: 100%;
-}
+
 .main {
     grid-column: 1 / span 3;
     grid-row: 2 / span 4;
@@ -50,6 +48,11 @@ body {
     overflow-x: hidden;
     direction: rtl;
     scroll-behavior: smooth;
+    scrollbar-color: var(--musicMenuColor)  #464646;/*FireFox*/
+    scrollbar-width: thin;/*FireFox*/
+    scrollbar-face-color: #0064a7;/* IE*/
+    scrollbar-shadow-color: #8ea5b5; /* IE*/
+    scrollbar-highlight-color: #8ea5b5;/* IE*/
 }
 .thumb {
     /* display: flex; */
@@ -57,7 +60,7 @@ body {
     justify-content: flex-end; */
     display: -webkit-box;
     padding: 5%;
-    overflow-x: auto;
+    /* overflow-x: scroll; */
     -webkit-overflow-scrolling: touch;
 
     /* width: 100%;
@@ -93,7 +96,7 @@ body {
 .main .row {
     display: flex;
     flex-wrap: wrap;
-    /* margin-right: 125px; */
+    margin-right: 175px;
     padding: 0 5px;
 }
 
@@ -187,7 +190,6 @@ body {
 
 
 /* Create four equal columns that sits next to each other */
-
 .column {
     flex: 25%;
     max-width: 35%;
@@ -195,19 +197,16 @@ body {
 }
 
 .column img {
-	width: 100%;
-  height: 500px;
-	object-fit: cover;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    transform: scale(1.05);
-  }
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
 
 img:hover {
     opacity: 0.8;
     cursor: pointer;
 }
+
 
 .slider {
     background-position: center;
@@ -435,6 +434,64 @@ display: block;
     .frame {
         width: 100vw;
     }
+    .grid{
+        display: grid;
+    }
+    [class*="col-"] {
+        float: left;
+    }
+
+    
+    
+    /* For desktop: */
+    
+    .col-1 {
+        width: 8.33%;
+    }
+    
+    .col-2 {
+        width: 16.66%;
+    }
+    
+    .col-3 {
+        width: 20%;
+    }
+    
+    .col-4 {
+        width: 33.33%;
+    }
+    
+    .col-5 {
+        width: 41.66%;
+    }
+    
+    .col-6 {
+        width: 50%;
+    }
+    
+    .col-7 {
+        width: 58.33%;
+    }
+    
+    .col-8 {
+        width: 66.66%;
+    }
+    
+    .col-9 {
+        width: 75%;
+    }
+    
+    .col-10 {
+        width: 83.33%;
+    }
+    
+    .col-11 {
+        width: 91.66%;
+    }
+    
+    .col-12 {
+        width: 100%;
+    }
     /* .column {
         -ms-flex: 100%;
         flex: 100%;
@@ -444,7 +501,9 @@ display: block;
         font-size: 9px;
         line-height: 10px;
     }
-
+.gallery{
+    display: none !important;
+}
     .main::-webkit-scrollbar,
     .main::-webkit-scrollbar-track,
     .main::-webkit-scrollbar-thumb,
@@ -497,6 +556,9 @@ display: block;
     }
     .sidebar {
         display: none !important;
+    }
+    .main .row{
+        margin-right:0% ;
     }
 
 }
