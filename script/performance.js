@@ -3,31 +3,37 @@ let information =[
     title:'Show Name',
     address:'Lorem, ipsum dolor sit amet.',
     date:'Date',
+    link:'',
   },
   {
     title:'Show Name',
     address:'Lorem, ipsum dolor sit amet.',
     date:'Date',
+    link:'',
   },
   {
     title:'Show Name',
     address:'Lorem, ipsum dolor sit amet.',
     date:'Date',
+    link:'',
   },
   {
     title:'Show Name',
     address:'Lorem, ipsum dolor sit amet.',
     date:'Date',
+    link:'',
   },
   {
     title:'Show Name',
     address:'Lorem, ipsum dolor sit amet.',
     date:'Date',
+    link:'',
   },
   {
     title:'Show Name',
     address:'Lorem, ipsum dolor sit amet.',
     date:'Date',
+    link:'',
   },
 ];
 
