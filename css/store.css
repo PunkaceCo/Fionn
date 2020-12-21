@@ -42,6 +42,10 @@ a:hover{
     overflow: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scrollbar-color: var(--actingMenuColor)  #464646;/*FireFox*/
+    scrollbar-width: thin;/*FireFox*/
+    scrollbar-face-color:var(--actingMenuColor) ;/* IE*/
+    scrollbar-shadow-color: #464646; /* IE*/
 }
 
 .socialmedia-icons {

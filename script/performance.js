@@ -31,6 +31,11 @@ let information =[
   },
 ];
 
+// var scrollbar = document.querySelector('.scrollbar')
+// if (information.length > 4){
+
+// }
+
 var all = document.querySelector('.main-information');
 var card = document.createElement('div');
 card.setAttribute('class', 'info');

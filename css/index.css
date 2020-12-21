@@ -219,7 +219,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    width: 174px;
+    /* width: 174px; */
     height: 48px;
     color: white;
     font-size: 18px;

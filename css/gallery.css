@@ -50,9 +50,8 @@ body {
     scroll-behavior: smooth;
     scrollbar-color: var(--musicMenuColor)  #464646;/*FireFox*/
     scrollbar-width: thin;/*FireFox*/
-    scrollbar-face-color: #0064a7;/* IE*/
-    scrollbar-shadow-color: #8ea5b5; /* IE*/
-    scrollbar-highlight-color: #8ea5b5;/* IE*/
+    scrollbar-face-color:var(--musicMenuColor) ;/* IE*/
+    scrollbar-shadow-color: #464646; /* IE*/
 }
 .thumb {
     /* display: flex; */
