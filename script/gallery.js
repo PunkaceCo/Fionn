@@ -130,10 +130,10 @@ for (var i = 0; i < images.length; i++) {
 
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+var modal = document.getElementById("myModal");
+
+modal.onclick = function(e){
+  modal.style.display = "none";
 };
 
 var row = document.querySelector('.row');

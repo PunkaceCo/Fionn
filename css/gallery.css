@@ -54,7 +54,7 @@ body {
     scrollbar-shadow-color: #464646; /* IE*/
 }
 .thumb {
-    /* display: flex; */
+    /* display: absolute; */
     /* align-items: center;
     justify-content: flex-end; */
     display: -webkit-box;
@@ -226,6 +226,7 @@ img:hover {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+    overflow: auto;
 }
 
 .slider--title {
@@ -407,12 +408,6 @@ display: block;
         flex: 100%;
         max-width: 100%;
     }
-    /* .main::-webkit-scrollbar,
-    .main::-webkit-scrollbar-track,
-    .main::-webkit-scrollbar-thumb,
-    .main::-webkit-scrollbar-thumb:hover {
-        display: block !important;
-    } */
     .side-nav {
         display: none;
     }
@@ -424,10 +419,6 @@ display: block;
         /* flex-direction: column; */
         justify-content: flex-end;
         grid-column: 1 /span 2;
-    }
-    .date,
-    .title p {
-        font-size: 10px;
     }
 
     .frame {
