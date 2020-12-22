@@ -57,19 +57,20 @@ body {
     /* display: absolute; */
     /* align-items: center;
     justify-content: flex-end; */
-    display: -webkit-box;
+    display: flex;
     padding: 5%;
-    /* overflow-x: scroll; */
+    /* overflow-x: scroll; */overflow: auto;
     -webkit-overflow-scrolling: touch;
 
     /* width: 100%;
     overflow: auto; */
 }
 .item{
-    display: inline-block;
-    display: flex; 
-    width: 50% !important;
+    /* display: inline-block; */
+    display: contents; 
+    width: 20%;
     padding: 3px;
+    border: 2px solid wheat;
     background-color: white;
     margin: 1%;
     box-shadow: 1px 1px 10px 5px gray;
